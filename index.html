@@ -10,7 +10,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="author" content="Daniel Almazan" />
 
 
 <title>Data &amp; Maps</title>
@@ -56,8 +55,6 @@ ul.task-list{list-style: none;}
 
 
 
-<h1 class="title toc-ignore">Data &amp; Maps</h1>
-<h4 class="author">Daniel Almazan</h4>
 
 
 
@@ -134,8 +131,13 @@ width: 100%;
 }
 .hero {
 animation: rise-in 680ms ease both;
-max-width: 760px;
 padding: clamp(10px, 2vw, 24px) 0 18px;
+}
+.hero-top {
+align-items: center;
+display: flex;
+gap: 18px;
+justify-content: space-between;
 }
 .eyebrow {
 color: var(--dani-muted);
@@ -155,25 +157,46 @@ line-height: 0.96;
 margin: 12px 0 20px;
 max-width: 640px;
 }
-.about-title,
-.sections-title {
-color: var(--dani-text);
-font-family: var(--dani-heading-font);
-font-size: clamp(1.12rem, 2vw, 1.6rem);
-letter-spacing: -0.025em;
-line-height: 1;
-margin: 0 0 12px;
-}
-.sections-title {
-animation: rise-in 680ms ease both;
-animation-delay: 80ms;
-margin-top: 6px;
-}
 .hero-copy {
 color: var(--dani-text-soft);
 font-size: clamp(1rem, 1.5vw, 1.18rem);
 line-height: 1.5;
+margin: 0;
 max-width: 680px;
+}
+.language-switch {
+align-items: center;
+background: rgba(255, 255, 255, 0.64);
+border: 1px solid var(--dani-border);
+border-radius: 999px;
+display: inline-flex;
+flex: 0 0 auto;
+gap: 2px;
+padding: 3px;
+}
+.language-switch span {
+color: var(--dani-muted);
+font-size: 0.72rem;
+}
+.language-switch button {
+background: transparent;
+border: 0;
+border-radius: 999px;
+color: var(--dani-muted);
+cursor: pointer;
+font-family: var(--dani-mono-font);
+font-size: 0.72rem;
+font-weight: 700;
+letter-spacing: 0.08em;
+padding: 6px 8px;
+}
+.language-switch button[aria-pressed="true"] {
+background: var(--dani-text);
+color: var(--dani-bg);
+}
+.language-switch button:focus-visible {
+outline: 3px solid color-mix(in srgb, var(--dani-highlight), transparent 35%);
+outline-offset: 2px;
 }
 .section-block {
 animation: rise-in 680ms ease both;
@@ -336,31 +359,33 @@ font-size: 0.84rem;
 }
 }
 </style>
-<main class="homepage" data-heading-font="serif">
+<main class="homepage" data-heading-font="serif" data-page-title-en="Data &amp; Maps — Daniel Almazan" data-page-title-es="Datos y mapas — Daniel Almazan" data-page-description-en="Data-powered maps" data-page-description-es="Mapas basados en datos">
   <section class="hero" aria-labelledby="page-title">
-    <div>
+    <div class="hero-top">
       <div class="eyebrow">Daniel Almazan</div>
-      <h1 id="page-title">Data &amp; Maps</h1>
-      <h2 class="about-title">About</h2>
-      <p class="hero-copy">Data-powered maps</p>
+      <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label-en="Language" data-i18n-aria-label-es="Idioma">
+  <button type="button" data-lang="en" aria-pressed="true">EN</button>
+  <span aria-hidden="true">/</span>
+  <button type="button" data-lang="es" aria-pressed="false">ES</button>
+</div>
     </div>
+    <h1 id="page-title" data-i18n-en="Data &amp; Maps" data-i18n-es="Datos y mapas">Data &amp; Maps</h1>
+    <p class="hero-copy" data-i18n-en="Data-powered maps" data-i18n-es="Mapas basados en datos">Data-powered maps</p>
   </section>
-
-  <h2 class="sections-title">Sections</h2>
 <section class="section-block" aria-labelledby="population-title">
   <header class="section-heading">
     <h2 id="population-title">
-      <a href="https://danielalmazan.com/population/">Population</a>
+      <a href="https://danielalmazan.com/population/" data-i18n-href-en="https://danielalmazan.com/population/" data-i18n-href-es="https://danielalmazan.com/population/?lang=es" data-i18n-en="Population" data-i18n-es="Población">Population</a>
     </h2>
   </header>
   <div class="project-grid">
-    <a class="project-card" href="https://danielalmazan.com/madrid/">
-      <h3>Madrid Interactive Atlas</h3>
-      <p>Explore population, buildings, elections, income and transport across Madrid, section by section.</p>
+    <a class="project-card" href="https://danielalmazan.com/madrid/" data-i18n-href-en="https://danielalmazan.com/madrid/" data-i18n-href-es="https://danielalmazan.com/madrid/">
+      <h3 data-i18n-en="Madrid Interactive Atlas" data-i18n-es="Atlas interactivo de Madrid">Madrid Interactive Atlas</h3>
+      <p data-i18n-en="Explore population, buildings, elections, income and transport across Madrid, section by section." data-i18n-es="Explora la población, los edificios, las elecciones, la renta y el transporte de Madrid, sección a sección.">Explore population, buildings, elections, income and transport across Madrid, section by section.</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/density-madrid-london/">
-      <h3>Where density actually lives: Madrid vs London</h3>
-      <p>A visual comparison of how land and residents are distributed by population density across Madrid and London.</p>
+    <a class="project-card" href="https://danielalmazan.com/density-madrid-london/" data-i18n-href-en="https://danielalmazan.com/density-madrid-london/" data-i18n-href-es="https://danielalmazan.com/density-madrid-london/?lang=es">
+      <h3 data-i18n-en="Where density actually lives: Madrid vs London" data-i18n-es="Dónde vive la densidad — Madrid vs Londres">Where density actually lives: Madrid vs London</h3>
+      <p data-i18n-en="A visual comparison of how land and residents are distributed by population density across Madrid and London." data-i18n-es="Análisis en áreas pequeñas de cómo se distribuyen el territorio y la población por densidad en Madrid y Londres.">A visual comparison of how land and residents are distributed by population density across Madrid and London.</p>
     </a>
   </div>
 </section>
@@ -368,21 +393,21 @@ font-size: 0.84rem;
 <section class="section-block" aria-labelledby="transport-title">
   <header class="section-heading">
     <h2 id="transport-title">
-      <a href="https://danielalmazan.com/transport/">Transport</a>
+      <a href="https://danielalmazan.com/transport/" data-i18n-href-en="https://danielalmazan.com/transport/" data-i18n-href-es="https://danielalmazan.com/transport/?lang=es" data-i18n-en="Transport" data-i18n-es="Transporte">Transport</a>
     </h2>
   </header>
   <div class="project-grid">
-    <a class="project-card" href="https://danielalmazan.com/metromadrid/dashboard.html">
-      <h3>Metro de Madrid - Demand dashboard</h3>
-      <p>Interactive dashboard exploring network and station demand, daily patterns, recovery and the impact of service disruptions using official Metro de Madrid data.</p>
+    <a class="project-card" href="https://danielalmazan.com/metromadrid/dashboard.html" data-i18n-href-en="https://danielalmazan.com/metromadrid/dashboard.html" data-i18n-href-es="https://danielalmazan.com/metromadrid/dashboard.html">
+      <h3 data-i18n-en="Metro de Madrid - Demand dashboard" data-i18n-es="Metro de Madrid — Panel de demanda">Metro de Madrid - Demand dashboard</h3>
+      <p data-i18n-en="Interactive dashboard exploring network and station demand, daily patterns, recovery and the impact of service disruptions using official Metro de Madrid data." data-i18n-es="Panel interactivo para explorar la demanda de la red y las estaciones, los patrones diarios, la recuperación y el impacto de las interrupciones del servicio con datos oficiales de Metro de Madrid.">Interactive dashboard exploring network and station demand, daily patterns, recovery and the impact of service disruptions using official Metro de Madrid data.</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/transport/londoncyclepulse">
-      <h3>London Cycle Pulse</h3>
-      <p>Interactive maps and charts exploring typical Santander Cycles docking and undocking patterns across London.</p>
+    <a class="project-card" href="https://danielalmazan.com/transport/londoncyclepulse" data-i18n-href-en="https://danielalmazan.com/transport/londoncyclepulse" data-i18n-href-es="https://danielalmazan.com/transport/londoncyclepulse">
+      <h3 data-i18n-en="London Cycle Pulse" data-i18n-es="London Cycle Pulse">London Cycle Pulse</h3>
+      <p data-i18n-en="Interactive maps and charts exploring typical Santander Cycles docking and undocking patterns across London." data-i18n-es="Mapas y gráficos interactivos sobre los patrones habituales de anclaje y retirada de Santander Cycles en Londres.">Interactive maps and charts exploring typical Santander Cycles docking and undocking patterns across London.</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/transport/madrid_public_transport.html">
-      <h3>Madrid. Public transport network</h3>
-      <p>Interactive map of Madrid’s public transport network, covering Metro, Cercanías (commuter rail), Metro Ligero (light rail), EMT buses and BiciMAD stations.</p>
+    <a class="project-card" href="https://danielalmazan.com/transport/madrid_public_transport.html" data-i18n-href-en="https://danielalmazan.com/transport/madrid_public_transport.html" data-i18n-href-es="https://danielalmazan.com/transport/madrid_public_transport.html">
+      <h3 data-i18n-en="Madrid. Public transport network" data-i18n-es="Red de transporte público de Madrid">Madrid. Public transport network</h3>
+      <p data-i18n-en="Interactive map of Madrid’s public transport network, covering Metro, Cercanías (commuter rail), Metro Ligero (light rail), EMT buses and BiciMAD stations." data-i18n-es="Mapa interactivo de la red de transporte público de Madrid, que incluye Metro, Cercanías, Metro Ligero, autobuses de la EMT y estaciones de BiciMAD.">Interactive map of Madrid’s public transport network, covering Metro, Cercanías (commuter rail), Metro Ligero (light rail), EMT buses and BiciMAD stations.</p>
     </a>
   </div>
 </section>
@@ -390,13 +415,13 @@ font-size: 0.84rem;
 <section class="section-block" aria-labelledby="covid-title">
   <header class="section-heading">
     <h2 id="covid-title">
-      <a href="https://danielalmazan.com/covid/">Covid-19</a>
+      <a href="https://danielalmazan.com/covid/" data-i18n-href-en="https://danielalmazan.com/covid/" data-i18n-href-es="https://danielalmazan.com/covid/?lang=es" data-i18n-en="Covid-19" data-i18n-es="Covid-19">Covid-19</a>
     </h2>
   </header>
   <div class="project-grid">
-    <a class="project-card" href="https://danielalmazan.com/covid/covid_uk.html">
-      <h3>Covid-19 in the UK</h3>
-      <p>Site with maps and charts showing covid-19 data from the United Kingdom.</p>
+    <a class="project-card" href="https://danielalmazan.com/covid/covid_uk.html" data-i18n-href-en="https://danielalmazan.com/covid/covid_uk.html" data-i18n-href-es="https://danielalmazan.com/covid/covid_uk.html">
+      <h3 data-i18n-en="Covid-19 in the UK" data-i18n-es="Covid-19 en Reino Unido">Covid-19 in the UK</h3>
+      <p data-i18n-en="Site with maps and charts showing covid-19 data from the United Kingdom." data-i18n-es="Sitio con mapas y gráficos sobre los datos de covid-19 de Reino Unido.">Site with maps and charts showing covid-19 data from the United Kingdom.</p>
     </a>
   </div>
 </section>
@@ -404,33 +429,74 @@ font-size: 0.84rem;
 <section class="section-block" aria-labelledby="elections-title">
   <header class="section-heading">
     <h2 id="elections-title">
-      <a href="https://danielalmazan.com/elections/">Elections</a>
+      <a href="https://danielalmazan.com/elections/" data-i18n-href-en="https://danielalmazan.com/elections/" data-i18n-href-es="https://danielalmazan.com/elections/?lang=es" data-i18n-en="Elections" data-i18n-es="Elecciones">Elections</a>
     </h2>
   </header>
   <div class="project-grid">
-    <a class="project-card" href="https://danielalmazan.com/elections/madrid_elections_2023.html">
-      <h3>Madrid elections 2023: three ballots, one city</h3>
-      <p>Interactive maps and charts comparing Madrid’s 2023 local, regional and national elections, section by census section.</p>
+    <a class="project-card" href="https://danielalmazan.com/elections/madrid_elections_2023.html" data-i18n-href-en="https://danielalmazan.com/elections/madrid_elections_2023.html" data-i18n-href-es="https://danielalmazan.com/elections/madrid_elections_2023.html?lang=es">
+      <h3 data-i18n-en="Madrid elections 2023: three ballots, one city" data-i18n-es="Tres urnas, una ciudad">Madrid elections 2023: three ballots, one city</h3>
+      <p data-i18n-en="Interactive maps and charts comparing Madrid’s 2023 local, regional and national elections, section by census section." data-i18n-es="Cómo votó Madrid en las elecciones municipales, autonómicas y generales de 2023, sección censal a sección censal.">Interactive maps and charts comparing Madrid’s 2023 local, regional and national elections, section by census section.</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/elections/general-elections-hex/">
-      <h3>Spain general elections: hex cartogram</h3>
-      <p>Interactive hex cartogram exploring party results and seats by province across Spain’s 2023 and 2019 general elections.</p>
+    <a class="project-card" href="https://danielalmazan.com/elections/general-elections-hex/?lang=en" data-i18n-href-en="https://danielalmazan.com/elections/general-elections-hex/?lang=en" data-i18n-href-es="https://danielalmazan.com/elections/general-elections-hex/?lang=es">
+      <h3 data-i18n-en="Spain general elections: hex cartogram" data-i18n-es="España, escaño a escaño">Spain general elections: hex cartogram</h3>
+      <p data-i18n-en="Interactive hex cartogram exploring party results and seats by province across Spain’s 2023 and 2019 general elections." data-i18n-es="Cada hexágono es un diputado electo.">Interactive hex cartogram exploring party results and seats by province across Spain’s 2023 and 2019 general elections.</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/elections/elections_locals_2015_madrid.html">
-      <h3>Local elections in Madrid - 2015</h3>
-      <p>Article with maps and plots created with data from the 2015 local elections in Madrid</p>
+    <a class="project-card" href="https://danielalmazan.com/elections/elections_locals_2015_madrid.html" data-i18n-href-en="https://danielalmazan.com/elections/elections_locals_2015_madrid.html" data-i18n-href-es="https://danielalmazan.com/elections/elections_locals_2015_madrid_es.html">
+      <h3 data-i18n-en="Local elections in Madrid - 2015" data-i18n-es="Elecciones locales en Madrid — 2015">Local elections in Madrid - 2015</h3>
+      <p data-i18n-en="Article with maps and plots created with data from the 2015 local elections in Madrid" data-i18n-es="Artículo con mapas y gráficos creados con datos de las elecciones municipales de 2015 en Madrid.">Article with maps and plots created with data from the 2015 local elections in Madrid</p>
     </a>
-    <a class="project-card" href="https://danielalmazan.com/elections/gen_elections_2016_hex.html">
-      <h3>General Election in Spain 2016: hexbin cartogram</h3>
-      <p>A cartogram with an hexagonal grid showing the parlamentarians obtained by each party in each province.</p>
+    <a class="project-card" href="https://danielalmazan.com/elections/gen_elections_2016_hex.html" data-i18n-href-en="https://danielalmazan.com/elections/gen_elections_2016_hex.html" data-i18n-href-es="https://danielalmazan.com/elections/gen_elections_2016_hex.html">
+      <h3 data-i18n-en="General Election in Spain 2016: hexbin cartogram" data-i18n-es="Elecciones generales de España 2016: cartograma hexagonal">General Election in Spain 2016: hexbin cartogram</h3>
+      <p data-i18n-en="A cartogram with an hexagonal grid showing the parlamentarians obtained by each party in each province." data-i18n-es="Cartograma con una cuadrícula hexagonal que muestra los diputados obtenidos por cada partido en cada provincia.">A cartogram with an hexagonal grid showing the parlamentarians obtained by each party in each province.</p>
     </a>
   </div>
 </section>
   <footer class="contact-panel">
-    <p>Do you have any questions, comments or suggestions?<br>
-    Contact me on <a href="https://twitter.com/danialmazan_?lang=en">Twitter</a> or <a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a>!</p>
+    <p><span data-i18n-en="Do you have any questions, comments or suggestions?" data-i18n-es="¿Tienes alguna pregunta, comentario o sugerencia?">Do you have any questions, comments or suggestions?</span><br>
+    <span data-i18n-en="Contact me on" data-i18n-es="Contacta conmigo en">Contact me on</span> <a href="https://twitter.com/danialmazan_?lang=en">Twitter</a> <span data-i18n-en="or" data-i18n-es="o">or</span> <a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a>!</p>
   </footer>
 </main>
+<script>
+(function () {
+  "use strict";
+  function languageFromUrl() {
+    return new URLSearchParams(window.location.search).get("lang") === "es" ? "es" : "en";
+  }
+  function setLanguage(language, updateUrl) {
+    document.documentElement.lang = language;
+    document.querySelectorAll("[data-i18n-en][data-i18n-es]").forEach(function (element) {
+      element.textContent = element.getAttribute("data-i18n-" + language);
+    });
+    document.querySelectorAll("[data-i18n-href-en][data-i18n-href-es]").forEach(function (element) {
+      element.setAttribute("href", element.getAttribute("data-i18n-href-" + language));
+    });
+    document.querySelectorAll("[data-i18n-aria-label-en][data-i18n-aria-label-es]").forEach(function (element) {
+      element.setAttribute("aria-label", element.getAttribute("data-i18n-aria-label-" + language));
+    });
+    document.querySelectorAll("[data-lang]").forEach(function (button) {
+      button.setAttribute("aria-pressed", String(button.getAttribute("data-lang") === language));
+    });
+    var page = document.querySelector("[data-page-title-en][data-page-title-es]");
+    if (page) {
+      document.title = page.getAttribute("data-page-title-" + language);
+      var meta = document.querySelector("meta[name=description]");
+      var description = page.getAttribute("data-page-description-" + language);
+      if (meta && description) meta.setAttribute("content", description);
+    }
+    if (updateUrl) {
+      var url = new URL(window.location.href);
+      if (language === "es") url.searchParams.set("lang", "es");
+      else url.searchParams.delete("lang");
+      history.replaceState({}, "", url);
+    }
+  }
+  document.querySelectorAll("[data-lang]").forEach(function (button) {
+    button.addEventListener("click", function () { setLanguage(button.getAttribute("data-lang"), true); });
+  });
+  window.addEventListener("popstate", function () { setLanguage(languageFromUrl(), false); });
+  setLanguage(languageFromUrl(), false);
+}());
+</script>
 
 
 
