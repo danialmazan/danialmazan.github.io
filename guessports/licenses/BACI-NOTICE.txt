@@ -1,0 +1,7 @@
+Guessports trade data are derived from CEPII BACI, release V202601, HS2022, reference year 2023.
+Source: https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html
+Licence: Etalab Open Licence 2.0, https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+Reference: Gaulier, G. and Zignago, S. (2010). BACI: International Trade Database at the Product-Level. The 1994-2007 Version. CEPII Working Paper No. 2010-23.
+Processing: Sum reconciled merchandise-trade values across partners into HS4 products and broad families; separately sum by importer and by export destination. Convert thousands of current USD to USD. Preserve unspecified goods and valid values with missing quantities.
+Product headings: UN Comtrade HS2022; Spanish HS4 headings from the official 2023 Combined Nomenclature, Regulation (EU) 2022/1998, published by BOE. Selected short labels are editorial simplifications; complete original headings are retained.
+These derived profiles are transformed by Guessports; CEPII does not endorse this game.

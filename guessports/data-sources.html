@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Guessports — Sources & methodology</title>
+    <link rel="icon" href="./icon.svg" />
+    <style>
+      @font-face {
+        font-family: Plex;
+        src: url("./fonts/plex-400.ttf");
+      }
+      @font-face {
+        font-family: Bricolage;
+        src: url("./fonts/bricolage-800.ttf");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f7f3e8;
+        color: #17233d;
+        font:
+          16px/1.65 Plex,
+          sans-serif;
+      }
+      main {
+        max-width: 790px;
+        margin: auto;
+        padding: 28px 22px 50px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #d8d9d3;
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+      }
+      header > a {
+        font:
+          800 28px Bricolage,
+          sans-serif;
+        letter-spacing: -1px;
+        text-decoration: none;
+      }
+      a {
+        color: #2347d8;
+        text-underline-offset: 3px;
+      }
+      h1,
+      h2 {
+        font-family: Bricolage, sans-serif;
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+      }
+      h1 {
+        font-size: 38px;
+      }
+      h2 {
+        font-size: 23px;
+        margin-top: 35px;
+      }
+      p {
+        margin: 14px 0;
+      }
+      button {
+        font: inherit;
+        border: 1px solid #d8d9d3;
+        border-radius: 3px;
+        background: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        color: inherit;
+      }
+      button[aria-pressed="true"] {
+        background: #17233d;
+        color: #f7f3e8;
+      }
+      button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #2347d8;
+        outline-offset: 3px;
+      }
+      small {
+        font-size: 13px;
+        color: #586176;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+      }
+      th,
+      td {
+        text-align: left;
+        border-bottom: 1px solid #d8d9d3;
+        padding: 8px;
+      }
+      footer {
+        border-top: 1px solid #d8d9d3;
+        margin-top: 40px;
+        padding-top: 15px;
+        font-size: 13px;
+        color: #586176;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #121b2d;
+          color: #f7f3e8;
+        }
+        a {
+          color: #91b2ff;
+        }
+        small,
+        footer {
+          color: #c0c8d8;
+        }
+        button {
+          border-color: #43516b;
+        }
+        button[aria-pressed="true"] {
+          background: #f7f3e8;
+          color: #121b2d;
+        }
+        header,
+        td,
+        th,
+        footer {
+          border-color: #43516b;
+        }
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="./">Guessports</a>
+        <div role="group" aria-label="Language">
+          <button id="en" aria-pressed="true">EN</button
+          ><button id="es" aria-pressed="false">ES</button>
+        </div>
+      </header>
+      <article data-language="en">
+        <h1>Sources & methodology</h1>
+        <p>
+          Real merchandise trade, prepared offline for three geography games. No
+          trade API, account or external request is needed during gameplay.
+        </p>
+        <h2>CEPII BACI · 2023 · V202601</h2>
+        <p>
+          All profiles use the same 2023 annual file in HS2022 from the January
+          2026 BACI release. BACI reconciles exporter and importer reports from
+          UN Comtrade, removing estimated freight/insurance differences. Values
+          are in current US dollars on a FOB-equivalent basis. Imports here are
+          therefore not a conventional CIF import series. Services are excluded;
+          gross merchandise trade can include re-exports.
+        </p>
+        <p>
+          We sum values once across partners for exports, across exporters for
+          imports, and across products for export destinations. The source’s
+          thousand-USD values are multiplied by 1,000. Valid trade values remain
+          included when quantity is missing. The full annual file contains
+          11,641,922 flows; 412,531 have missing quantities.
+        </p>
+        <p>
+          The 2023 reference year is a more mature snapshot than the newest
+          available 2024 file. It is not guaranteed complete or unrevised:
+          source records may change between BACI releases. This game freezes the
+          specified release and does not mix reference years or silently
+          substitute older country profiles.
+        </p>
+        <h2>What the percentages mean</h2>
+        <p>
+          The overview combines HS4 products into 14 broad families. Its
+          percentages and rectangle areas use all exports or all imports as the
+          denominator. Opening a family gives a single HS4 product level:
+          percentages and areas then use that family’s value, while the header
+          changes to its dollar total. No small products are dropped or
+          enlarged; the scrollable data view exposes every positive product.
+          Unspecified product 999999 is retained as “Unspecified goods”. Rounded
+          labels may not add to exactly 100%.
+        </p>
+        <p>
+          The partners game shows the actual five largest export destinations,
+          ordered by dollar value. Each percentage uses all exports, including
+          destinations outside those five. “Other destinations” is the
+          remainder. Ties use the source destination code for stable ordering.
+        </p>
+        <h2>195 guesses; audited answer pools</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Game</th>
+              <th>Eligible answers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Exports</td>
+              <td>192</td>
+            </tr>
+            <tr>
+              <td>Imports</td>
+              <td>192</td>
+            </tr>
+            <tr>
+              <td>Trade Partners</td>
+              <td>188</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          All 193 UN members plus Palestine and Vatican City are valid guesses.
+          Liechtenstein, Monaco and Vatican City have no separate BACI reporters
+          and are excluded as answers. Australia, Japan, Palau and Papua New
+          Guinea are additionally excluded from Trade Partners because an
+          unidentified source destination occurs in their actual top five. We do
+          not replace these with the next named destination or assign a proxy
+          country. Reporting territories such as Hong Kong and Macao remain
+          legitimate destinations.
+        </p>
+        <p>
+          BACI numeric codes are mapped using its own country table, not ISO
+          numeric codes. Historical combined reporters are not substituted for
+          current countries. China’s trade profile covers mainland China; Hong
+          Kong and Macao are separate trade territories. Statistical territories
+          can differ from the country definitions used for geographic
+          comparisons.
+        </p>
+        <p>
+          <a href="./data/coverage.csv"
+            >Download the complete coverage and exclusion table</a
+          >.
+        </p>
+        <h2>Geographic comparisons and daily games</h2>
+        <p>
+          Country IDs, frozen EN/ES names and aliases, land areas and population
+          comparators are reused from The Mapfather. Its 195-country definition
+          uses curated Natural Earth 1:10m 5.1.2 geometry; population is a World
+          Bank 2024 snapshot. Vatican population is unavailable. Geographic area
+          and population scope need not exactly match trade reporting
+          territories. Clues show mystery-country value divided by the
+          guessed-country value; missingness is preserved.
+        </p>
+        <p>
+          Each daily date has three distinct answers, selected from the
+          appropriate eligible pools. A frozen v1 schedule is anchored to 14
+          October 2026 and uses local calendar dates. Trade profiles are
+          content-addressed and stored with the game version. Ten-country rounds
+          select ten distinct eligible countries. Outcomes are recorded once;
+          daily and practice statistics are independent for each trade game.
+          Progress and preferences stay in this browser.
+        </p>
+        <h2>Attribution</h2>
+        <p>
+          <a
+            href="https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html"
+            >CEPII BACI documentation and downloads</a
+          >
+          ·
+          <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+            >Etalab Open Licence 2.0</a
+          >. Reference: Gaulier, G. and Zignago, S. (2010),
+          <em
+            >BACI: International Trade Database at the Product-Level. The
+            1994–2007 Version</em
+          >, CEPII Working Paper 2010-23. Guessports transforms the data; CEPII
+          does not endorse this game.
+        </p>
+        <p>
+          English headings:
+          <a href="https://comtradeapi.un.org/files/v1/app/reference/H6.json"
+            >UN Comtrade HS2022 classification</a
+          >. Spanish headings:
+          <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81602"
+            >official Combined Nomenclature 2023, Regulation (EU) 2022/1998</a
+          >. Display names may use editorial short labels; source headings are
+          retained.
+        </p>
+        <p>
+          Geographic sources:
+          <a href="https://www.naturalearthdata.com/about/terms-of-use/"
+            >Natural Earth, public domain</a
+          >;
+          <a href="https://data.worldbank.org/indicator/SP.POP.TOTL"
+            >World Bank population, CC BY 4.0</a
+          >; supplementary Vatican boundary from
+          <a href="https://www.geoboundaries.org/">geoBoundaries</a>. Country
+          curation and territory definitions follow The Mapfather’s documented
+          snapshot.
+        </p>
+        <p>
+          Original logo and icons.
+          <a href="https://github.com/ateliertriay/bricolage"
+            >Bricolage Grotesque</a
+          >
+          and <a href="https://github.com/IBM/plex">IBM Plex Sans</a> are
+          self-hosted under SIL OFL. React and React DOM use MIT; D3 hierarchy
+          uses ISC. Notices are included in the local release.
+        </p>
+      </article>
+      <article data-language="es" hidden>
+        <h1>Fuentes y metodología</h1>
+        <p>
+          Comercio real de mercancías, preparado sin conexión para tres juegos
+          de geografía. Durante el juego no hacen falta cuentas, API comerciales
+          ni solicitudes externas.
+        </p>
+        <h2>CEPII BACI · 2023 · V202601</h2>
+        <p>
+          Todos los perfiles usan el archivo anual de 2023, en SA2022, de la
+          versión de enero de 2026 de BACI. BACI concilia las declaraciones de
+          exportadores e importadores de UN Comtrade y elimina diferencias
+          estimadas de flete y seguro. Los valores son dólares estadounidenses
+          corrientes, equivalentes a FOB. Las importaciones de este juego no
+          son, por tanto, una serie convencional CIF. No se incluyen servicios;
+          el comercio bruto de mercancías puede incluir reexportaciones.
+        </p>
+        <p>
+          Sumamos los valores una sola vez: por exportador y producto, por
+          importador y producto, y por exportador y destino. Los valores
+          originales, en miles de dólares, se multiplican por 1.000. Se
+          conservan los valores válidos aunque falte la cantidad física. El
+          archivo anual contiene 11.641.922 flujos; 412.531 carecen de cantidad
+          física.
+        </p>
+        <p>
+          2023 es una instantánea más consolidada que el último año disponible,
+          2024. Esto no garantiza que sea completa o definitiva: los registros
+          pueden revisarse entre versiones. El juego fija una versión y no
+          mezcla años ni sustituye silenciosamente perfiles por datos
+          anteriores.
+        </p>
+        <h2>Qué significan los porcentajes</h2>
+        <p>
+          La vista general agrupa productos SA4 en 14 familias. Los porcentajes
+          y las superficies usan como denominador todas las exportaciones o
+          importaciones. Al abrir una familia, se muestra un solo nivel de
+          productos SA4: los porcentajes y superficies corresponden al valor de
+          esa familia, cuyo total aparece arriba. No se eliminan ni se agrandan
+          los productos pequeños; la lista desplazable incluye todos los
+          productos con valor positivo. El código 999999 se conserva como
+          «Productos sin especificar». Los porcentajes redondeados pueden no
+          sumar exactamente el 100%.
+        </p>
+        <p>
+          Socios comerciales muestra los cinco mayores destinos reales de
+          exportación, ordenados por valor. Los porcentajes corresponden a todas
+          las exportaciones, incluidas las destinadas a otros mercados. «Otros
+          destinos» muestra el resto. Los empates se resuelven por el código de
+          destino para mantener un orden estable.
+        </p>
+        <h2>195 respuestas posibles; cobertura auditada</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Juego</th>
+              <th>Países elegibles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Exportaciones</td>
+              <td>192</td>
+            </tr>
+            <tr>
+              <td>Importaciones</td>
+              <td>192</td>
+            </tr>
+            <tr>
+              <td>Socios comerciales</td>
+              <td>188</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Se puede responder con cualquiera de los 193 miembros de la ONU,
+          Palestina o la Ciudad del Vaticano. Liechtenstein, Mónaco y el
+          Vaticano no tienen registros estadísticos separados en BACI y no
+          aparecen como países misteriosos. Australia, Japón, Palaos y Papúa
+          Nueva Guinea quedan además fuera de Socios comerciales porque entre
+          sus cinco mayores destinos figura un destino sin identificar. No lo
+          sustituimos por el siguiente destino con nombre ni le asignamos un
+          país aproximado. Hong Kong y Macao, entre otros territorios
+          estadísticos, se conservan como destinos legítimos.
+        </p>
+        <p>
+          Los códigos numéricos se relacionan usando la tabla de BACI, no los
+          códigos numéricos ISO. No se sustituyen países actuales por registros
+          históricos conjuntos. Los datos comerciales de China corresponden a
+          China continental; Hong Kong y Macao son territorios estadísticos
+          separados. La cobertura estadística puede diferir de las definiciones
+          geográficas.
+        </p>
+        <p>
+          <a href="./data/coverage.csv"
+            >Descargar la tabla completa de cobertura y exclusiones</a
+          >.
+        </p>
+        <h2>Comparaciones geográficas y retos diarios</h2>
+        <p>
+          Los identificadores, nombres y alias EN/ES, superficies y poblaciones
+          proceden de The Mapfather. Su definición de 195 países usa geometría
+          adaptada de Natural Earth 1:10m 5.1.2 y una instantánea de población
+          del Banco Mundial de 2024. No hay población disponible para el
+          Vaticano. Las superficies y poblaciones pueden tener distinta
+          cobertura territorial que los datos comerciales. Las pistas dividen el
+          valor del país misterioso por el del país propuesto; los datos
+          ausentes se conservan.
+        </p>
+        <p>
+          Cada fecha tiene tres respuestas diferentes, elegidas de los conjuntos
+          elegibles. El calendario fijo v1 comienza el 14 de octubre de 2026 y
+          usa fechas locales. Cada partida conserva la versión y los perfiles
+          comerciales identificados por su contenido. Las rondas aleatorias
+          eligen diez países distintos. Los resultados se contabilizan una sola
+          vez; estadísticas diarias y de práctica son independientes para cada
+          juego. El progreso y las preferencias quedan en este navegador.
+        </p>
+        <h2>Atribución</h2>
+        <p>
+          <a
+            href="https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html"
+            >Documentación y descargas de CEPII BACI</a
+          >
+          ·
+          <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+            >Etalab Open Licence 2.0</a
+          >. Referencia: Gaulier, G. y Zignago, S. (2010),
+          <em
+            >BACI: International Trade Database at the Product-Level. The
+            1994–2007 Version</em
+          >, CEPII Working Paper 2010-23. Guessports transforma los datos; CEPII
+          no patrocina este juego.
+        </p>
+        <p>
+          Nombres ingleses:
+          <a href="https://comtradeapi.un.org/files/v1/app/reference/H6.json"
+            >clasificación SA2022 de UN Comtrade</a
+          >. Nombres españoles:
+          <a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2022-81602"
+            >Nomenclatura Combinada 2023 oficial, Reglamento (UE) 2022/1998</a
+          >. Se usan nombres cortos adaptados para la interfaz y se conservan
+          las denominaciones originales.
+        </p>
+        <p>
+          Fuentes geográficas:
+          <a href="https://www.naturalearthdata.com/about/terms-of-use/"
+            >Natural Earth, dominio público</a
+          >;
+          <a href="https://data.worldbank.org/indicator/SP.POP.TOTL"
+            >población del Banco Mundial, CC BY 4.0</a
+          >; límite complementario del Vaticano de
+          <a href="https://www.geoboundaries.org/">geoBoundaries</a>. La
+          selección y los territorios siguen la instantánea documentada de The
+          Mapfather.
+        </p>
+        <p>
+          Logo e iconos originales.
+          <a href="https://github.com/ateliertriay/bricolage"
+            >Bricolage Grotesque</a
+          >
+          e <a href="https://github.com/IBM/plex">IBM Plex Sans</a> se incluyen
+          localmente bajo SIL OFL. React y React DOM usan MIT; D3 hierarchy usa
+          ISC. Los avisos se incluyen en la versión local.
+        </p>
+      </article>
+      <footer>Guessports · CEPII BACI V202601 · 2023</footer>
+    </main>
+    <script>
+      function select(l) {
+        document.documentElement.lang = l;
+        document
+          .querySelectorAll("[data-language]")
+          .forEach((e) => (e.hidden = e.dataset.language !== l));
+        for (const k of ["en", "es"])
+          document
+            .getElementById(k)
+            .setAttribute("aria-pressed", String(k === l));
+      }
+      const l =
+        new URLSearchParams(location.search).get("lang") ||
+        (navigator.languages.some((l) => l.startsWith("es")) ? "es" : "en");
+      select(l === "es" ? "es" : "en");
+      document.getElementById("en").onclick = () => select("en");
+      document.getElementById("es").onclick = () => select("es");
+    </script>
+  </body>
+</html>
