@@ -1,0 +1,560 @@
+{
+  "catalonia": {
+    "PODEMOS": "pending",
+    "CUP": "pending"
+  },
+  "schemaVersion": 1,
+  "id": "promedio-2026-10-19-v1",
+  "date": "2026-10-19",
+  "targets": {
+    "PP": 32.87952242318251,
+    "PSOE": 26.896523372733718,
+    "VOX": 18.673565356474803,
+    "FA": 5.770708098499933,
+    "PODEMOS": 2.7987529760421874,
+    "ERC": 2.341249571534368,
+    "JUNTS": 1.8498463977443043,
+    "EHB": 1.3503873627135499,
+    "PNV": 1.006615526067108,
+    "BNG": 0.8762579740645755,
+    "AA": 0.9136070272881033,
+    "CC": 0.47297999624298925,
+    "UPN": 0.20163898891079315,
+    "SALF": 1.8147509001971378,
+    "MES": 0.11193498138347197,
+    "NC": 0.15305462059855873,
+    "H-46f23df085b20f": 0.0005524507411044604,
+    "H-b28ff755860306": 0.001656895105276085,
+    "H-c9e11e49fc2fe9": 0.005631618751132027,
+    "H-cd69a97673e19c": 0.0029176437429343565,
+    "H-389996ab9c89e8": 0.007982372944851835,
+    "H-94e017eda7d7ae": 0.020053263655750338,
+    "H-83cbb27d399fac": 0.0005356471483144259,
+    "H-9fa8ec53b8f4ac": 0.01889359959092609,
+    "CUP": 0.3461366655889017,
+    "H-09a233fc9a097d": 0.004379676167727974,
+    "H-91618c958e1077": 0.02720459062436797,
+    "H-9de928e8308743": 0.0016125260201004749,
+    "H-140fef671dd4ff": 0.010786932756021649,
+    "H-2078c2bbfcb54d": 0.004047105248297072,
+    "H-7dfc273d48a239": 0.004838629592189813,
+    "H-2df7948636ef08": 0.0009162820806076886,
+    "H-6166d9f5de7ce3": 0.030754475474627677,
+    "H-3c24887bae9071": 0.03863888298654275,
+    "H-cebcdd0bc56e48": 0.0017125541679999605,
+    "H-ffaa0ffd81669d": 0.015781359012503614,
+    "H-bac9d49a68b10f": 0.1575996809460983,
+    "H-61fffdb11378f4": 0.0003905166387643919,
+    "H-7e1124e67d724a": 0.03428879798314693,
+    "H-c6f8cf17be2cfc": 0.001249907881280566,
+    "H-be577456a91269": 0.028339841684137137,
+    "H-c72562e69c527e": 0.004096867094611458,
+    "H-2c37b80f8814a1": 0.0008782982090657252,
+    "H-097fe4a76d3265": 0.44835851937152776,
+    "H-9a6c0f73c9aa8a": 0.12801528064959453,
+    "H-b5a3d63a4671d9": 0.014136330450902334,
+    "H-44a3bb2d078964": 0.004857518604061333,
+    "H-a049140f5cb34f": 0.01345245609591734,
+    "H-4e3f79e8bfb605": 0.04547738906959826,
+    "H-3b58b21bbd68d4": 0.0009097615037712849,
+    "H-02cbe7d3716ca2": 0.0024522416039137276,
+    "H-48b347391e932f": 0.11116252210323804,
+    "H-89054d4ac12ac0": 0.00979891134882612,
+    "H-af48bd8013a29d": 0.005685220353911356,
+    "H-983ab5e985e8fd": 0.003310966810118003,
+    "H-53affd1e479db8": 0.000927942230840598,
+    "H-96486b211de8da": 0.0008923150293607435,
+    "H-0d1e59f32f8829": 0.07703309438000118,
+    "H-c5fb29bae08081": 0.0010269333838621947,
+    "H-8df9861ff9f41e": 0.07974544551175047,
+    "H-ea104f80fc6a6e": 0.03348173974893012,
+    "H-685c0f5702b67f": 0.003331192854293058,
+    "H-aed178cc1a1ebb": 0.07952511482410027,
+    "H-d54777561b9984": 0.0008747900618631897,
+    "H-fd4c023fdfe861": 0.0015722539456340299,
+    "H-88c2f4f25225eb": 0.006063821546012672,
+    "H-69823a88b54765": 0.006546648656871163,
+    "H-4ee31b3e13ad30": 0.02514341585960342,
+    "H-c51bf26d8d127f": 0.006585568044875334,
+    "H-db870ea6d1f2d3": 0.0063599504412528984
+  },
+  "reported": {
+    "PP": 32.87952242318251,
+    "PSOE": 26.896523372733718,
+    "VOX": 18.673565356474803,
+    "FA": 5.882643079883405,
+    "PODEMOS": 2.7987529760421874,
+    "ERC": 2.341249571534368,
+    "JUNTS": 1.8498463977443043,
+    "EHB": 1.3503873627135499,
+    "PNV": 1.006615526067108,
+    "BNG": 0.8762579740645755,
+    "AA": 0.9136070272881033,
+    "CC": 0.47297999624298925,
+    "UPN": 0.20163898891079315,
+    "SALF": 1.8147509001971378
+  },
+  "fallbacks": [
+    "NC",
+    "H-46f23df085b20f",
+    "H-b28ff755860306",
+    "H-c9e11e49fc2fe9",
+    "H-cd69a97673e19c",
+    "H-389996ab9c89e8",
+    "H-94e017eda7d7ae",
+    "H-83cbb27d399fac",
+    "H-9fa8ec53b8f4ac",
+    "CUP",
+    "H-09a233fc9a097d",
+    "H-91618c958e1077",
+    "H-9de928e8308743",
+    "H-140fef671dd4ff",
+    "H-2078c2bbfcb54d",
+    "H-7dfc273d48a239",
+    "H-2df7948636ef08",
+    "H-6166d9f5de7ce3",
+    "H-3c24887bae9071",
+    "H-cebcdd0bc56e48",
+    "H-ffaa0ffd81669d",
+    "H-bac9d49a68b10f",
+    "H-61fffdb11378f4",
+    "H-7e1124e67d724a",
+    "H-c6f8cf17be2cfc",
+    "H-be577456a91269",
+    "H-c72562e69c527e",
+    "H-2c37b80f8814a1",
+    "H-097fe4a76d3265",
+    "H-9a6c0f73c9aa8a",
+    "H-b5a3d63a4671d9",
+    "H-44a3bb2d078964",
+    "H-a049140f5cb34f",
+    "H-4e3f79e8bfb605",
+    "H-3b58b21bbd68d4",
+    "H-02cbe7d3716ca2",
+    "H-48b347391e932f",
+    "H-89054d4ac12ac0",
+    "H-af48bd8013a29d",
+    "H-983ab5e985e8fd",
+    "H-53affd1e479db8",
+    "H-96486b211de8da",
+    "H-0d1e59f32f8829",
+    "H-c5fb29bae08081",
+    "H-8df9861ff9f41e",
+    "H-ea104f80fc6a6e",
+    "H-685c0f5702b67f",
+    "H-aed178cc1a1ebb",
+    "H-d54777561b9984",
+    "H-fd4c023fdfe861",
+    "H-88c2f4f25225eb",
+    "H-69823a88b54765",
+    "H-4ee31b3e13ad30",
+    "H-c51bf26d8d127f",
+    "H-db870ea6d1f2d3"
+  ],
+  "polls": [
+    {
+      "poll": {
+        "id": "sigma-2026-10-12",
+        "pollster": "Sigma Dos",
+        "publisher": "El Mundo",
+        "published": "2026-10-12",
+        "fieldworkStart": "2026-10-01",
+        "fieldworkEnd": "2026-10-08",
+        "sample": 2017,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 31.9,
+          "PSOE": 25.3,
+          "VOX": 19.1,
+          "FA": 7.6,
+          "PODEMOS": 3.1,
+          "ERC": 2.6,
+          "JUNTS": 1.2,
+          "EHB": 1.1,
+          "PNV": 0.9,
+          "BNG": 0.9,
+          "AA": 0.8,
+          "CC": 0.5,
+          "UPN": 0.2
+        },
+        "source": "https://www.sigmados.com/sondeo-de-arranque-de-campana-estimacion-de-voto-para-las-elecciones-generales-29-n/",
+        "fieldworkSource": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
+        "verified": "2026-10-16",
+        "note": "Campo comprobado en la ficha técnica de la imagen del editor. Se interpreta el voto publicado sobre votos válidos; el texto no desglosa blancos. Las estimaciones de escaños del editor no se importan.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "unknown",
+            "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+          },
+          "CUP": {
+            "status": "unknown",
+            "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+          }
+        }
+      },
+      "weight": 0.18794589415550783,
+      "included": true,
+      "reason": ""
+    },
+    {
+      "poll": {
+        "id": "gad3-2026-10-12",
+        "pollster": "GAD3",
+        "publisher": "ABC / Vocento",
+        "published": "2026-10-12",
+        "fieldworkStart": "2026-10-06",
+        "fieldworkEnd": "2026-10-08",
+        "sample": 1077,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 31.4,
+          "PSOE": 26.4,
+          "VOX": 18.2,
+          "FA": 7.4,
+          "PODEMOS": 2.2,
+          "ERC": 2.6,
+          "JUNTS": 1.5,
+          "EHB": 1.5,
+          "PNV": 1,
+          "BNG": 0.9,
+          "AA": 1,
+          "CC": 0.5
+        },
+        "source": "https://www.gad3.com/barometro-abc-estimacion-de-voto-nacional-octubre-2026/",
+        "fieldworkSource": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
+        "verified": "2026-10-16",
+        "note": "Datos contrastados con el CSV enlazado por GAD3: Podemos 2,2%, no 2,3% de algunas recopilaciones. UPN no publicado: permanece sin dato. Denominador armonizado como voto válido; blancos no desglosados.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "unknown",
+            "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          },
+          "CUP": {
+            "status": "unknown",
+            "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          }
+        }
+      },
+      "weight": 0.21271014271368502,
+      "included": true,
+      "reason": ""
+    },
+    {
+      "poll": {
+        "id": "40db-2026-10-09",
+        "pollster": "40dB.",
+        "publisher": "EL PAÍS / Cadena SER",
+        "published": "2026-10-09",
+        "fieldworkStart": "2026-10-07",
+        "fieldworkEnd": "2026-10-08",
+        "sample": 800,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 31.9,
+          "PSOE": 28.1,
+          "VOX": 18.9,
+          "FA": 5.3,
+          "PODEMOS": 2.3,
+          "SALF": 1.8
+        },
+        "source": "https://elpais.com/espana/2026-10-09/consulte-todos-los-datos-internos-de-la-encuesta-de-el-pais-cuestionarios-cruces-y-respuestas-individuales.html",
+        "fieldworkSource": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+        "verified": "2026-10-16",
+        "note": "Informe, pp. 5 y 26: estimaciones sobre votos válidos; universo excluye Ceuta y Melilla. Solo se importan estimaciones, no intención directa ni simpatía. Los votos regionales no se deducen de sus escaños publicados.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "pending",
+            "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+            "verified": "2026-10-19",
+            "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          },
+          "CUP": {
+            "status": "pending",
+            "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+            "verified": "2026-10-19",
+            "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          }
+        }
+      },
+      "weight": 0.21804155481795226,
+      "included": true,
+      "reason": ""
+    },
+    {
+      "poll": {
+        "id": "dym-2026-10-09",
+        "pollster": "DYM",
+        "publisher": "20minutos / Henneo",
+        "published": "2026-10-09",
+        "fieldworkStart": "2026-10-05",
+        "fieldworkEnd": "2026-10-07",
+        "sample": 1011,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 34,
+          "PSOE": 28.2,
+          "VOX": 18.2,
+          "FA": 3.6,
+          "PODEMOS": 2.6
+        },
+        "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+        "verified": "2026-10-16",
+        "note": "Cifras y campo de la publicación original. El editor no desglosa estimaciones regionales ni blancos; denominador armonizado como voto válido.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "unknown",
+            "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          },
+          "CUP": {
+            "status": "unknown",
+            "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          }
+        }
+      },
+      "weight": 0.20243521181681118,
+      "included": true,
+      "reason": ""
+    },
+    {
+      "poll": {
+        "id": "sigma-2026-10-05",
+        "pollster": "Sigma Dos",
+        "publisher": "El Mundo",
+        "published": "2026-10-05",
+        "fieldworkStart": "2026-09-22",
+        "fieldworkEnd": "2026-10-01",
+        "sample": 2116,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 32.6,
+          "PSOE": 25.6,
+          "VOX": 18.3,
+          "FA": 6.6,
+          "PODEMOS": 3.3,
+          "ERC": 2.5,
+          "JUNTS": 1.1,
+          "EHB": 1.3,
+          "PNV": 1,
+          "BNG": 0.9,
+          "AA": 0.8,
+          "CC": 0.5,
+          "UPN": 0.2
+        },
+        "source": "https://www.sigmados.com/barometro-de-octubre-estimacion-de-voto-para-las-elecciones-generales/",
+        "verified": "2026-10-16",
+        "note": "Archivada, sustituida por la encuesta más reciente de la misma empresa. La configuración anterior incluía Aliança Catalana: no se incorpora al escenario central actual.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "unknown",
+            "source": "https://www.sigmados.com/barometro-de-octubre-estimacion-de-voto-para-las-elecciones-generales/",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          },
+          "CUP": {
+            "status": "unknown",
+            "source": "https://www.sigmados.com/barometro-de-octubre-estimacion-de-voto-para-las-elecciones-generales/",
+            "verified": "2026-10-19",
+            "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          }
+        }
+      },
+      "weight": 0,
+      "included": false,
+      "reason": "Sustituida por la encuesta más reciente de esta empresa"
+    },
+    {
+      "poll": {
+        "id": "40db-2026-10-09-joint",
+        "pollster": "40dB.",
+        "publisher": "EL PAÍS / Cadena SER",
+        "published": "2026-10-09",
+        "fieldworkStart": "2026-10-07",
+        "fieldworkEnd": "2026-10-08",
+        "sample": 800,
+        "configuration": "joint",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 31.9,
+          "PSOE": 27.3,
+          "VOX": 19.1,
+          "FA": 9.5,
+          "SALF": 1.8
+        },
+        "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+        "verified": "2026-10-16",
+        "note": "Pregunta alternativa FA + Podemos, p. 6. No se mezcla con la pregunta de listas separadas ni se usa como bonus automático de coalición.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "pending",
+            "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+            "verified": "2026-10-19",
+            "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          },
+          "CUP": {
+            "status": "pending",
+            "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+            "verified": "2026-10-19",
+            "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          }
+        }
+      },
+      "weight": 0,
+      "included": false,
+      "reason": "Pregunta de lista conjunta: no comparable"
+    },
+    {
+      "poll": {
+        "id": "ncreport-2026-10-08",
+        "pollster": "NC Report",
+        "publisher": "La Razón",
+        "published": "2026-10-08",
+        "fieldworkStart": "2026-10-01",
+        "fieldworkEnd": "2026-10-06",
+        "sample": 1000,
+        "configuration": "separate",
+        "denominator": "valid",
+        "estimates": {
+          "PP": 34.1,
+          "PSOE": 25,
+          "VOX": 18.2,
+          "FA": 5.3,
+          "PODEMOS": 3.9,
+          "JUNTS": 2.9,
+          "ERC": 1.7,
+          "EHB": 1.4,
+          "PNV": 1.1,
+          "BNG": 0.8,
+          "CC": 0.4,
+          "UPN": 0.2
+        },
+        "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+        "fieldworkSource": "https://fotografias-2.larazon.es/clipping/cmsimages02/2026/10/07/91A324CF-D46E-4323-8611-C90A46933376/encuesta-electoral-7-octubre_98.jpg?crop%3D1898%2C1068%2Cx3%2Cy0%26width%3D1900%26height%3D1069%26optimize%3Dlow%26format%3Dwebply=",
+        "verified": "2026-10-19",
+        "note": "Estimación y ficha comprobadas en el gráfico original de La Razón (NC Report, 1–6/10, 1.000 entrevistas). El 5% de «Otros» no se asigna a partidos concretos. Sumar se armoniza con el componente FA del modelo. Denominador asumido sobre votos válidos; blancos no desglosados. La publicación del 19/10 localizada analiza escaños y no acredita una nueva estimación nacional de voto utilizable.",
+        "catalonia": {
+          "PODEMOS": {
+            "status": "unknown",
+            "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+            "verified": "2026-10-19",
+            "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
+          },
+          "CUP": {
+            "status": "unknown",
+            "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+            "verified": "2026-10-19",
+            "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
+          }
+        }
+      },
+      "weight": 0.17886719649604374,
+      "included": true,
+      "reason": ""
+    }
+  ],
+  "policy": {
+    "days": 30,
+    "halfLife": 14,
+    "excluded": [
+      "CIS"
+    ]
+  },
+  "notes": [
+    "CAT: Podemos 50% ERC / 30% FA / 20% abstención; CUP 50% ERC / 10% FA / 40% abstención. Hipótesis editoriales fijas, solo para orígenes pendientes. Lo no documentado se trata como pendiente; nunca se infiere absorción por fecha de publicación.",
+    "Porcentajes armonizados sobre votos a candidaturas. Las encuestas sobre votos válidos se convierten suponiendo la proporción nacional de blancos de 2023: 0.813%.",
+    "Més se desagrega del porcentaje publicado de Sumar/FA con el perfil territorial estimado; no se añade dos veces.",
+    "Los partidos no cubiertos por las estimaciones verificadas reparten el residual según la base territorial documentada; no son estimaciones de encuesta.",
+    "Selección de fuentes verificadas: no se afirma cobertura exhaustiva de todos los sondeos publicados."
+  ],
+  "review": {
+    "date": "2026-10-19",
+    "summary": "Revisión de fuentes al 19/10: se incorpora NC Report del 8/10. Cuatro publicaciones quedan pendientes de datos o compatibilidad; no participan en el promedio.",
+    "items": [
+      {
+        "pollster": "NC Report",
+        "published": "2026-10-08",
+        "status": "included",
+        "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+        "reason": "Porcentajes y ficha primaria comprobados: campo 1–6/10, 1.000 entrevistas. Se incorpora al promedio.",
+        "evidenceSources": [
+          "https://fotografias-2.larazon.es/clipping/cmsimages02/2026/10/07/91A324CF-D46E-4323-8611-C90A46933376/encuesta-electoral-7-octubre_98.jpg?crop%3D1898%2C1068%2Cx3%2Cy0%26width%3D1900%26height%3D1069%26optimize%3Dlow%26format%3Dwebply="
+        ]
+      },
+      {
+        "pollster": "Sigma Dos",
+        "published": "2026-10-19",
+        "status": "pending",
+        "source": "https://www.sigmados.com/noticia.php?id=EIJOKGN2GFZmhHt&lang=es",
+        "reason": "El texto publica Podemos 2,8% y el gráfico original 2,5%. El gráfico señala la ausencia de Podemos en Cataluña; el texto incorpora el acuerdo ERC–Podemos y PP–UPN, y separa Compromís (0,9%) de FA (7,2%). Requiere resolver la discrepancia y armonizar coberturas antes de mezclarla con las encuestas pendientes de ajuste CAT. Sigue incluida Sigma Dos del 12/10 como última compatible.",
+        "evidenceSources": [
+          "https://www.sigmados.com/img/uploads/2026/10/19/news_d53761ecfc7d8afb_1792400676.png"
+        ],
+        "observed": {
+          "fieldworkStart": "2026-10-01",
+          "fieldworkEnd": "2026-10-14",
+          "sample": 3007,
+          "podemosText": 2.8,
+          "podemosGraphic": 2.5,
+          "FA": 7.2,
+          "Compromis": 0.9
+        }
+      },
+      {
+        "pollster": "SocioMétrica",
+        "published": "2026-10-11",
+        "status": "pending",
+        "source": "https://www.elespanol.com/espana/politica/20261011/sanchez-no-funciona-apropiarse-maricarmen-huelga-oposicion-cae-sondeo-noche/1003744416762_0.html",
+        "reason": "Fuente y ficha verificadas: campo 10–11/10, 1.000 entrevistas CAWI-Panel (el texto narrativo dice telefónicas; se conserva la técnica de la ficha). Publica Democracia21 e Iustitia Europa, ambas 0,1%, sin perfil territorial documentado en este modelo. No se eliminan sus identidades para forzar la importación. También separa Compromís del espacio Sumar/FA; requiere armonización explícita.",
+        "evidenceSources": [
+          "https://public.flourish.studio/visualisation/30530018/thumbnail"
+        ],
+        "observed": {
+          "fieldworkStart": "2026-10-10",
+          "fieldworkEnd": "2026-10-11",
+          "sample": 1000,
+          "PP": 32.6,
+          "PSOE": 26.2,
+          "VOX": 18.8,
+          "Sumar": 4.9,
+          "Compromis": 0.9,
+          "PODEMOS": 2.8,
+          "Democracia21": 0.1,
+          "IustitiaEuropa": 0.1
+        }
+      },
+      {
+        "pollster": "GESOP",
+        "published": "2026-10-12",
+        "status": "pending",
+        "source": "https://www.elperiodico.com/es/politica/20261012/encuesta-elecciones-generales-espana-2026-29n-135212729",
+        "reason": "El boletín público de Prensa Ibérica confirma las estimaciones principales: PP 28,7%, PSOE 26,1%, Vox 18,9%, FA 8%, Podemos 2,6%, SALF 2%. No se ha podido consultar la ficha primaria completa (acceso 403/406); las reproducciones secundarias señalan campo 6–8/10 y 1.000 entrevistas. Pendiente de comprobación primaria de ficha y coberturas; no se importa intención directa.",
+        "evidenceSources": [
+          "https://estaticos-data.prensaiberica.es/statics/data/guitar_amplifier/elperiodico/preview/7173.html"
+        ]
+      },
+      {
+        "pollster": "NC Report",
+        "published": "2026-10-19",
+        "status": "pending",
+        "source": "https://www.larazon.es/opinion/miserias-izquierda_202610196ad54875cfd4076f0c7fe599.html?outputType=amp",
+        "reason": "La referencia primaria localizada es un editorial sobre la proyección de escaños del espacio de Sumar. No aporta una nueva tabla nacional de porcentajes ni ficha de campo. No se deduce voto a partir de diputados; se incorpora la encuesta verificable del 8/10."
+      }
+    ]
+  }
+}

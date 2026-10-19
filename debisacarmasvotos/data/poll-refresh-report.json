@@ -1,0 +1,450 @@
+{
+  "date": "2026-10-19",
+  "previous": "promedio-2026-10-16-v2",
+  "next": "promedio-2026-10-19-v1",
+  "changes": {
+    "PP": {
+      "previous": 32.55279401597718,
+      "current": 32.87952242318251,
+      "delta": 0.32672840720533003
+    },
+    "PSOE": {
+      "previous": 27.26501510578069,
+      "current": 26.896523372733718,
+      "delta": -0.368491733046973
+    },
+    "VOX": {
+      "previous": 18.744233127182014,
+      "current": 18.673565356474803,
+      "delta": -0.07066777070721031
+    },
+    "FA": {
+      "previous": 5.885929125488736,
+      "current": 5.770708098499933,
+      "delta": -0.11522102698880321
+    },
+    "PODEMOS": {
+      "previous": 2.5519066518964957,
+      "current": 2.7987529760421874,
+      "delta": 0.24684632414569174
+    },
+    "ERC": {
+      "previous": 2.6213068558403108,
+      "current": 2.341249571534368,
+      "delta": -0.28005728430594257
+    },
+    "JUNTS": {
+      "previous": 1.3704105409321545,
+      "current": 1.8498463977443043,
+      "delta": 0.47943585681214973
+    },
+    "EHB": {
+      "previous": 1.3231165822992235,
+      "current": 1.3503873627135499,
+      "delta": 0.0272707804143264
+    },
+    "PNV": {
+      "previous": 0.9609009859210342,
+      "current": 1.006615526067108,
+      "delta": 0.04571454014607368
+    },
+    "BNG": {
+      "previous": 0.9073754500985689,
+      "current": 0.8762579740645755,
+      "delta": -0.031117476033993396
+    },
+    "AA": {
+      "previous": 0.9136070272881032,
+      "current": 0.9136070272881033,
+      "delta": 1.1102230246251565e-16
+    },
+    "CC": {
+      "previous": 0.5040974722769828,
+      "current": 0.47297999624298925,
+      "delta": -0.031117476033993507
+    },
+    "UPN": {
+      "previous": 0.20163898891079313,
+      "current": 0.20163898891079315,
+      "delta": 2.7755575615628914e-17
+    },
+    "SALF": {
+      "previous": 1.814750900197138,
+      "current": 1.8147509001971378,
+      "delta": -2.220446049250313e-16
+    },
+    "MES": {
+      "previous": 0.11416993475328957,
+      "current": 0.11193498138347197,
+      "delta": -0.002234953369817605
+    },
+    "NC": {
+      "previous": 0.17007847017100514,
+      "current": 0.15305462059855873,
+      "delta": -0.017023849572446403
+    },
+    "H-46f23df085b20f": {
+      "previous": 0.0006138983359302088,
+      "current": 0.0005524507411044604,
+      "delta": -0.0000614475948257484
+    },
+    "H-b28ff755860306": {
+      "previous": 0.0018411870457561126,
+      "current": 0.001656895105276085,
+      "delta": -0.00018429194048002768
+    },
+    "H-c9e11e49fc2fe9": {
+      "previous": 0.006258008402706799,
+      "current": 0.005631618751132027,
+      "delta": -0.0006263896515747722
+    },
+    "H-cd69a97673e19c": {
+      "previous": 0.0032421653287019654,
+      "current": 0.0029176437429343565,
+      "delta": -0.0003245215857676088
+    },
+    "H-389996ab9c89e8": {
+      "previous": 0.008870230597975202,
+      "current": 0.007982372944851835,
+      "delta": -0.0008878576531233667
+    },
+    "H-94e017eda7d7ae": {
+      "previous": 0.02228373368388169,
+      "current": 0.020053263655750338,
+      "delta": -0.002230470028131353
+    },
+    "H-83cbb27d399fac": {
+      "previous": 0.0005952257251725005,
+      "current": 0.0005356471483144259,
+      "delta": -0.000059578576858074564
+    },
+    "H-9fa8ec53b8f4ac": {
+      "previous": 0.020995083336141356,
+      "current": 0.01889359959092609,
+      "delta": -0.0021014837452152657
+    },
+    "CUP": {
+      "previous": 0.38463650638723396,
+      "current": 0.3461366655889017,
+      "delta": -0.03849984079833224
+    },
+    "H-09a233fc9a097d": {
+      "previous": 0.004866815647502239,
+      "current": 0.004379676167727974,
+      "delta": -0.0004871394797742656
+    },
+    "H-91618c958e1077": {
+      "previous": 0.030230483319786457,
+      "current": 0.02720459062436797,
+      "delta": -0.0030258926954184855
+    },
+    "H-9de928e8308743": {
+      "previous": 0.0017918829077951458,
+      "current": 0.0016125260201004749,
+      "delta": -0.0001793568876946709
+    },
+    "H-140fef671dd4ff": {
+      "previous": 0.011986733976451686,
+      "current": 0.010786932756021649,
+      "delta": -0.0011998012204300374
+    },
+    "H-2078c2bbfcb54d": {
+      "previous": 0.004497253768357605,
+      "current": 0.004047105248297072,
+      "delta": -0.0004501485200605329
+    },
+    "H-7dfc273d48a239": {
+      "previous": 0.005376817214308572,
+      "current": 0.004838629592189813,
+      "delta": -0.0005381876221187583
+    },
+    "H-2df7948636ef08": {
+      "previous": 0.0010181976467316715,
+      "current": 0.0009162820806076886,
+      "delta": -0.00010191556612398282
+    },
+    "H-6166d9f5de7ce3": {
+      "previous": 0.034175212216269596,
+      "current": 0.030754475474627677,
+      "delta": -0.0034207367416419186
+    },
+    "H-3c24887bae9071": {
+      "previous": 0.04293658095239205,
+      "current": 0.03863888298654275,
+      "delta": -0.0042976979658492995
+    },
+    "H-cebcdd0bc56e48": {
+      "previous": 0.0019030369147911544,
+      "current": 0.0017125541679999605,
+      "delta": -0.00019048274679119384
+    },
+    "H-ffaa0ffd81669d": {
+      "previous": 0.017536676694694272,
+      "current": 0.015781359012503614,
+      "delta": -0.0017553176821906574
+    },
+    "H-bac9d49a68b10f": {
+      "previous": 0.1751290652312611,
+      "current": 0.1575996809460983,
+      "delta": -0.01752938428516279
+    },
+    "H-61fffdb11378f4": {
+      "previous": 0.00043395274339072293,
+      "current": 0.0003905166387643919,
+      "delta": -0.00004343610462633103
+    },
+    "H-7e1124e67d724a": {
+      "previous": 0.03810264781402615,
+      "current": 0.03428879798314693,
+      "delta": -0.0038138498308792207
+    },
+    "H-c6f8cf17be2cfc": {
+      "previous": 0.0013889317386925253,
+      "current": 0.001249907881280566,
+      "delta": -0.0001390238574119592
+    },
+    "H-be577456a91269": {
+      "previous": 0.03149200527025392,
+      "current": 0.028339841684137137,
+      "delta": -0.003152163586116783
+    },
+    "H-c72562e69c527e": {
+      "previous": 0.004552550489625719,
+      "current": 0.004096867094611458,
+      "delta": -0.000455683395014261
+    },
+    "H-2c37b80f8814a1": {
+      "previous": 0.0009759889323670562,
+      "current": 0.0008782982090657252,
+      "delta": -0.00009769072330133093
+    },
+    "H-097fe4a76d3265": {
+      "previous": 0.4982282192110735,
+      "current": 0.44835851937152776,
+      "delta": -0.049869699839545756
+    },
+    "H-9a6c0f73c9aa8a": {
+      "previous": 0.1422540724758749,
+      "current": 0.12801528064959453,
+      "delta": -0.014238791826280378
+    },
+    "H-b5a3d63a4671d9": {
+      "previous": 0.015708676076022395,
+      "current": 0.014136330450902334,
+      "delta": -0.001572345625120061
+    },
+    "H-44a3bb2d078964": {
+      "previous": 0.005397807199645743,
+      "current": 0.004857518604061333,
+      "delta": -0.0005402885955844098
+    },
+    "H-a049140f5cb34f": {
+      "previous": 0.014948736234741144,
+      "current": 0.01345245609591734,
+      "delta": -0.001496280138823804
+    },
+    "H-4e3f79e8bfb605": {
+      "previous": 0.050535715485623814,
+      "current": 0.04547738906959826,
+      "delta": -0.005058326416025556
+    },
+    "H-3b58b21bbd68d4": {
+      "previous": 0.001010951803851326,
+      "current": 0.0009097615037712849,
+      "delta": -0.00010119030008004103
+    },
+    "H-02cbe7d3716ca2": {
+      "previous": 0.0027249977743387783,
+      "current": 0.0024522416039137276,
+      "delta": -0.0002727561704250507
+    },
+    "H-48b347391e932f": {
+      "previous": 0.12352682738836115,
+      "current": 0.11116252210323804,
+      "delta": -0.012364305285123112
+    },
+    "H-89054d4ac12ac0": {
+      "previous": 0.010888817632764367,
+      "current": 0.00979891134882612,
+      "delta": -0.0010899062839382478
+    },
+    "H-af48bd8013a29d": {
+      "previous": 0.006317571966118148,
+      "current": 0.005685220353911356,
+      "delta": -0.000632351612206792
+    },
+    "H-983ab5e985e8fd": {
+      "previous": 0.0036792366519194496,
+      "current": 0.003310966810118003,
+      "delta": -0.00036826984180144675
+    },
+    "H-53affd1e479db8": {
+      "previous": 0.0010311547237922773,
+      "current": 0.000927942230840598,
+      "delta": -0.00010321249295167925
+    },
+    "H-96486b211de8da": {
+      "previous": 0.000991564805497286,
+      "current": 0.0008923150293607435,
+      "delta": -0.00009924977613654244
+    },
+    "H-0d1e59f32f8829": {
+      "previous": 0.08560127615521743,
+      "current": 0.07703309438000118,
+      "delta": -0.008568181775216246
+    },
+    "H-c5fb29bae08081": {
+      "previous": 0.001141156393787829,
+      "current": 0.0010269333838621947,
+      "delta": -0.0001142230099256342
+    },
+    "H-8df9861ff9f41e": {
+      "previous": 0.08861531473340889,
+      "current": 0.07974544551175047,
+      "delta": -0.008869869221658416
+    },
+    "H-ea104f80fc6a6e": {
+      "previous": 0.03720582268533874,
+      "current": 0.03348173974893012,
+      "delta": -0.003724082936408614
+    },
+    "H-685c0f5702b67f": {
+      "previous": 0.0037017123840303217,
+      "current": 0.003331192854293058,
+      "delta": -0.00037051952973726375
+    },
+    "H-aed178cc1a1ebb": {
+      "previous": 0.08837047726204915,
+      "current": 0.07952511482410027,
+      "delta": -0.008845362437948881
+    },
+    "H-d54777561b9984": {
+      "previous": 0.0009720905834834449,
+      "current": 0.0008747900618631897,
+      "delta": -0.00009730052162025527
+    },
+    "H-fd4c023fdfe861": {
+      "previous": 0.0017471314799122149,
+      "current": 0.0015722539456340299,
+      "delta": -0.000174877534278185
+    },
+    "H-88c2f4f25225eb": {
+      "previous": 0.006738283940089857,
+      "current": 0.006063821546012672,
+      "delta": -0.0006744623940771848
+    },
+    "H-69823a88b54765": {
+      "previous": 0.007274814598561671,
+      "current": 0.006546648656871163,
+      "delta": -0.0007281659416905079
+    },
+    "H-4ee31b3e13ad30": {
+      "previous": 0.02794004968651699,
+      "current": 0.02514341585960342,
+      "delta": -0.002796633826913572
+    },
+    "H-c51bf26d8d127f": {
+      "previous": 0.007318062884342621,
+      "current": 0.006585568044875334,
+      "delta": -0.0007324948394672867
+    },
+    "H-db870ea6d1f2d3": {
+      "previous": 0.007067350447712573,
+      "current": 0.0063599504412528984,
+      "delta": -0.0007074000064596743
+    }
+  },
+  "catalonia": {
+    "previous": {
+      "PODEMOS": "pending",
+      "CUP": "pending"
+    },
+    "current": {
+      "PODEMOS": "pending",
+      "CUP": "pending"
+    },
+    "changesAre": "Tratamiento territorial revisado por origen; las cifras publicadas se conservan en cada ficha."
+  },
+  "included": [
+    "sigma-2026-10-12",
+    "gad3-2026-10-12",
+    "40db-2026-10-09",
+    "dym-2026-10-09",
+    "ncreport-2026-10-08"
+  ],
+  "review": {
+    "date": "2026-10-19",
+    "summary": "Revisión de fuentes al 19/10: se incorpora NC Report del 8/10. Cuatro publicaciones quedan pendientes de datos o compatibilidad; no participan en el promedio.",
+    "items": [
+      {
+        "pollster": "NC Report",
+        "published": "2026-10-08",
+        "status": "included",
+        "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+        "reason": "Porcentajes y ficha primaria comprobados: campo 1–6/10, 1.000 entrevistas. Se incorpora al promedio.",
+        "evidenceSources": [
+          "https://fotografias-2.larazon.es/clipping/cmsimages02/2026/10/07/91A324CF-D46E-4323-8611-C90A46933376/encuesta-electoral-7-octubre_98.jpg?crop%3D1898%2C1068%2Cx3%2Cy0%26width%3D1900%26height%3D1069%26optimize%3Dlow%26format%3Dwebply="
+        ]
+      },
+      {
+        "pollster": "Sigma Dos",
+        "published": "2026-10-19",
+        "status": "pending",
+        "source": "https://www.sigmados.com/noticia.php?id=EIJOKGN2GFZmhHt&lang=es",
+        "reason": "El texto publica Podemos 2,8% y el gráfico original 2,5%. El gráfico señala la ausencia de Podemos en Cataluña; el texto incorpora el acuerdo ERC–Podemos y PP–UPN, y separa Compromís (0,9%) de FA (7,2%). Requiere resolver la discrepancia y armonizar coberturas antes de mezclarla con las encuestas pendientes de ajuste CAT. Sigue incluida Sigma Dos del 12/10 como última compatible.",
+        "evidenceSources": [
+          "https://www.sigmados.com/img/uploads/2026/10/19/news_d53761ecfc7d8afb_1792400676.png"
+        ],
+        "observed": {
+          "fieldworkStart": "2026-10-01",
+          "fieldworkEnd": "2026-10-14",
+          "sample": 3007,
+          "podemosText": 2.8,
+          "podemosGraphic": 2.5,
+          "FA": 7.2,
+          "Compromis": 0.9
+        }
+      },
+      {
+        "pollster": "SocioMétrica",
+        "published": "2026-10-11",
+        "status": "pending",
+        "source": "https://www.elespanol.com/espana/politica/20261011/sanchez-no-funciona-apropiarse-maricarmen-huelga-oposicion-cae-sondeo-noche/1003744416762_0.html",
+        "reason": "Fuente y ficha verificadas: campo 10–11/10, 1.000 entrevistas CAWI-Panel (el texto narrativo dice telefónicas; se conserva la técnica de la ficha). Publica Democracia21 e Iustitia Europa, ambas 0,1%, sin perfil territorial documentado en este modelo. No se eliminan sus identidades para forzar la importación. También separa Compromís del espacio Sumar/FA; requiere armonización explícita.",
+        "evidenceSources": [
+          "https://public.flourish.studio/visualisation/30530018/thumbnail"
+        ],
+        "observed": {
+          "fieldworkStart": "2026-10-10",
+          "fieldworkEnd": "2026-10-11",
+          "sample": 1000,
+          "PP": 32.6,
+          "PSOE": 26.2,
+          "VOX": 18.8,
+          "Sumar": 4.9,
+          "Compromis": 0.9,
+          "PODEMOS": 2.8,
+          "Democracia21": 0.1,
+          "IustitiaEuropa": 0.1
+        }
+      },
+      {
+        "pollster": "GESOP",
+        "published": "2026-10-12",
+        "status": "pending",
+        "source": "https://www.elperiodico.com/es/politica/20261012/encuesta-elecciones-generales-espana-2026-29n-135212729",
+        "reason": "El boletín público de Prensa Ibérica confirma las estimaciones principales: PP 28,7%, PSOE 26,1%, Vox 18,9%, FA 8%, Podemos 2,6%, SALF 2%. No se ha podido consultar la ficha primaria completa (acceso 403/406); las reproducciones secundarias señalan campo 6–8/10 y 1.000 entrevistas. Pendiente de comprobación primaria de ficha y coberturas; no se importa intención directa.",
+        "evidenceSources": [
+          "https://estaticos-data.prensaiberica.es/statics/data/guitar_amplifier/elperiodico/preview/7173.html"
+        ]
+      },
+      {
+        "pollster": "NC Report",
+        "published": "2026-10-19",
+        "status": "pending",
+        "source": "https://www.larazon.es/opinion/miserias-izquierda_202610196ad54875cfd4076f0c7fe599.html?outputType=amp",
+        "reason": "La referencia primaria localizada es un editorial sobre la proyección de escaños del espacio de Sumar. No aporta una nueva tabla nacional de porcentajes ni ficha de campo. No se deduce voto a partir de diputados; se incorpora la encuesta verificable del 8/10."
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-19",
+  "previousBallot": "29N-territorial-2026-10-19-v3",
+  "currentBallot": "29N-territorial-2026-10-19-v4",
+  "previousSnapshot": "promedio-2026-10-16-v1",
+  "currentSnapshot": "promedio-2026-10-16-v2",
+  "originalPollFiguresAndTargetsUnchanged": true,
+  "legacyExactReproduction": true,
+  "all48ProvincesOutsideCataloniaUnchanged": true,
+  "nationalBefore": {
+    "PP": 135,
+    "PSOE": 109,
+    "Vox": 64,
+    "Frente Amplio+": 10,
+    "Podemos": 2,
+    "ERC": 11,
+    "Junts": 5,
+    "EH Bildu": 6,
+    "EAJ-PNV": 3,
+    "BNG": 2,
+    "Adelante Andalucía": 1,
+    "CCa": 1,
+    "UPC": 1
+  },
+  "nationalAfter": {
+    "PP": 134,
+    "PSOE": 109,
+    "Vox": 64,
+    "Frente Amplio+": 10,
+    "Podemos": 1,
+    "ERC": 13,
+    "Junts": 5,
+    "EH Bildu": 6,
+    "EAJ-PNV": 3,
+    "BNG": 2,
+    "Adelante Andalucía": 1,
+    "CCa": 1,
+    "UPC": 1
+  },
+  "referenceAbstained": 63786.1793865121,
+  "provinces": [
+    {
+      "id": "08",
+      "name": "Barcelona",
+      "seatsBefore": {
+        "PP": 5,
+        "PSOE": 11,
+        "VOX": 4,
+        "FA": 2,
+        "PODEMOS": 1,
+        "ERC": 6,
+        "JUNTS": 3
+      },
+      "seatsAfter": {
+        "PP": 5,
+        "PSOE": 11,
+        "VOX": 4,
+        "FA": 2,
+        "ERC": 7,
+        "JUNTS": 3
+      },
+      "flows": [
+        {
+          "origin": "PODEMOS",
+          "potential": 107164.30624378707,
+          "destinations": {
+            "ERC": 53582.153121893534,
+            "FA": 32149.29187313612
+          },
+          "abstained": 21432.861248757414
+        },
+        {
+          "origin": "CUP",
+          "potential": 64029.72109561047,
+          "destinations": {
+            "ERC": 32014.860547805234,
+            "FA": 6402.972109561048
+          },
+          "abstained": 25611.88843824419
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Girona",
+      "seatsBefore": {
+        "PSOE": 2,
+        "VOX": 1,
+        "ERC": 2,
+        "JUNTS": 1
+      },
+      "seatsAfter": {
+        "PSOE": 2,
+        "VOX": 1,
+        "ERC": 2,
+        "JUNTS": 1
+      },
+      "flows": [
+        {
+          "origin": "PODEMOS",
+          "potential": 9281.225062589718,
+          "destinations": {
+            "ERC": 4640.612531294859,
+            "FA": 2784.3675187769154
+          },
+          "abstained": 1856.2450125179437
+        },
+        {
+          "origin": "CUP",
+          "potential": 17212.789837067976,
+          "destinations": {
+            "ERC": 8606.394918533988,
+            "FA": 1721.2789837067976
+          },
+          "abstained": 6885.11593482719
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Lleida",
+      "seatsBefore": {
+        "PP": 1,
+        "PSOE": 1,
+        "ERC": 1,
+        "JUNTS": 1
+      },
+      "seatsAfter": {
+        "PSOE": 1,
+        "ERC": 2,
+        "JUNTS": 1
+      },
+      "flows": [
+        {
+          "origin": "PODEMOS",
+          "potential": 3643.348638406736,
+          "destinations": {
+            "ERC": 1821.674319203368,
+            "FA": 1093.0045915220207
+          },
+          "abstained": 728.6697276813472
+        },
+        {
+          "origin": "CUP",
+          "potential": 5003.46086016826,
+          "destinations": {
+            "ERC": 2501.73043008413,
+            "FA": 500.34608601682606
+          },
+          "abstained": 2001.3843440673043
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "name": "Tarragona",
+      "seatsBefore": {
+        "PP": 1,
+        "PSOE": 2,
+        "VOX": 1,
+        "ERC": 2
+      },
+      "seatsAfter": {
+        "PP": 1,
+        "PSOE": 2,
+        "VOX": 1,
+        "ERC": 2
+      },
+      "flows": [
+        {
+          "origin": "PODEMOS",
+          "potential": 10466.954530635961,
+          "destinations": {
+            "ERC": 5233.477265317981,
+            "FA": 3140.0863591907882
+          },
+          "abstained": 2093.3909061271925
+        },
+        {
+          "origin": "CUP",
+          "potential": 7941.559435723782,
+          "destinations": {
+            "ERC": 3970.779717861891,
+            "FA": 794.1559435723783
+          },
+          "abstained": 3176.623774289513
+        }
+      ]
+    }
+  ],
+  "coalitionExperiments": [
+    {
+      "partners": [
+        "PODEMOS"
+      ],
+      "before": 12,
+      "after": 14,
+      "candidacyGain": 2,
+      "leftBlocGain": 1
+    },
+    {
+      "partners": [
+        "PODEMOS",
+        "AA"
+      ],
+      "before": 13,
+      "after": 17,
+      "candidacyGain": 4,
+      "leftBlocGain": 2
+    },
+    {
+      "partners": [
+        "PODEMOS",
+        "ERC",
+        "EHB",
+        "BNG",
+        "AA"
+      ],
+      "before": 34,
+      "after": 44,
+      "candidacyGain": 10,
+      "leftBlocGain": 6
+    }
+  ]
+}

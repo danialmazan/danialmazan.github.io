@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "id": "cha-aragon",
+      "url": "https://www.chunta.org/presentacion-de-la-coalicion-entre-cha-y-frente-amplio-para-las-elecciones-generales-de-2026/",
+      "published": "2026-10-16",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/cha-aragon-2026-10-19.html",
+      "sha256": "c5d00840b9094bcbd6b3f1260d9752a673c5fafc7370539b5fa5cc1dbc5612ee"
+    },
+    {
+      "id": "iu-aragon",
+      "url": "https://www.iuaragon.com/izquierda-unida-de-aragon-concurrira-a-las-elecciones-generales-en-la-coalicion-de-frente-amplio-dirigida-a-frenar-el-avance-de-las-derechas-reaccionarias/",
+      "published": "2026-10-16",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/iu-aragon-2026-10-19.html",
+      "sha256": "e10d817b5e1133f8ce3c01107a20e367c8d414936aea4be02eef1b9a926977a0"
+    },
+    {
+      "id": "iu-murcia",
+      "url": "https://iuverdes.es/actualidad/region-de-murcia/iuvrm-comunicado-iu-verdes-region-de-murcia-ante-la-configuracion-de-la-coalicion-frente-amplio/",
+      "published": "2026-10-17",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/iu-murcia-2026-10-19.html",
+      "sha256": "fbc62419d606e171c6cb16565ff1d503c7ba76128fbccc76236bd1e253002356"
+    }
+  ],
+  "findings": [
+    "CHA, IU, Movimiento Sumar, Partido Verde y Recortes Cero integran el acuerdo de Aragón. Podemos queda fuera a la fecha de consulta.",
+    "CHA ya está representada en el componente territorial FA derivado de Sumar Aragón 2023. No se añade una estimación independiente ni votos nuevos de CHA.",
+    "Recortes Cero sí tenía un componente propio en el modelo: se une solo en Huesca, Teruel y Zaragoza.",
+    "La fuente de IU Murcia identifica Movimiento Sumar, IU, Más Madrid y Comuns en el núcleo federal; no enumera las quince organizaciones, por lo que no se presenta una lista exhaustiva.",
+    "El anuncio de pacto no se confunde con la proclamación final de candidaturas."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "upn-pp-ratification",
+      "url": "https://www.upn.org/el-consejo-politico-de-upn-aprueba-el-acuerdo-para-concurrir-con-el-pp-a-las-elecciones-generales/",
+      "published": "2026-10-13",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/upn-pp-2026-10-19.html",
+      "sha256": "1e787d7e4e6316e209bd3fd42c4b6d9dbe1fb946f5164e8414c5badf32a4ab35"
+    }
+  ],
+  "findings": [
+    "UPN confirms approval of the PP coalition on 13 October for the 29 November general election.",
+    "The official coalition name is Unión del Pueblo Navarro en coalición con el Partido Popular. UPN heads the Congress list in Navarra.",
+    "Combine the already profiled PP and UPN components only in Navarra, after calibration and local overrides and before seat allocation. No new polling estimates are introduced.",
+    "National displays count the joint ballot with PP; the actual Navarra ballot remains UPN–PP. Seats are not divided between its organizations.",
+    "The party announcement confirms the agreement; it is not a final proclaimed candidate roster."
+  ],
+  "method": "A new ballot version preserves prior saved scenario compositions."
+}

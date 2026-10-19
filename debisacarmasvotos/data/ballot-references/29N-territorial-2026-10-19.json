@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "version": "29N-territorial-2026-10-19",
+  "retrieved": "2026-10-19",
+  "source": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJEC?fechaeleccion=2026-11-29&tipoeleccion=Elecciones+Generales",
+  "archive": "data/raw/coaliciones-jec-2026-10-19.html",
+  "sha256": "3014cfe20ca6991f18b1f21748d94b5a36ef17fc47b455dc1ca4eff66c1fe7c5",
+  "scope": "Only registered combinations of components already profiled in the simulator. Not a complete proclaimed candidate roster.",
+  "ballots": [
+    {
+      "id": "UPC",
+      "label": "UPC",
+      "fullLabel": "Unidad del Pueblo Canario · NC-BC, Podemos, IU y Sumar",
+      "members": [
+        "FA",
+        "PODEMOS",
+        "NC"
+      ],
+      "provinces": [
+        "35",
+        "38"
+      ],
+      "color": "#7c9951"
+    },
+    {
+      "id": "CFV",
+      "label": "Compromís–FV",
+      "fullLabel": "Compromís: Front Valencià · Compromís, EUPV, Podem y ERPV",
+      "members": [
+        "FA",
+        "PODEMOS"
+      ],
+      "provinces": [
+        "03",
+        "12",
+        "46"
+      ],
+      "color": "#d96485"
+    }
+  ],
+  "notes": [
+    "Més retains the announced Balearic alliance with Sumar/IU; Podemos remains separate there unless a lab toggle joins it.",
+    "FA is an estimated Sumar-2023-space component. In CFV it proxies that territorial electorate; Sumar is not claimed as a signatory.",
+    "New entrants lacking documented profiles are not assigned invented zero estimates.",
+    "Original 2023 ballots are allocated before any display-family aggregation.",
+    "Files without ballotVersion preserve the prior composition."
+  ],
+  "balearicAnnouncement": "https://www.mespermallorca.cat/noticies/lassemblea-de-mes-avala-la-coalicio-dara-mes-amb-sumar-i-esquerra-unida-a-les-balears-per-concorrer-a-les-eleccions-del-29n/"
+}

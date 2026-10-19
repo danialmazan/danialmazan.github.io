@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "version": "29N-territorial-2026-10-19-v2",
+  "retrieved": "2026-10-19",
+  "source": "https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJEC?fechaeleccion=2026-11-29&tipoeleccion=Elecciones+Generales",
+  "archive": "data/raw/coaliciones-jec-2026-10-19.html",
+  "sha256": "3014cfe20ca6991f18b1f21748d94b5a36ef17fc47b455dc1ca4eff66c1fe7c5",
+  "scope": "Only registered combinations of components already profiled in the simulator. Not a complete proclaimed candidate roster.",
+  "ballots": [
+    {
+      "id": "UPC",
+      "label": "UPC",
+      "fullLabel": "Unidad del Pueblo Canario · NC-BC, Podemos, IU y Sumar",
+      "members": [
+        "FA",
+        "PODEMOS",
+        "NC"
+      ],
+      "provinces": [
+        "35",
+        "38"
+      ],
+      "color": "#7c9951"
+    },
+    {
+      "id": "CFV",
+      "label": "Compromís–FV",
+      "fullLabel": "Compromís: Front Valencià · Compromís, EUPV, Podem y ERPV",
+      "members": [
+        "FA",
+        "PODEMOS"
+      ],
+      "provinces": [
+        "03",
+        "12",
+        "46"
+      ],
+      "color": "#d96485"
+    }
+  ],
+  "notes": [
+    "Més retains the announced Balearic alliance with Sumar/IU; Podemos remains separate there unless a lab toggle joins it.",
+    "FA is an estimated Sumar-2023-space component. In CFV it proxies that territorial electorate; Sumar is not claimed as a signatory.",
+    "New entrants lacking documented profiles are not assigned invented zero estimates.",
+    "Original 2023 ballots are allocated before any display-family aggregation.",
+    "Files without ballotVersion preserve the prior composition.",
+    "The prior ballotVersion is still accepted and solved with its original composition. The v2 adds the announced Recortes Cero pact in Aragón."
+  ],
+  "balearicAnnouncement": "https://www.mespermallorca.cat/noticies/lassemblea-de-mes-avala-la-coalicio-dara-mes-amb-sumar-i-esquerra-unida-a-les-balears-per-concorrer-a-les-eleccions-del-29n/",
+  "aragon": {
+    "provinces": [
+      "22",
+      "44",
+      "50"
+    ],
+    "label": "CHA–Frente Amplio Aragón",
+    "organizations": [
+      "CHA",
+      "Izquierda Unida",
+      "Movimiento Sumar",
+      "Partido Verde",
+      "Recortes Cero"
+    ],
+    "modeledComponents": [
+      "FA",
+      "H-8df9861ff9f41e"
+    ],
+    "method": "CHA remains inside the existing FA territorial proxy, with no invented separate estimate. Recortes Cero joins FA only in Aragón after calibration and local edits.",
+    "podemos": "separate unless explicitly joined in Lab 1"
+  },
+  "sourcesReviewed": [
+    {
+      "id": "cha-aragon",
+      "url": "https://www.chunta.org/presentacion-de-la-coalicion-entre-cha-y-frente-amplio-para-las-elecciones-generales-de-2026/",
+      "published": "2026-10-16",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/cha-aragon-2026-10-19.html",
+      "sha256": "c5d00840b9094bcbd6b3f1260d9752a673c5fafc7370539b5fa5cc1dbc5612ee"
+    },
+    {
+      "id": "iu-aragon",
+      "url": "https://www.iuaragon.com/izquierda-unida-de-aragon-concurrira-a-las-elecciones-generales-en-la-coalicion-de-frente-amplio-dirigida-a-frenar-el-avance-de-las-derechas-reaccionarias/",
+      "published": "2026-10-16",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/iu-aragon-2026-10-19.html",
+      "sha256": "e10d817b5e1133f8ce3c01107a20e367c8d414936aea4be02eef1b9a926977a0"
+    },
+    {
+      "id": "iu-murcia",
+      "url": "https://iuverdes.es/actualidad/region-de-murcia/iuvrm-comunicado-iu-verdes-region-de-murcia-ante-la-configuracion-de-la-coalicion-frente-amplio/",
+      "published": "2026-10-17",
+      "retrieved": "2026-10-19",
+      "archive": "data/raw/iu-murcia-2026-10-19.html",
+      "sha256": "fbc62419d606e171c6cb16565ff1d503c7ba76128fbccc76236bd1e253002356"
+    }
+  ]
+}

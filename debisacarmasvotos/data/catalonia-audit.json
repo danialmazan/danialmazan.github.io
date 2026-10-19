@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-19",
+  "ballotVersion": "29N-territorial-2026-10-19-v4",
+  "rates": {
+    "PODEMOS": {
+      "ERC": 50,
+      "FA": 30,
+      "abstention": 20
+    },
+    "CUP": {
+      "ERC": 50,
+      "FA": 10,
+      "abstention": 40
+    }
+  },
+  "assumption": "Sin evidencia de absorción se aplica la hipótesis pendiente. No son transferencias observadas. CUP es residual histórico, no una estimación publicada.",
+  "politicalSources": [
+    {
+      "source": "https://www.europapress.es/catalunya/noticia-erc-niega-coalicion-podemos-si-contribuira-independientes-listas-barcelona-tarragona-20261013135705.html",
+      "finding": "ERC declara que Podemos no concurre en Cataluña y contribuye con independientes; no es coalición formal."
+    },
+    {
+      "source": "https://www.rtve.es/noticias/20261012/podemos-erc-no-candidatura-propia-cataluna-montero-rufian-campana-juntos/17263173.shtml",
+      "finding": "Podemos no presenta candidatura propia; CUP tampoco concurre; Comuns mantiene candidatura en FA."
+    }
+  ],
+  "polls": [
+    {
+      "id": "sigma-2026-10-12",
+      "fieldworkStart": "2026-10-01",
+      "fieldworkEnd": "2026-10-08",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+        }
+      }
+    },
+    {
+      "id": "gad3-2026-10-12",
+      "fieldworkStart": "2026-10-06",
+      "fieldworkEnd": "2026-10-08",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+        }
+      }
+    },
+    {
+      "id": "40db-2026-10-09",
+      "fieldworkStart": "2026-10-07",
+      "fieldworkEnd": "2026-10-08",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "pending",
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+          "verified": "2026-10-19",
+          "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+        },
+        "CUP": {
+          "status": "pending",
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
+          "verified": "2026-10-19",
+          "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+        }
+      }
+    },
+    {
+      "id": "dym-2026-10-09",
+      "fieldworkStart": "2026-10-05",
+      "fieldworkEnd": "2026-10-07",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+          "verified": "2026-10-19",
+          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+        }
+      }
+    },
+    {
+      "id": "ncreport-2026-10-08",
+      "fieldworkStart": "2026-10-01",
+      "fieldworkEnd": "2026-10-06",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+          "verified": "2026-10-19",
+          "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+          "verified": "2026-10-19",
+          "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
+        }
+      }
+    }
+  ],
+  "previousReferenceResultSha256": "943697cf24cbdd49d7fb5b544ea9fcea49a5604ecace712179f89822585fe1f6",
+  "snapshotId": "promedio-2026-10-19-v1"
+}
