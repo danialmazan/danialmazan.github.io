@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-methodology>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Flag Bag — Flags & methodology</title>
+    <style>
+      @font-face {
+        font-family: Plex;
+        src: url("fonts/body.woff2");
+      }
+      body {
+        font:
+          16px Plex,
+          sans-serif;
+        line-height: 1.7;
+        background: var(--bg);
+        color: var(--ink);
+        margin: 0;
+        padding: 30px 22px;
+      }
+      main {
+        max-width: 760px;
+        margin: auto;
+      }
+      a {
+        color: var(--accent);
+        text-underline-offset: 4px;
+      }
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+      h1 {
+        margin-top: 40px;
+      }
+      h2 {
+        font-size: 21px;
+        margin-top: 32px;
+      }
+      small {
+        color: var(--muted);
+      }
+      [data-language] {
+        display: none;
+      }
+      html[lang="en"] [data-language="en"],
+      html[lang="es"] [data-language="es"] {
+        display: block;
+      }
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+      code {
+        background: var(--soft);
+        padding: 2px 5px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+    <link rel="stylesheet" href="./theme.css" />
+    <script src="./theme.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="./">← Flag Bag</a>
+      </nav>
+      <div data-language="en" lang="en">
+        <h1>Flags & methodology</h1>
+        <p>
+          Flag Bag uses a frozen, reproducible set of flags. Gameplay needs no
+          external data service.
+        </p>
+        <h2>Countries and artwork</h2>
+        <p>
+          The roster is exactly The Mapfather’s 195 countries: 193 UN members,
+          Palestine and Vatican City. English and Spanish names and aliases are
+          reused unchanged. No territories are added as answers.
+        </p>
+        <p>
+          SVG artwork comes from
+          <a
+            href="https://github.com/hampusborgos/country-flags/tree/c09927e63705529bbf59ca6684cd9b23225dddad"
+            >hampusborgos/country-flags, revision c09927e</a
+          >, sourced primarily from Wikimedia Commons. The upstream project
+          describes the flag designs as public domain. SVGs keep their natural
+          proportions, including Switzerland’s square and Nepal’s outline.
+          Identifying metadata is stripped; geometric definitions and references
+          are preserved.
+        </p>
+        <p>
+          National-flag variants follow this frozen source, including
+          Afghanistan’s black-red-green tricolour, consistent with the existing
+          games. Syria uses the green-white-black flag with three red stars.
+          Asset choices are documented, rather than silently changed between
+          challenges.
+        </p>
+        <h2>Colour percentages</h2>
+        <p>
+          Before release, each SVG is rendered by
+          <code>@resvg/resvg-js 2.6.2</code> at 1,260 pixels on its longest
+          edge. Pixel area is weighted by opacity. Transparent space outside a
+          flag is excluded, so Nepal’s surrounding rectangle is never counted as
+          white.
+        </p>
+        <p>
+          A fixed HSV classifier assigns pixels to twelve families: black,
+          white, grey, red, orange, yellow, green, cyan, blue, purple, pink and
+          brown. Anti-aliased edges cannot introduce a family absent from the
+          authored SVG palette: such fringe pixels are snapped to the nearest
+          source colour. These are practical visual categories; they do not
+          claim to be official national colour specifications.
+        </p>
+        <ul>
+          <li>
+            Percentages are quantised to 0.1%. Largest-remainder allocation,
+            with a fixed palette-order tie break, makes every flag total exactly
+            100%.
+          </li>
+          <li>
+            The displayed vector is the sole basis for colour answers and
+            comparisons. Every country with an identical vector is accepted,
+            regardless of stripe order or flag layout.
+          </li>
+          <li>
+            Ratios always mean <strong>mystery ÷ guess</strong>. A missing
+            guessed colour is described in words; zero is never used as a
+            denominator.
+          </li>
+        </ul>
+        <h2>Daily questions and fairness</h2>
+        <p>
+          All players receive the same versioned questions at 00:00 UTC. The
+          four targets differ. The Colours answer group is kept separate from
+          the other daily targets, and Reverse distractors do not reveal them.
+        </p>
+        <p>
+          Zoom starts are chosen from precomputed opaque regions containing a
+          boundary or emblem. Reverse distractors are ranked by colour
+          proportions, spatial layout and aspect ratio. Confusing near-identical
+          pairs are excluded from appearing together.
+        </p>
+        <p>
+          Daily streaks count consecutive wins separately for each game.
+          Failures and surrender are zero-score completed games. Ten-round
+          statistics count finished challenges only. Progress is saved in your
+          browser; it is not shared between devices.
+        </p>
+        <p>
+          <a href="inspection.html"
+            >Inspect all frozen flags and colour profiles (contains spoilers)
+            →</a
+          >
+        </p>
+        <small
+          >Fonts: Press Start 2P, Chakra Petch and IBM Plex Sans, SIL Open Font
+          License. React, MIT. Attribution notices are included in
+          licenses/.</small
+        >
+      </div>
+      <div data-language="es" lang="es">
+        <h1>Banderas y metodología</h1>
+        <p>
+          Flag Bag utiliza un conjunto fijo y reproducible de banderas. No
+          necesita servicios externos durante las partidas.
+        </p>
+        <h2>Países e imágenes</h2>
+        <p>
+          La lista contiene los mismos 195 países de The Mapfather: los 193
+          miembros de la ONU, Palestina y Ciudad del Vaticano. Los nombres y
+          alias en inglés y español se conservan sin cambios.
+        </p>
+        <p>
+          Los SVG proceden de
+          <a
+            href="https://github.com/hampusborgos/country-flags/tree/c09927e63705529bbf59ca6684cd9b23225dddad"
+            >hampusborgos/country-flags, revisión c09927e</a
+          >, basada principalmente en Wikimedia Commons. El proyecto original
+          considera los diseños de dominio público. Se respetan las proporciones
+          reales y las formas no rectangulares.
+        </p>
+        <p>
+          Las variantes siguen esta fuente fija. Afganistán utiliza la tricolor
+          negra, roja y verde, como los juegos existentes. Siria utiliza la
+          bandera verde, blanca y negra con tres estrellas rojas.
+        </p>
+        <h2>Porcentajes de color</h2>
+        <p>
+          Los SVG se procesan antes de publicar con
+          <code>@resvg/resvg-js 2.6.2</code>, a 1.260 píxeles en el lado mayor.
+          Se pondera cada píxel por su opacidad y se excluyen las zonas
+          transparentes.
+        </p>
+        <p>
+          Un clasificador HSV fijo agrupa los colores en doce familias: negro,
+          blanco, gris, rojo, naranja, amarillo, verde, cian, azul, morado, rosa
+          y marrón. Los bordes suavizados no introducen familias ausentes de los
+          colores originales del SVG: esos píxeles se asignan al color original
+          más cercano. Son categorías visuales prácticas, no especificaciones
+          oficiales.
+        </p>
+        <ul>
+          <li>
+            Los porcentajes se redondean a 0,1% mediante el método del mayor
+            resto, hasta sumar exactamente 100%.
+          </li>
+          <li>
+            La misma distribución mostrada determina las respuestas equivalentes
+            y los cocientes. Todos los países con esa distribución se aceptan.
+          </li>
+          <li>
+            Los cocientes siempre expresan
+            <strong>misterio ÷ tu respuesta</strong>. Si falta un color en tu
+            respuesta, se explica con texto y no se divide por cero.
+          </li>
+        </ul>
+        <h2>Retos y estadísticas</h2>
+        <p>
+          Los retos diarios son iguales para todos y cambian a las 00:00 UTC.
+          Los cuatro países son diferentes y se evitan pistas entre juegos,
+          incluidas las respuestas equivalentes de Colores.
+        </p>
+        <p>
+          Los recortes iniciales de Zoom contienen un límite de colores o un
+          emblema. Las opciones de Bandera inversa se eligen por semejanza de
+          colores, diseño y proporciones, evitando pares visualmente
+          indistinguibles.
+        </p>
+        <p>
+          Cada juego tiene su propia racha de victorias consecutivas. Fallar o
+          rendirse cuenta como partida completada con cero puntos. Las
+          estadísticas de diez rondas solo cuentan retos terminados. El progreso
+          se guarda en este navegador.
+        </p>
+        <p>
+          <a href="inspection.html"
+            >Ver todas las banderas y distribuciones (contiene respuestas) →</a
+          >
+        </p>
+        <small
+          >Tipografías Press Start 2P, Chakra Petch e IBM Plex Sans: SIL Open
+          Font License. React: MIT. Los avisos se incluyen en licenses/.</small
+        >
+      </div>
+    </main>
+  </body>
+</html>

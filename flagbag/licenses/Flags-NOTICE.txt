@@ -1,0 +1,9 @@
+Flag SVG artwork: hampusborgos/country-flags
+https://github.com/hampusborgos/country-flags
+Frozen revision c09927e63705529bbf59ca6684cd9b23225dddad.
+The upstream project states that its flag designs are public domain and are
+sourced primarily from Wikimedia Commons. Original SVGs and their construction
+references remain in the private/local source under data/source-flags/.
+Flag Bag renders only the 195-country roster from The Mapfather. Rendered files
+preserve natural proportions; identifying metadata is removed and structural
+IDs are renamed. See docs/flag-assets.json for original and rendered hashes.

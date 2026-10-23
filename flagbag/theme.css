@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+  --bg: #f3f4e9;
+  --surface: #fcfdf6;
+  --ink: #202720;
+  --muted: #596356;
+  --line: #bdc6b3;
+  --accent: #3d6500;
+  --action: #c6f34b;
+  --action-ink: #182406;
+  --soft: #e6eadb;
+  --well: #e1e7d7;
+  --wrong: #aa3328;
+  --positive: #256148;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #141a17;
+  --surface: #1c2420;
+  --ink: #f3f5e8;
+  --muted: #b1bcb1;
+  --line: #475548;
+  --accent: #c6f34b;
+  --action: #c6f34b;
+  --action-ink: #182406;
+  --soft: #283329;
+  --well: #0e1511;
+  --wrong: #ffa18d;
+  --positive: #a6dcb5;
+}
