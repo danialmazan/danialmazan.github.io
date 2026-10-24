@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-24",
   "ballotVersion": "29N-territorial-2026-10-19-v4",
   "rates": {
     "PODEMOS": {
@@ -119,8 +119,27 @@
           "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
         }
       }
+    },
+    {
+      "id": "imop-2026-10-23",
+      "fieldworkStart": "2026-10-13",
+      "fieldworkEnd": "2026-10-16",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+          "verified": "2026-10-24",
+          "note": "La fuente publica FA y Podemos por separado, pero no documenta la absorción territorial de la ausencia de Podemos en Cataluña. El campo 13–16/10 y la mención al contexto de pactos no acreditan esa absorción. Se mantiene no documentado, tratado como pendiente por la política vigente."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+          "verified": "2026-10-24",
+          "note": "La fuente no publica una estimación de CUP ni documenta la absorción de su ausencia en Cataluña. La cifra omitida no se convierte en cero; conserva el residual y el tratamiento pendiente del modelo."
+        }
+      }
     }
   ],
   "previousReferenceResultSha256": "943697cf24cbdd49d7fb5b544ea9fcea49a5604ecace712179f89822585fe1f6",
-  "snapshotId": "promedio-2026-10-19-v1"
+  "snapshotId": "promedio-2026-10-24-v1"
 }
