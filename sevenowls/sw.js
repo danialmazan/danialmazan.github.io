@@ -1,8 +1,8 @@
 // This worker never receives passwords, keys, decrypted assets or answers.
 const root = new URL("./", self.location),
   PREFIX = "sevenowls-encrypted-" + root.pathname + "-",
-  CACHE = PREFIX + "65c108c4d977a6918943",
-  FILES = ["index.html","gate.js","game.65c108c4d977a6918943.bin"];
+  CACHE = PREFIX + "765e3f8dcc9432b33b7c",
+  FILES = ["index.html","gate.js","game.765e3f8dcc9432b33b7c.bin"];
 self.addEventListener("install", (e) =>
   e.waitUntil(
     (async () => {

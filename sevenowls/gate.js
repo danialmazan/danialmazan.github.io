@@ -1,4 +1,4 @@
-const PAYLOAD = "game.65c108c4d977a6918943.bin";
+const PAYLOAD = "game.765e3f8dcc9432b33b7c.bin";
 const FORMAT = "seven-owls-encrypted-v1";
 const root = new URL("./", location.href);
 const spanish = navigator.language.toLowerCase().startsWith("es");
@@ -134,6 +134,9 @@ async function openGame(files) {
   );
   const boot = doc.createElement("script");
   boot.textContent = `{const files=${JSON.stringify(data)},root=${JSON.stringify(root.href)},nativeFetch=window.fetch.bind(window);window.fetch=async(input,init)=>{const u=new URL(typeof input==='string'?input:input instanceof URL?input.href:input.url,document.baseURI),r=new URL(root);if(u.origin===r.origin&&u.pathname.startsWith(r.pathname)){const path=u.pathname.slice(r.pathname.length);if(!Object.hasOwn(files,path))return new Response('',{status:404});const bytes=Uint8Array.from(atob(files[path]),c=>c.charCodeAt(0));return new Response(bytes,{headers:{'Content-Type':'application/json','Cache-Control':'no-store'}});}return nativeFetch(input,init);};}`;
+  // A base URL is needed for application data. Keep fragment links inside the
+  // srcdoc document rather than navigating the frame back to the password page.
+  boot.textContent += `document.addEventListener('click',event=>{const anchor=event.target instanceof Element?event.target.closest('a[href^="#"]'):null;if(!anchor)return;const target=document.getElementById(decodeURIComponent(anchor.getAttribute('href').slice(1)));if(target){event.preventDefault();target.focus();target.scrollIntoView();}});`;
   doc.head.insertBefore(boot, base.nextSibling);
   const frame = document.createElement("iframe");
   frame.title = t.open;
