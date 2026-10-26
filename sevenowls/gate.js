@@ -1,4 +1,4 @@
-const PAYLOAD = "game.765e3f8dcc9432b33b7c.bin";
+const PAYLOAD = "game.85d1cd232c602a75fcab.bin";
 const FORMAT = "seven-owls-encrypted-v1";
 const root = new URL("./", location.href);
 const spanish = navigator.language.toLowerCase().startsWith("es");
