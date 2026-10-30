@@ -1,4 +1,4 @@
-const PAYLOAD = "game.85d1cd232c602a75fcab.bin";
+const PAYLOAD = "game.4cb8eabea554f7c44197.bin";
 const FORMAT = "seven-owls-encrypted-v1";
 const root = new URL("./", location.href);
 const spanish = navigator.language.toLowerCase().startsWith("es");
@@ -60,8 +60,14 @@ const mime = (path) =>
     txt: "text/plain",
   })[path.split(".").at(-1)] || "application/octet-stream";
 let payloadPromise;
+window.addEventListener("offline", () => {
+  payloadPromise = null;
+  document.querySelector('iframe[title]')?.remove();
+  document.getElementById("gate").hidden = false;
+  message.textContent = t.network;
+});
 const getPayload = () =>
-  (payloadPromise ||= fetch(new URL(PAYLOAD, root))
+  (payloadPromise ||= fetch(new URL(PAYLOAD, root), { cache: "no-store" })
     .then((r) => {
       if (!r.ok) throw Error("network");
       return r.json();
