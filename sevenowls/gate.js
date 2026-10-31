@@ -67,7 +67,8 @@ window.addEventListener("offline", () => {
   message.textContent = t.network;
 });
 const getPayload = () =>
-  (payloadPromise ||= fetch(new URL(PAYLOAD, root), { cache: "no-store" })
+  (payloadPromise ||= workerReady
+    .then(() => fetch(new URL(PAYLOAD, root), { cache: "no-store" }))
     .then((r) => {
       if (!r.ok) throw Error("network");
       return r.json();
@@ -76,13 +77,24 @@ const getPayload = () =>
       payloadPromise = null;
       throw e;
     }));
-if ("serviceWorker" in navigator)
-  navigator.serviceWorker
+const workerReady = "serviceWorker" in navigator
+  ? navigator.serviceWorker
     .register(new URL("sw.js", root), {
       scope: root.pathname,
       updateViaCache: "none",
     })
-    .catch(() => {});
+    .then(async (registration) => {
+      if (!registration.installing) await registration.update();
+      const worker = registration.installing || registration.waiting || registration.active;
+      if (!worker || ["activated", "redundant"].includes(worker.state)) return;
+      await new Promise((resolve) => {
+        worker.addEventListener("statechange", () => {
+          if (["activated", "redundant"].includes(worker.state)) resolve();
+        });
+      });
+    })
+    .catch(() => {})
+  : Promise.resolve();
 async function openGame(files) {
   const urls = {},
     bytes = {};

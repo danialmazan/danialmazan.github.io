@@ -18,15 +18,19 @@ self.addEventListener("fetch", (event) => {
   // A returning player's cached gate can still name a retired encrypted bundle
   // after this worker takes over. Redirect to the current encrypted release;
   // never restore offline caches or persist decrypted files.
-  if (/^game\.[a-f0-9]{20}\.bin$/.test(path) && path !== payload) {
-    event.respondWith(Promise.resolve(new Response(null, {
-      status: 307,
-      headers: {
-        Location: new URL(payload, root).href,
-        "Cache-Control": "no-store",
-      },
-    })));
-    return;
-  }
-  event.respondWith(fetch(new Request(event.request, { cache: "no-store" })));
+  event.respondWith((async () => {
+    const response = await fetch(new Request(event.request, { cache: "no-store" }));
+    // A worker from the previous release may still control a new loader. Keep
+    // existing archives usable and recover only a genuinely retired request.
+    if ((response.status === 404 || response.status === 410) &&
+        /^game\.[a-f0-9]{20}\.bin$/.test(path) && path !== payload)
+      return new Response(null, {
+        status: 307,
+        headers: {
+          Location: new URL(payload, root).href,
+          "Cache-Control": "no-store",
+        },
+      });
+    return response;
+  })());
 });
