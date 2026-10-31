@@ -14,7 +14,7 @@ const t = spanish
       busy: "Abriendo…",
       wrong: "Contraseña incorrecta. Inténtalo de nuevo.",
       network:
-        "No se ha podido descargar el juego. Comprueba la conexión e inténtalo de nuevo.",
+        "No se ha podido cargar el juego. Comprueba la conexión e inténtalo de nuevo.",
       unsupported:
         "Este navegador no permite abrir el juego cifrado. Prueba con un navegador actualizado.",
       open: "Juego Seven Owls",
@@ -23,7 +23,7 @@ const t = spanish
       busy: "Opening…",
       wrong: "Incorrect password. Try again.",
       network:
-        "The game could not be downloaded. Check your connection and try again.",
+        "The game could not be loaded. Check your connection and try again.",
       unsupported:
         "This browser cannot open the encrypted game. Try an updated browser.",
       open: "Seven Owls game",
