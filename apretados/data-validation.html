@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apretados · Data validation</title><link rel="stylesheet" href="./fonts/fonts.css"><style>:root{font-family:Manrope,sans-serif;background:#f7f3ea;color:#25241f}body{max-width:850px;margin:40px auto;padding:0 20px}h1{font-size:36px;letter-spacing:-.05em}h2{margin-top:36px;letter-spacing:-.03em}p{font-size:13px;line-height:1.9;overflow-wrap:anywhere}a{color:#147d85;text-underline-offset:3px}nav{font-size:12px}footer{margin-top:40px;border-top:1px solid #d8d3c8;padding:20px 0;font-size:11px}</style></head><body><nav><a href="./">← Apretados · Volver / Back</a> · <a href="./data/qa.json">Machine-readable QA</a> · <a href="./data/surface-reconciliation.csv">Surface comparisons (CSV)</a></nav><h1>Apretados — 2025 data reconciliation</h1>
 
-<p>Generated: 2026-11-01T18:06:20Z</p>
+<p>Generated: 2026-11-01T22:27:42Z</p>
 
 <p>36554 current sections; 8132 municipalities; 52 provincial units; 19 autonomy-level units. All current identifiers join one-to-one.</p>
 <p>Population: 49128297. Exact agreement at every municipality, province, autonomous community/city and Spain.</p>
@@ -17,7 +17,7 @@
 
 <p>Areas: terra::expanse on EPSG:4326 geometry transformed from the declared EPSG:25830, using ellipsoidal surface. Independent EPSG:6933 area cross-checks cover the mainland, both Canary provinces, Ceuta and Melilla (area-crosscheck.csv). Source polygons and holes are retained unchanged.</p>
 <p>Topology: each province is dissolved in the original CRS and its geodesic union surface is compared with the sum of section surfaces (topology.csv). Overlap above 0.01 km² per province stops the release.</p>
-<p>Bucket intervals: [0,100), [100,1000), [1000,5000), [5000,15000), [15000,infinity). Population and surface weights are summed independently. All exact bucket totals and cumulative monotonicity checks passed for every generated entity.</p>
+<p>Bucket intervals: [0,100), [100,1000), [1000,5000), [5000,25000), [25000,infinity). Population and surface weights are summed independently. All exact bucket totals and cumulative monotonicity checks passed for every generated entity.</p>
 <p>The browser receives full-precision numeric arrays, not rounded histograms. Rendered particles are deterministic approximations; metrics use exact section distributions.</p>
 
 <h2>References</h2>
@@ -33,4 +33,4 @@
 <p>- Seccionado cedido por el Instituto Nacional de Estadística.</p>
 
 <p>Source hashes, reference dates, download times and HTTP metadata are in public/data/manifest.json. Raw data and intermediate section records are excluded from Git.</p>
-<footer>2025-a3bfa4a4ce42 · 36,554 sections · INE 2025 · CC BY 4.0</footer></body></html>
+<footer>2025-b2cacfd353e2 · 36,554 sections · INE 2025 · CC BY 4.0</footer></body></html>
