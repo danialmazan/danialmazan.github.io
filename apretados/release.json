@@ -1,9 +1,9 @@
 {
-  "createdAt": "2026-11-01T23:31:23.118Z",
+  "createdAt": "2026-11-01T23:52:18.334Z",
   "dataVersion": "2025-fcaa66785f41",
   "assets": {
-    "assets/index-BiRsxtWh.js": "f33b740a312594c2bad9c198026b2138c69b525a31005b849dfd7cde79d4f236",
-    "assets/index-DN7cj55D.css": "e2be80bb64cbe10bc90a19f0f4aee02e57fa562f4d12ef83931fb81c63cb5b54",
+    "assets/index-B9CUY6_G.css": "796a7209deb6ae7747f3e09beb714c65aeeb1c5961c4da4a0ff5618f151fe8b8",
+    "assets/index-C7xTK89V.js": "a16211a0d8c6b7c872b06ab9263d08ba6daf0a46770a8c8d38aea1dcddba8fae",
     "data-validation.html": "554ea0b68b9aa001776040a8bb6f8411c882d93c414cc1bfd0501da70c432513",
     "data/2025-a3bfa4a4ce42/ccaa-01.json": "20969b2ad16d2cd3baa5c38b2ff9d37971351357f7bd87489aab5d2d1923afef",
     "data/2025-a3bfa4a4ce42/ccaa-02.json": "18ea50ea5059b64fd1af830a163d821784385eb3b45ed7a61571f8f1aeae2dcc",
@@ -394,6 +394,6 @@
     "fonts/manrope-OFL.txt": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
     "fonts/manrope-latin-ext.woff2": "27eccb1f8944bc26f6511601bac9284786feb5e5bbb0c8035ff09ac63aaf7c52",
     "fonts/manrope-latin.woff2": "8bd97e6bbbc1f602a8f791530eed1064c9a357d5731bbc76e3fc587fb068728f",
-    "index.html": "ae1acb67f9f9476a22cc0edd4d44ec62f08f03a7d6f5a7efae311075086414ab"
+    "index.html": "42c5fa1e2c73d8a69608e3a7030a7f0aa619e7e6bc4d029fd3d9d84437e8e26b"
   }
 }
