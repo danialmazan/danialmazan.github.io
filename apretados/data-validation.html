@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apretados · Data validation</title><link rel="stylesheet" href="./fonts/fonts.css"><style>:root{font-family:Manrope,sans-serif;background:#f7f3ea;color:#25241f}body{max-width:850px;margin:40px auto;padding:0 20px}h1{font-size:36px;letter-spacing:-.05em}h2{margin-top:36px;letter-spacing:-.03em}p{font-size:13px;line-height:1.9;overflow-wrap:anywhere}a{color:#147d85;text-underline-offset:3px}nav{font-size:12px}footer{margin-top:40px;border-top:1px solid #d8d3c8;padding:20px 0;font-size:11px}</style></head><body><nav><a href="./">← Apretados · Volver / Back</a> · <a href="./data/qa.json">Machine-readable QA</a> · <a href="./data/surface-reconciliation.csv">Surface comparisons (CSV)</a></nav><h1>Apretados — 2025 data reconciliation</h1>
+
+<p>Generated: 2026-11-01T18:06:20Z</p>
+
+<p>36554 current sections; 8132 municipalities; 52 provincial units; 19 autonomy-level units. All current identifiers join one-to-one.</p>
+<p>Population: 49128297. Exact agreement at every municipality, province, autonomous community/city and Spain.</p>
+<p>Surface: 504476.194082 km². All polygon areas finite and positive; invalid/empty polygons: 0. Maximum per-province overlap: 0.000001306 km².</p>
+<p>338 historical rows are blank in 2025 and absent from 2025 geometry. They are audited, not interpreted as zero. One explicit zero-population section retains 28.627321 km².</p>
+
+<h2>Surface coverage limitation</h2>
+
+<p>The denominator is the sum of published census-section surfaces. It is deliberately not rescaled to the national reference. All 8,132 municipalities and all reported residents are represented, but the section geometry does not cover every part of national geographic territory.</p>
+<p>The national difference against 505,983 km² is -1506.806 km² (-0.298%). Regional differences are larger, notably Navarra. Shared/faceria and jurisdictional territories outside ordinary municipal coverage account for material differences; reference definitions, shoreline detail and rounding also differ.</p>
+<p>surface-reconciliation.csv records all province comparisons and attribution limits. It does not assign density or zero residents to unsectioned land, and is not a spatial crosswalk of every residual polygon.</p>
+
+<h2>Methods and validation</h2>
+
+<p>Areas: terra::expanse on EPSG:4326 geometry transformed from the declared EPSG:25830, using ellipsoidal surface. Independent EPSG:6933 area cross-checks cover the mainland, both Canary provinces, Ceuta and Melilla (area-crosscheck.csv). Source polygons and holes are retained unchanged.</p>
+<p>Topology: each province is dissolved in the original CRS and its geodesic union surface is compared with the sum of section surfaces (topology.csv). Overlap above 0.01 km² per province stops the release.</p>
+<p>Bucket intervals: [0,100), [100,1000), [1000,5000), [5000,15000), [15000,infinity). Population and surface weights are summed independently. All exact bucket totals and cumulative monotonicity checks passed for every generated entity.</p>
+<p>The browser receives full-precision numeric arrays, not rounded histograms. Rendered particles are deterministic approximations; metrics use exact section distributions.</p>
+
+<h2>References</h2>
+
+<p>- <a href="https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/65031.csv">https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/65031.csv</a></p>
+<p>- <a href="https://www.ine.es/prodyser/cartografia/seccionado_2025.zip">https://www.ine.es/prodyser/cartografia/seccionado_2025.zip</a></p>
+<p>- <a href="https://www.ine.es/daco/daco42/codmun/diccionario25.xlsx">https://www.ine.es/daco/daco42/codmun/diccionario25.xlsx</a></p>
+<p>- <a href="https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/68065.csv">https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/68065.csv</a></p>
+<p>- <a href="https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/67988.csv">https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/67988.csv</a></p>
+<p>- Surface reference: <a href="https://www.ine.es/prodyser/espa_cifras/01_TERRITORIO_Y_MEDIO_AMBIENTE.pdf">https://www.ine.es/prodyser/espa_cifras/01_TERRITORIO_Y_MEDIO_AMBIENTE.pdf</a></p>
+<p>- Communal/faceria context, Government of Navarra: <a href="https://www.navarra.es/NR/rdonlyres/ACCCD512-309A-4408-969C-A8972FB1F7E8/337990/PG_ZMyR_8Febrero2016compressed.pdf">https://www.navarra.es/NR/rdonlyres/ACCCD512-309A-4408-969C-A8972FB1F7E8/337990/PG_ZMyR_8Febrero2016compressed.pdf</a></p>
+<p>- Reuse: <a href="https://www.ine.es/dyngs/AYU/index.htm?cid=125">https://www.ine.es/dyngs/AYU/index.htm?cid=125</a> — CC BY 4.0; Elaboración propia con datos extraídos del sitio web del INE.</p>
+<p>- Seccionado cedido por el Instituto Nacional de Estadística.</p>
+
+<p>Source hashes, reference dates, download times and HTTP metadata are in public/data/manifest.json. Raw data and intermediate section records are excluded from Git.</p>
+<footer>2025-a3bfa4a4ce42 · 36,554 sections · INE 2025 · CC BY 4.0</footer></body></html>
