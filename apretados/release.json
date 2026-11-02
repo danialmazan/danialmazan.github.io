@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-11-02T09:34:38.293Z",
+  "createdAt": "2026-11-02T12:02:42.144Z",
   "dataVersion": "2025-fcaa66785f41",
   "assets": {
     "assets/index-B_lRcAKn.js": "814d90fb65780044dcb64cbdcb7ab27c65654fa85d9cf17a63527c14d145ec2d",
@@ -394,6 +394,6 @@
     "fonts/manrope-OFL.txt": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
     "fonts/manrope-latin-ext.woff2": "27eccb1f8944bc26f6511601bac9284786feb5e5bbb0c8035ff09ac63aaf7c52",
     "fonts/manrope-latin.woff2": "8bd97e6bbbc1f602a8f791530eed1064c9a357d5731bbc76e3fc587fb068728f",
-    "index.html": "dedd1a40cf269165ea124d37b79b13fc3e9a110324ccbd73259272c56933a6d8"
+    "index.html": "94c832547612f0fc1928c95987b2a52b341057e97ef9299bded5e1df4aae0d3f"
   }
 }
