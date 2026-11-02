@@ -1,7 +1,8 @@
 {
-  "createdAt": "2026-11-02T12:02:42.144Z",
+  "createdAt": "2026-11-02T19:02:53.903Z",
   "dataVersion": "2025-fcaa66785f41",
   "assets": {
+    "apretados-share-v1.png": "f9b1e6d36230940887ae5c3c568a1419f593d41f6c1174ea59c45d8dbb9af0bb",
     "assets/index-B_lRcAKn.js": "814d90fb65780044dcb64cbdcb7ab27c65654fa85d9cf17a63527c14d145ec2d",
     "assets/index-DN_BC2P_.css": "6937d1fb1acf25a9a773d19f3b1e640a2a1f6750643aaa8dbb4d207163209a45",
     "data-validation.html": "554ea0b68b9aa001776040a8bb6f8411c882d93c414cc1bfd0501da70c432513",
@@ -394,6 +395,6 @@
     "fonts/manrope-OFL.txt": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
     "fonts/manrope-latin-ext.woff2": "27eccb1f8944bc26f6511601bac9284786feb5e5bbb0c8035ff09ac63aaf7c52",
     "fonts/manrope-latin.woff2": "8bd97e6bbbc1f602a8f791530eed1064c9a357d5731bbc76e3fc587fb068728f",
-    "index.html": "94c832547612f0fc1928c95987b2a52b341057e97ef9299bded5e1df4aae0d3f"
+    "index.html": "0bced68f383789bc8bc7ef59a87c030e6ee3369e64939d246476057597a2bb16"
   }
 }
