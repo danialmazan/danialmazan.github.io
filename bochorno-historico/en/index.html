@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-style="atmosfera">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eaf0e9">
+    <script>
+      try {
+        if (localStorage.getItem('bochorno-theme') === 'impacto') {
+          document.documentElement.dataset.theme = 'impacto';
+          document.querySelector('meta[name="theme-color"]').content = '#f5d2b8';
+        }
+      } catch {}
+      {
+        const url = new URL(location.href);
+        const language = url.searchParams.get('lang');
+        if (language === 'es' || language === 'en') {
+          url.searchParams.delete('lang');
+          url.pathname = '/bochorno-historico/' + (language === 'en' ? 'en/' : '');
+          location.replace(url.href);
+        }
+      }
+    </script>
+    <title>Bochorno histórico · Spain’s temperature record</title>
+    <meta name="description" content="Explore Spain’s changing temperatures with AEMET observations since 1961: years, months, days and weather stations.">
+    <meta name="author" content="Daniel Almazán">
+    <link rel="canonical" href="https://danielalmazan.com/bochorno-historico/en/">
+    <link rel="alternate" hreflang="es" href="https://danielalmazan.com/bochorno-historico/">
+    <link rel="alternate" hreflang="en" href="https://danielalmazan.com/bochorno-historico/en/">
+    <link rel="alternate" hreflang="x-default" href="https://danielalmazan.com/bochorno-historico/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bochorno histórico">
+    <meta property="og:title" content="Bochorno histórico · Spain’s temperature record">
+    <meta property="og:description" content="Explore Spain’s changing temperatures with AEMET observations since 1961: years, months, days and weather stations.">
+    <meta property="og:url" content="https://danielalmazan.com/bochorno-historico/en/">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:image" content="https://danielalmazan.com/bochorno-historico/social/share-en-v1.png">
+    <meta property="og:image:secure_url" content="https://danielalmazan.com/bochorno-historico/social/share-en-v1.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bochorno histórico: a blue-to-red warming-stripe title and a thermometer over a landscape of contour lines.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bochorno histórico · Spain’s temperature record">
+    <meta name="twitter:description" content="Explore Spain’s changing temperatures with AEMET observations since 1961: years, months, days and weather stations.">
+    <meta name="twitter:image" content="https://danielalmazan.com/bochorno-historico/social/share-en-v1.png">
+    <meta name="twitter:image:alt" content="Bochorno histórico: a blue-to-red warming-stripe title and a thermometer over a landscape of contour lines.">
+    <link rel="icon" type="image/svg+xml" href="/bochorno-historico/favicon.svg">
+    <script type="module" crossorigin src="/bochorno-historico/assets/main-BlC8ZTfq.js"></script>
+    <link rel="stylesheet" crossorigin href="/bochorno-historico/assets/main-BMF1LOrE.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
