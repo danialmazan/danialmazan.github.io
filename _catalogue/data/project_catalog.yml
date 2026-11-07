@@ -321,6 +321,18 @@ sections:
       en: "Other projects and practical interactive tools"
       es: "Otros proyectos y herramientas interactivas prácticas"
     projects:
+      - id: bochorno-historico
+        topics: ["climate", "places"]
+        format: {en: "Temperature atlas", es: "Atlas de temperaturas"}
+        summary: {en: "Explore Spain’s changing temperatures, station by station.", es: "Explora cómo cambia la temperatura en España, estación por estación."}
+        last_published: "2026-11-07"
+        title: {en: "Bochorno histórico", es: "Bochorno histórico"}
+        description:
+          en: "Explore AEMET temperature observations from 1961 to 2025 across 96 stations, with annual trends, monthly stripes, daily records and anomaly distributions."
+          es: "Explora las observaciones de temperatura de AEMET de 1961 a 2025 en 96 estaciones, con evolución anual, franjas mensuales, registros diarios y distribuciones de anomalías."
+        url: "https://danielalmazan.com/bochorno-historico/"
+        url_en: "https://danielalmazan.com/bochorno-historico/en/"
+        url_es: "https://danielalmazan.com/bochorno-historico/"
       - id: e-spain
         topics: ["energy"]
         format: {en: "Energy explorer", es: "Explorador energético"}
@@ -344,12 +356,13 @@ sections:
         url: "https://danielalmazan.com/salary-calculator-2026/"
 
 homepage:
-  featured: ["de-aqui-para-alla", "tu-rincon", "kilometro-cero"]
+  featured: ["bochorno-historico", "de-aqui-para-alla", "tu-rincon"]
 topics:
   all: {en: "All", es: "Todo"}
   places: {en: "Places", es: "Lugares"}
   mobility: {en: "Mobility", es: "Movilidad"}
   people: {en: "People & Economy", es: "Población y economía"}
   elections: {en: "Elections", es: "Elecciones"}
+  climate: {en: "Climate", es: "Clima"}
   energy: {en: "Energy", es: "Energía"}
   games: {en: "Games", es: "Juegos"}

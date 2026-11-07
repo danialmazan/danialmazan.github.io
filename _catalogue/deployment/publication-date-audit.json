@@ -762,6 +762,19 @@
       "published_at": "2026-11-04T17:54:11Z",
       "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/41880933577/job/126753691665",
       "date_basis": "successful Pages deployment of the latest changed published files"
+    },
+    {
+      "id": "bochorno-historico",
+      "repository": "danialmazan/danialmazan.github.io",
+      "path": "bochorno-historico",
+      "branch": "master",
+      "commit": "85f036dcc2e30146ec053a7bd6ce694ec09ac25a",
+      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/85f036dcc2e30146ec053a7bd6ce694ec09ac25a",
+      "committed_at": "2026-11-07T20:57:45Z",
+      "message": "Finalize the temperature atlas tablet header and release manifest",
+      "published_at": "2026-11-07T20:59:27Z",
+      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/42413542884/job/128526844377",
+      "date_basis": "successful Pages deployment of the initial atlas release"
     }
   ]
 }
