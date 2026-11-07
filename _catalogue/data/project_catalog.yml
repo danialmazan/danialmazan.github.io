@@ -1,0 +1,355 @@
+sections:
+  - id: density-transport-analysis
+    title: {en: "Density and transport analysis", es: "Análisis de densidad y transporte"}
+    url: "https://danielalmazan.com/density-transport-analysis/"
+    url_es: "https://danielalmazan.com/density-transport-analysis/?lang=es"
+    description:
+      en: "Projects exploring how population density and transport shape places"
+      es: "Proyectos que exploran cómo la densidad de población y el transporte dan forma a los lugares"
+    projects:
+      - id: de-aqui-para-alla
+        topics: ["mobility", "places"]
+        format: {en: "Mobility map", es: "Mapa de movilidad"}
+        summary: {en: "See how Spain moves, hour by hour.", es: "Mira cómo se mueve España, hora a hora."}
+        last_published: "2026-11-06"
+        title: {en: "De aquí para allá", es: "De aquí para allá"}
+        description:
+          en: "Watch how Spain moves, hour by hour, in a living map of trips between municipalities built from the Ministry of Transport’s open mobility data."
+          es: "Mira cómo se mueve España, hora a hora, en un mapa vivo de los viajes entre municipios hecho con los datos abiertos de movilidad del Ministerio de Transportes."
+        url: "https://danielalmazan.com/de-aqui-para-alla/"
+        url_en: "https://danielalmazan.com/de-aqui-para-alla/en/"
+        url_es: "https://danielalmazan.com/de-aqui-para-alla/"
+      - id: apretados
+        topics: ["places", "people"]
+        format: {en: "Density explorer", es: "Explorador de densidad"}
+        summary: {en: "See how tightly packed Spain really is.", es: "Descubre cómo se reparte la densidad en España."}
+        last_published: "2026-11-03"
+        title: {en: "Apretados", es: "Apretados"}
+        description:
+          en: "Explore how Spain’s population and land are distributed by census-section density, and compare places using official 2025 data."
+          es: "Explora cómo se reparten la población y el territorio de España según la densidad de sus secciones censales y compara lugares con datos oficiales de 2025."
+        url: "https://danielalmazan.com/apretados/"
+        url_en: "https://danielalmazan.com/apretados/?lang=en"
+        url_es: "https://danielalmazan.com/apretados/?lang=es"
+      - id: kilometro-cero
+        topics: ["mobility", "places"]
+        format: {en: "Road atlas", es: "Atlas de carreteras"}
+        summary: {en: "Follow Spain’s roads and see where they converge.", es: "Sigue las carreteras de España y descubre dónde confluyen."}
+        last_published: "2026-11-04"
+        title: {en: "Kilómetro Cero", es: "Kilómetro Cero"}
+        description:
+          en: "Explore the roads of mainland Spain. See how routes converge on cities, compare road basins, find meeting points and see what changes without motorways."
+          es: "Explora las carreteras de la España peninsular. Descubre cómo llegan las rutas a cada ciudad, compara cuencas, encuentra puntos de encuentro y mira qué cambia sin autopistas ni autovías."
+        url: "https://danielalmazan.com/kilometro-cero/"
+        url_en: "https://danielalmazan.com/kilometro-cero/en/"
+        url_es: "https://danielalmazan.com/kilometro-cero/"
+      - id: density-madrid-london
+        topics: ["places", "people"]
+        format: {en: "Visual story", es: "Historia visual"}
+        summary: {en: "Compare where people live in Madrid and London.", es: "Compara dónde vive la población de Madrid y Londres."}
+        last_published: "2026-08-23"
+        title: {en: "Where density actually lives: Madrid vs London", es: "Dónde vive la densidad — Madrid vs Londres"}
+        description:
+          en: "A visual comparison of how land and residents are distributed by population density across Madrid and London."
+          es: "Análisis en áreas pequeñas de cómo se distribuyen el territorio y la población por densidad en Madrid y Londres."
+        url: "https://danielalmazan.com/density-madrid-london/"
+        url_es: "https://danielalmazan.com/density-madrid-london/?lang=es"
+      - id: density-europe
+        topics: ["places", "people"]
+        format: {en: "Visual story", es: "Historia visual"}
+        summary: {en: "Compare how people are spread across 30 European countries.", es: "Compara cómo se distribuye la población en 30 países europeos."}
+        last_published: "2026-09-06"
+        title: {en: "Empty country, dense country?", es: "¿País vacío, país denso?"}
+        description:
+          en: "A one-kilometre grid reveals how population density and concentration differ across 30 European countries."
+          es: "Una cuadrícula de un kilómetro revela cómo difieren la densidad y la concentración de población en 30 países europeos."
+        url: "https://danielalmazan.com/density-europe/"
+        url_es: "https://danielalmazan.com/density-europe/?lang=es"
+      - id: madrid-rail-density
+        topics: ["mobility", "places"]
+        format: {en: "Rail access map", es: "Mapa de acceso al tren"}
+        summary: {en: "See how far Madrid’s buildings are from rail.", es: "Mide la distancia al tren de los edificios de Madrid."}
+        last_published: "2026-09-20"
+        title: {en: "How close does Madrid live to rail?", es: "¿A qué distancia vive Madrid del tren?"}
+        description:
+          en: "A building-level view of straight-line distance to Metro, Cercanías, Metro Ligero and Tranvía."
+          es: "Una estimación edificio a edificio de la distancia en línea recta a Metro, Cercanías, Metro Ligero y Tranvía."
+        url: "https://danielalmazan.com/madrid-rail-density/"
+        url_es: "https://danielalmazan.com/madrid-rail-density/?lang=es"
+      - id: madrid-income-rail-access
+        topics: ["mobility", "people"]
+        format: {en: "Interactive analysis", es: "Análisis interactivo"}
+        summary: {en: "Compare income and rail access across Madrid.", es: "Compara la renta y el acceso al tren en Madrid."}
+        last_published: "2026-09-27"
+        title: {en: "Income and rail access in Madrid", es: "Renta y acceso al tren en Madrid"}
+        description:
+          en: "Compare census-section income with building-level access to Madrid's rail lines."
+          es: "Compara la renta por sección censal con el acceso al tren calculado edificio a edificio en Madrid."
+        url: "https://danielalmazan.com/madrid-income-rail-access/"
+        url_es: "https://danielalmazan.com/madrid-income-rail-access/?lang=es"
+
+  - id: population
+    title: {en: "Population", es: "Población"}
+    url: "https://danielalmazan.com/population/"
+    url_es: "https://danielalmazan.com/population/?lang=es"
+    description:
+      en: "Maps with population and census-related data"
+      es: "Mapas con datos de población y censales"
+    projects:
+      - id: madrid-interactive-atlas
+        topics: ["places", "mobility", "people", "elections"]
+        format: {en: "City atlas", es: "Atlas urbano"}
+        summary: {en: "Explore Madrid one census section at a time.", es: "Explora Madrid sección censal a sección censal."}
+        last_published: "2026-10-26"
+        title: {en: "Madrid Interactive Atlas", es: "Atlas interactivo de Madrid"}
+        description:
+          en: "Explore population, buildings, elections, income and transport across Madrid, section by section."
+          es: "Explora la población, los edificios, las elecciones, la renta y el transporte de Madrid, sección a sección."
+        url: "https://danielalmazan.com/madrid/"
+      - id: london-interactive-atlas
+        topics: ["places", "mobility", "people", "elections"]
+        format: {en: "City atlas", es: "Atlas urbano"}
+        summary: {en: "Explore London’s people, places and networks.", es: "Explora la población, el territorio y las redes de Londres."}
+        last_published: "2026-09-05"
+        title: {en: "London Interactive Atlas", es: "Atlas interactivo de Londres"}
+        description:
+          en: "Explore population, buildings, elections, income and transport across London, area by area."
+          es: "Explora la población, los edificios, las elecciones, la renta y el transporte de Londres, área por área."
+        url: "https://danielalmazan.com/london/"
+      - id: espana-desde-2018
+        topics: ["people"]
+        format: {en: "Data explorer", es: "Explorador de datos"}
+        summary: {en: "See how work and living conditions have changed in Spain.", es: "Descubre cómo han cambiado el trabajo y las condiciones de vida en España."}
+        last_published: "2026-10-31"
+        title: {en: "Spain, since 2018", es: "España, desde 2018"}
+        description:
+          en: "Explore changes in employment, income, education and living conditions since 2018, by nationality or birthplace."
+          es: "Explora los cambios en el empleo, la renta, la educación y las condiciones de vida desde 2018, por nacionalidad o lugar de nacimiento."
+        url: "https://danielalmazan.com/espana-desde-2018/"
+        url_en: "https://danielalmazan.com/espana-desde-2018/?lang=en"
+        url_es: "https://danielalmazan.com/espana-desde-2018/?lang=es"
+      - id: asi-somos
+        topics: ["people", "places"]
+        format: {en: "Population explorer", es: "Explorador de población"}
+        summary: {en: "Compare population pyramids across Spain.", es: "Compara pirámides de población de toda España."}
+        last_published: "2026-11-03"
+        title: {en: "Así Somos", es: "Así Somos"}
+        description:
+          en: "Explore and compare population by age, sex, nationality and birthplace across every municipality, province and region in Spain."
+          es: "Explora y compara la población por edad, sexo, nacionalidad y nacimiento en todos los municipios, provincias y comunidades de España."
+        url: "https://danielalmazan.com/asi-somos/"
+        url_en: "https://danielalmazan.com/asi-somos/?lang=en"
+        url_es: "https://danielalmazan.com/asi-somos/?lang=es"
+      - id: ocupados
+        topics: ["people"]
+        format: {en: "Employment explorer", es: "Explorador de empleo"}
+        summary: {en: "Explore what people in Spain do for work.", es: "Explora en qué trabaja la población de España."}
+        last_published: "2026-11-03"
+        title: {en: "Ocupados", es: "Ocupados"}
+        description:
+          en: "Explore what people in Spain do for work and how employment has changed in recent years."
+          es: "Explora en qué trabajamos y cómo ha cambiado el empleo en los últimos años."
+        url: "https://danielalmazan.com/ocupados/"
+        url_en: "https://danielalmazan.com/ocupados/en/"
+        url_es: "https://danielalmazan.com/ocupados/?lang=es"
+      - id: tu-rincon
+        topics: ["places", "people"]
+        format: {en: "Address explorer", es: "Explorador por dirección"}
+        summary: {en: "See how your neighbourhood compares with the rest of Spain.", es: "Compara tu barrio con el resto de España."}
+        last_published: "2026-11-04"
+        title: {en: "Tu rincón", es: "Tu rincón"}
+        description:
+          en: "Search for an address and compare population, income, education and employment across census sections in Spain."
+          es: "Busca una dirección y compara la población, la renta, la educación y el empleo por secciones censales de España."
+        url: "https://danielalmazan.com/tu-rincon/"
+        url_en: "https://danielalmazan.com/tu-rincon/en/"
+        url_es: "https://danielalmazan.com/tu-rincon/"
+      - id: where-do-you-fit-spain
+        topics: ["people"]
+        format: {en: "Interactive tool", es: "Herramienta interactiva"}
+        summary: {en: "Find out how many people in Spain share your profile.", es: "Descubre cuántas personas en España comparten tu perfil."}
+        last_published: "2026-09-07"
+        title: {en: "Where do you fit in Spain?", es: "¿Dónde encajas en España?"}
+        description:
+          en: "Compare your age, work, education, household and income with Spain, and estimate how many adults share a similar profile."
+          es: "Compara tu edad, trabajo, estudios, hogar e ingresos con España y estima cuántos adultos comparten un perfil parecido al tuyo."
+        url: "https://danielalmazan.com/where-do-you-fit-spain/"
+        url_en: "https://danielalmazan.com/where-do-you-fit-spain/?lang=en"
+        url_es: "https://danielalmazan.com/where-do-you-fit-spain/"
+
+  - id: transport
+    title: {en: "Transport", es: "Transporte"}
+    url: "https://danielalmazan.com/transport/"
+    url_es: "https://danielalmazan.com/transport/?lang=es"
+    description: {en: "Maps with transport data", es: "Mapas con datos de transporte"}
+    projects:
+      - id: metro-madrid-demand
+        topics: ["mobility"]
+        format: {en: "Ridership dashboard", es: "Panel de demanda"}
+        summary: {en: "Explore when and where people ride Metro de Madrid.", es: "Explora cuándo y dónde se usa Metro de Madrid."}
+        last_published: "2026-07-26"
+        title: {en: "Metro de Madrid - Demand dashboard", es: "Metro de Madrid — Panel de demanda"}
+        description:
+          en: "Interactive dashboard exploring network and station demand, daily patterns, recovery and the impact of service disruptions using official Metro de Madrid data."
+          es: "Panel interactivo para explorar la demanda de la red y las estaciones, los patrones diarios, la recuperación y el impacto de las interrupciones del servicio con datos oficiales de Metro de Madrid."
+        url: "https://danielalmazan.com/metromadrid/dashboard.html"
+      - id: london-cycle-pulse
+        topics: ["mobility", "places"]
+        format: {en: "Interactive dashboard", es: "Panel interactivo"}
+        summary: {en: "See London’s hire-bike journeys across a typical day.", es: "Explora el uso diario de la bicicleta pública en Londres."}
+        last_published: "2026-09-03"
+        title: {en: "London Cycle Pulse", es: "London Cycle Pulse"}
+        description:
+          en: "Interactive maps and charts exploring typical Santander Cycles docking and undocking patterns across London."
+          es: "Mapas y gráficos interactivos sobre los patrones habituales de anclaje y retirada de Santander Cycles en Londres."
+        url: "https://danielalmazan.com/transport/londoncyclepulse"
+      - id: madrid-public-transport
+        topics: ["mobility", "places"]
+        format: {en: "Network map", es: "Mapa de red"}
+        summary: {en: "Browse Madrid’s public transport network.", es: "Recorre la red de transporte público de Madrid."}
+        last_published: "2026-08-28"
+        title: {en: "Madrid. Public transport network", es: "Red de transporte público de Madrid"}
+        description:
+          en: "Interactive map of Madrid’s public transport network, covering Metro, Cercanías (commuter rail), Metro Ligero (light rail), EMT buses and BiciMAD stations."
+          es: "Mapa interactivo de la red de transporte público de Madrid, que incluye Metro, Cercanías, Metro Ligero, autobuses de la EMT y estaciones de BiciMAD."
+        url: "https://danielalmazan.com/transport/madrid_public_transport.html"
+      - id: airport-to-tower-distance-global-index
+        topics: ["mobility", "places"]
+        format: {en: "Global index", es: "Índice global"}
+        summary: {en: "Rank airports by their distance to a city landmark.", es: "Ordena aeropuertos por su distancia a un monumento urbano."}
+        last_published: "2026-09-17"
+        title: {en: "Airport to Tower Distance Global Index", es: "Distancia de Aeropuerto a Torre - Índice Global"}
+        description:
+          en: "Ranking airports by their straight-line distance to a city's tallest or most iconic tower."
+          es: "Clasificación de aeropuertos según su distancia en línea recta a la torre más alta o más icónica de una ciudad."
+        url: "https://danielalmazan.com/airport-to-tower/"
+
+  - id: elections
+    title: {en: "Elections", es: "Elecciones"}
+    url: "https://danielalmazan.com/elections/"
+    url_es: "https://danielalmazan.com/elections/?lang=es"
+    description: {en: "Projects with election data", es: "Proyectos con datos electorales"}
+    projects:
+      - id: debi-sacar-mas-votos
+        topics: ["elections"]
+        format: {en: "Election simulator", es: "Simulador electoral"}
+        summary: {en: "Adjust polls and model seats in Spain’s Congress.", es: "Ajusta las encuestas y simula escaños en el Congreso."}
+        last_published: "2026-10-24"
+        title: {en: "Debí sacar más votos", es: "Debí sacar más votos"}
+        description:
+          en: "Explore polls and model votes, seats, joint lists and withdrawals for Spain’s Congress. In Spanish."
+          es: "Explora las encuestas, ajusta el voto y simula escaños, listas conjuntas y retiradas para el Congreso."
+        url: "https://danielalmazan.com/debisacarmasvotos/"
+      - id: madrid-elections-2023
+        topics: ["elections", "places"]
+        format: {en: "Election maps", es: "Mapas electorales"}
+        summary: {en: "Compare Madrid’s three elections in 2023.", es: "Compara las tres elecciones de Madrid de 2023."}
+        last_published: "2026-08-30"
+        title: {en: "Madrid elections 2023: three ballots, one city", es: "Tres urnas, una ciudad"}
+        description:
+          en: "Interactive maps and charts comparing Madrid’s 2023 local, regional and national elections, section by census section."
+          es: "Cómo votó Madrid en las elecciones municipales, autonómicas y generales de 2023, sección censal a sección censal."
+        url: "https://danielalmazan.com/elections/madrid_elections_2023.html"
+        url_es: "https://danielalmazan.com/elections/madrid_elections_2023.html?lang=es"
+      - id: spain-general-elections-hex
+        topics: ["elections", "places"]
+        format: {en: "Election cartogram", es: "Cartograma electoral"}
+        summary: {en: "Explore Spain’s election results one seat at a time.", es: "Explora los resultados de España escaño a escaño."}
+        last_published: "2026-09-04"
+        title: {en: "Spain general elections: hex cartogram", es: "España, escaño a escaño"}
+        description:
+          en: "Interactive hex cartogram exploring party results and seats by province across Spain’s 2023 and 2019 general elections."
+          es: "Cada hexágono es un diputado electo."
+        url: "https://danielalmazan.com/elections/general-elections-hex/"
+        url_en: "https://danielalmazan.com/elections/general-elections-hex/?lang=en"
+        url_es: "https://danielalmazan.com/elections/general-elections-hex/?lang=es"
+  - id: games
+    title: {en: "Games", es: "Juegos"}
+    url: "https://danielalmazan.com/games/"
+    url_es: "https://danielalmazan.com/games/?lang=es"
+    description:
+      en: "Football and geography games"
+      es: "Juegos de fútbol y geografía"
+    projects:
+      - id: leo-guessi
+        topics: ["games"]
+        format: {en: "Football trivia", es: "Trivial de fútbol"}
+        summary: {en: "Guess the player or complete the lineup.", es: "Adivina el jugador o completa la alineación."}
+        last_published: "2026-09-21"
+        title: {en: "Leo Guessi", es: "Leo Guessi"}
+        description:
+          en: "Player of the Day, Lineup of the Day, and other games. Can you guess it?"
+          es: "Jugador del día, Alineación del día y otros juegos. ¿Puedes adivinarlo?"
+        url: "https://danielalmazan.com/football_trivia_game/"
+      - id: mapfather
+        topics: ["games"]
+        format: {en: "Geography game", es: "Juego de geografía"}
+        summary: {en: "Recognise the silhouette, then place it on the map.", es: "Reconoce la silueta y sitúala en el mapa."}
+        last_published: "2026-10-14"
+        title: {en: "The Mapfather", es: "The Mapfather"}
+        description:
+          en: "Guess the country from its silhouette, then place it on a map. A new challenge every day."
+          es: "Adivina el país por su silueta y sitúalo en un mapa. Un reto nuevo cada día."
+        url: "https://danielalmazan.com/mapfather/"
+      - id: guessports
+        topics: ["games"]
+        format: {en: "Trade puzzle", es: "Juego de comercio"}
+        summary: {en: "Guess the country from its trade.", es: "Adivina el país a partir de su comercio."}
+        last_published: "2026-11-03"
+        title: {en: "Guessports", es: "Guessports"}
+        description:
+          en: "Guess the country from its exports, imports or export destinations. Daily puzzles and 10-country rounds."
+          es: "Adivina el país por sus exportaciones, importaciones o destinos de exportación. Retos diarios y rondas de 10 países."
+        url: "https://danielalmazan.com/guessports/"
+
+      - id: flagbag
+        topics: ["games"]
+        format: {en: "Flag puzzles", es: "Juegos de banderas"}
+        summary: {en: "Four ways to test how well you know your flags.", es: "Pon a prueba cuánto sabes de banderas con cuatro juegos."}
+        last_published: "2026-10-23"
+        title: {en: "Flag Bag", es: "Flag Bag"}
+        description:
+          en: "Four flag guessing games. Identify flags, compare colours, zoom in or pick the right flag. Daily challenges and 10-round games."
+          es: "Cuatro juegos para adivinar banderas: identifícalas, compara colores, amplía detalles o elige la correcta. Retos diarios y partidas de 10 rondas."
+        url: "https://danielalmazan.com/flagbag/"
+
+  - id: other
+    title: {en: "Other", es: "Otros"}
+    url: "https://danielalmazan.com/other/"
+    url_es: "https://danielalmazan.com/other/?lang=es"
+    description:
+      en: "Other projects and practical interactive tools"
+      es: "Otros proyectos y herramientas interactivas prácticas"
+    projects:
+      - id: e-spain
+        topics: ["energy"]
+        format: {en: "Energy explorer", es: "Explorador energético"}
+        summary: {en: "See how Spain generates its electricity.", es: "Descubre cómo se genera la electricidad en España."}
+        last_published: "2026-11-07"
+        title: {en: "E-Spain", es: "E-Spain"}
+        description:
+          en: "An analysis of the technologies and patterns of electricity generation in Spain"
+          es: "Un análisis de las tecnologías y los patrones de generación de electricidad en España"
+        url: "https://danielalmazan.com/e-spain/"
+        url_es: "https://danielalmazan.com/e-spain/?lang=es"
+      - id: salary-calculator-2026
+        topics: ["people"]
+        format: {en: "Calculator", es: "Calculadora"}
+        summary: {en: "Estimate take-home pay and labour costs in Madrid.", es: "Calcula el salario neto y el coste laboral en Madrid."}
+        last_published: "2026-07-17"
+        title: {en: "Calculadora Salario 2026", es: "Calculadora Salario 2026"}
+        description:
+          en: "Net salary and labour-cost calculator for Madrid in 2026."
+          es: "Calculadora de salario neto y costes laborales — Madrid 2026."
+        url: "https://danielalmazan.com/salary-calculator-2026/"
+
+homepage:
+  featured: ["de-aqui-para-alla", "tu-rincon", "kilometro-cero"]
+topics:
+  all: {en: "All", es: "Todo"}
+  places: {en: "Places", es: "Lugares"}
+  mobility: {en: "Mobility", es: "Movilidad"}
+  people: {en: "People & Economy", es: "Población y economía"}
+  elections: {en: "Elections", es: "Elecciones"}
+  energy: {en: "Energy", es: "Energía"}
+  games: {en: "Games", es: "Juegos"}
