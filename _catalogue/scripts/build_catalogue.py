@@ -171,12 +171,27 @@ def page(games):
         f'<section class="game-collection" aria-label="Games" {attributes("label", "Games", "Juegos")}>'
         + "".join(card(pid, "game") for pid in GAME_ORDER) + "</section>"
     ) if games else homepage()
+    sharing = ""
+    if not games:
+        image = "https://danielalmazan.com" + asset("share.png")
+        alt = "Daniel Almazan — blue site icon on a white background"
+        sharing = (
+            f'<meta property="og:image" content="{image}">\n'
+            f'<meta property="og:image:secure_url" content="{image}">\n'
+            '<meta property="og:image:type" content="image/png">\n'
+            '<meta property="og:image:width" content="1200">\n'
+            '<meta property="og:image:height" content="630">\n'
+            f'<meta property="og:image:alt" content="{alt}">\n'
+            '<meta name="twitter:card" content="summary_large_image">\n'
+            f'<meta name="twitter:image" content="{image}">\n'
+            f'<meta name="twitter:image:alt" content="{alt}">\n'
+        )
     html = f'''<!doctype html>
 <html lang="en" {attributes("title", title_en, title_es)}>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title_en}</title><meta name="description" content="{description}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:title" content="{title_en}"><meta property="og:description" content="{description}"><meta property="og:url" content="{url}">
-<link rel="icon" href="{asset("mark.svg")}" type="image/svg+xml">
+{sharing}<link rel="icon" href="{asset("mark.svg")}" type="image/svg+xml">
 <script>(() => {{ let theme = new URLSearchParams(location.search).get('theme'); try {{ theme ||= localStorage.getItem('dani-theme') }} catch {{}} document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' }})()</script>
 <link rel="preload" href="{asset("geist.woff2")}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{asset("jakarta.woff2")}" as="font" type="font/woff2" crossorigin>
