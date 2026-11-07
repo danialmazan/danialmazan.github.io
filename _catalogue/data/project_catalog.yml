@@ -164,6 +164,18 @@ sections:
         url: "https://danielalmazan.com/tu-rincon/"
         url_en: "https://danielalmazan.com/tu-rincon/en/"
         url_es: "https://danielalmazan.com/tu-rincon/"
+      - id: di-mi-nombre
+        topics: ["people", "places"]
+        format: {en: "Names explorer", es: "Explorador de nombres"}
+        summary: {en: "Find out how many people share your name.", es: "Descubre cuánta gente se llama como tú."}
+        last_published: "2026-11-07"
+        title: {en: "Di mi nombre", es: "Di mi nombre"}
+        description:
+          en: "Search any first name or surname in Spain: how many people have it, where they live, how it has changed over generations, and which surnames define each province."
+          es: "Busca cualquier nombre o apellido de España: cuánta gente lo lleva, dónde vive, cómo ha cambiado de una generación a otra y qué apellidos definen cada provincia."
+        url: "https://danielalmazan.com/di-mi-nombre/"
+        url_en: "https://danielalmazan.com/di-mi-nombre/en/"
+        url_es: "https://danielalmazan.com/di-mi-nombre/"
       - id: where-do-you-fit-spain
         topics: ["people"]
         format: {en: "Interactive tool", es: "Herramienta interactiva"}
@@ -356,7 +368,7 @@ sections:
         url: "https://danielalmazan.com/salary-calculator-2026/"
 
 homepage:
-  featured: ["bochorno-historico", "de-aqui-para-alla", "tu-rincon"]
+  featured: ["di-mi-nombre", "bochorno-historico", "de-aqui-para-alla"]
 topics:
   all: {en: "All", es: "Todo"}
   places: {en: "Places", es: "Lugares"}
