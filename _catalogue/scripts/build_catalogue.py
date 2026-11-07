@@ -176,6 +176,7 @@ def page(games):
         image = "https://danielalmazan.com" + asset("share.png")
         alt = "Daniel Almazan — blue site icon on a white background"
         sharing = (
+            '<meta property="og:site_name" content="Daniel Almazan">\n'
             f'<meta property="og:image" content="{image}">\n'
             f'<meta property="og:image:secure_url" content="{image}">\n'
             '<meta property="og:image:type" content="image/png">\n'
