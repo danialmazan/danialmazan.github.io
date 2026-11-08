@@ -135,7 +135,7 @@ def header(games):
     destination = "/" if games else "/games/"
     label = ("Projects", "Proyectos") if games else ("Games", "Juegos")
     return f'''<header class="site-header"><div class="shell header-inner">
-<a class="brand" href="/" data-local-link><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Daniel Almazan</a>
+<a class="brand" href="/" data-local-link><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 6h9v20H6zM17 6a9 9 0 0 1 9 9h-9z"/><path fill="currentColor" fill-opacity=".42" d="M17 17h9a9 9 0 0 1-9 9z"/></svg>Daniel Almazán</a>
 <nav aria-label="Sections" {attributes("label", "Sections", "Secciones")}><a class="nav-games" href="{destination}" data-local-link>{text(*label)} <span aria-hidden="true">↗</span></a></nav>
 <div class="preferences"><div class="languages" role="group" aria-label="Language / Idioma"><button type="button" data-language="en" aria-label="English" aria-pressed="true">EN</button><button type="button" data-language="es" aria-label="Español" aria-pressed="false">ES</button></div>
 <button type="button" class="theme-button" aria-pressed="false" aria-label="Dark mode" {attributes("label", "Dark mode", "Modo oscuro")}><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M21 13.5A9.2 9.2 0 0 1 10.5 3 9.1 9.1 0 1 0 21 13.5Z"/></svg></button></div>
@@ -192,7 +192,7 @@ def page(games):
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title_en}</title><meta name="description" content="{description}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:title" content="{title_en}"><meta property="og:description" content="{description}"><meta property="og:url" content="{url}">
-{sharing}<link rel="icon" href="{asset("mark.svg")}" type="image/svg+xml">
+{sharing}<link rel="icon" href="{asset("mark.svg")}" type="image/svg+xml"><link rel="apple-touch-icon" href="{asset("apple-touch-icon.png")}">
 <script>(() => {{ let theme = new URLSearchParams(location.search).get('theme'); try {{ theme ||= localStorage.getItem('dani-theme') }} catch {{}} document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' }})()</script>
 <link rel="preload" href="{asset("geist.woff2")}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{asset("jakarta.woff2")}" as="font" type="font/woff2" crossorigin>

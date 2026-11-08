@@ -143,19 +143,14 @@ img {
   margin-right:auto
 }
 .brand-mark {
-  display:grid;
-  grid-template:repeat(2,5px)/repeat(2,5px);
-  gap:2px;
-  padding:5px;
+  display:block;
+  flex:none;
+  width:22px;
+  height:22px;
   background:var(--button);
+  color:var(--button-ink);
   border-radius:3px;
   transform:rotate(-8deg)
-}
-.brand-mark i {
-  background:var(--button-ink)
-}
-.brand-mark i:last-child {
-  opacity:.42
 }
 nav,.preferences,.languages {
   display:flex;
@@ -812,8 +807,8 @@ nav a:hover {
     gap:5px
   }
   .brand-mark {
-    grid-template:repeat(2,4px)/repeat(2,4px);
-    padding:4px
+    width:18px;
+    height:18px
   }
   .header-inner {
     gap:7px
@@ -973,8 +968,8 @@ nav a:hover {
 .identity-cobalt .brand-mark {
   background: #2145df;
 }
-.identity-cobalt .brand-mark i {
-  background: white;
+.identity-cobalt .brand-mark {
+  color: white;
 }
 .identity-cobalt .lead {
   border: 0;
