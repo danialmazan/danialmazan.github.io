@@ -174,22 +174,20 @@ def page(games):
         f'<section class="game-collection" aria-label="Games" {attributes("label", "Games", "Juegos")}>'
         + "".join(card(pid, "game") for pid in GAME_ORDER) + "</section>"
     ) if games else homepage()
-    sharing = ""
-    if not games:
-        image = "https://danielalmazan.com" + asset("share.png")
-        alt = "Daniel Almazán — blue site icon on a white background"
-        sharing = (
-            '<meta property="og:site_name" content="Daniel Almazán">\n'
-            f'<meta property="og:image" content="{image}">\n'
-            f'<meta property="og:image:secure_url" content="{image}">\n'
-            '<meta property="og:image:type" content="image/png">\n'
-            '<meta property="og:image:width" content="1200">\n'
-            '<meta property="og:image:height" content="630">\n'
-            f'<meta property="og:image:alt" content="{alt}">\n'
-            '<meta name="twitter:card" content="summary_large_image">\n'
-            f'<meta name="twitter:image" content="{image}">\n'
-            f'<meta name="twitter:image:alt" content="{alt}">\n'
-        )
+    image = "https://danielalmazan.com" + asset("share.png")
+    alt = "Daniel Almazán — blue site icon on a white background"
+    sharing = (
+        '<meta property="og:site_name" content="Daniel Almazán">\n'
+        f'<meta property="og:image" content="{image}">\n'
+        f'<meta property="og:image:secure_url" content="{image}">\n'
+        '<meta property="og:image:type" content="image/png">\n'
+        '<meta property="og:image:width" content="1200">\n'
+        '<meta property="og:image:height" content="630">\n'
+        f'<meta property="og:image:alt" content="{alt}">\n'
+        '<meta name="twitter:card" content="summary_large_image">\n'
+        f'<meta name="twitter:image" content="{image}">\n'
+        f'<meta name="twitter:image:alt" content="{alt}">\n'
+    )
     html = f'''<!doctype html>
 <html lang="en" {attributes("title", title_en, title_es)}>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

@@ -15,6 +15,17 @@
   let topic = "all";
   let language = "en";
 
+  function preferredLanguage() {
+    const requested = new URLSearchParams(location.search).get("lang");
+    if (requested === "en" || requested === "es") return requested;
+    try {
+      const saved = localStorage.getItem("dani-language");
+      if (saved === "en" || saved === "es") return saved;
+    } catch { /* Device language still works when storage is unavailable. */ }
+    const device = (navigator.language || navigator.languages?.[0] || "en").toLowerCase().split(/[-_]/)[0];
+    return device === "es" ? "es" : "en";
+  }
+
   function updateCatalogue() {
     if (!search) return;
     const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
@@ -44,7 +55,7 @@
       const destination = new URL(link.getAttribute("href"), location.href);
       destination.searchParams.delete("lang");
       destination.searchParams.delete("theme");
-      if (language === "es") destination.searchParams.set("lang", "es");
+      destination.searchParams.set("lang", language);
       if (root.dataset.theme) destination.searchParams.set("theme", root.dataset.theme);
       link.href = destination.href;
     }
@@ -52,8 +63,7 @@
 
   function writeState() {
     const url = new URL(location.href);
-    if (language === "es") url.searchParams.set("lang", "es");
-    else url.searchParams.delete("lang");
+    url.searchParams.set("lang", language);
     if (root.dataset.theme) url.searchParams.set("theme", root.dataset.theme);
     try { history.replaceState(null, "", url); } catch { /* File URLs can restrict history. */ }
   }
@@ -95,6 +105,7 @@
 
   for (const button of languages) button.addEventListener("click", () => {
     setLanguage(button.dataset.language);
+    try { localStorage.setItem("dani-language", language); } catch { /* The URL also carries the preference. */ }
     writeState();
   });
   themeButton.addEventListener("click", () => {
@@ -114,7 +125,7 @@
     updateThemeControl();
   });
   window.addEventListener("popstate", () => {
-    setLanguage(new URLSearchParams(location.search).get("lang"));
+    setLanguage(preferredLanguage());
     const theme = new URLSearchParams(location.search).get("theme");
     if (theme === "light" || theme === "dark") root.dataset.theme = theme;
     updateThemeControl();
@@ -142,7 +153,7 @@
     });
   }
 
-  setLanguage(new URLSearchParams(location.search).get("lang"));
+  setLanguage(preferredLanguage());
   updateThemeControl();
   updateFreshness();
 })();
