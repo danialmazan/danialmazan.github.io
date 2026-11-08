@@ -1,6 +1,7 @@
 """Build the approved Cobalt homepage, Games page, and versioned static assets."""
 from datetime import date
 from hashlib import sha256
+from PIL import Image
 from html import escape
 import json
 from pathlib import Path
@@ -88,18 +89,20 @@ def badge(value):
         f'{attributes("label", en, es)} {attributes("text", short_en, short_es)}>{short_en}</time>'
     )
 
+def pixel_width(filename):
+    with Image.open(SOURCE / "media" / filename) as image:
+        return image.width
+
 def artwork(pid, lead=False):
     normal = asset(pid + ".webp")
     if lead:
         large = asset(pid + "-lead.webp")
-        sources = f'{normal} 480w, {large} 1000w'
+        sources = f'{normal} {pixel_width(pid + ".webp")}w, {large} {pixel_width(pid + "-lead.webp")}w'
         sizes = '(max-width: 720px) 94vw, 56vw'
         priority = 'fetchpriority="high"'
     else:
         small = asset(pid + "-small.webp")
-        width = 640 if pid in GAME_ORDER else 480
-        small_width = 320 if pid in GAME_ORDER else 200
-        sources = f'{small} {small_width}w, {normal} {width}w'
+        sources = f'{small} {pixel_width(pid + "-small.webp")}w, {normal} {pixel_width(pid + ".webp")}w'
         sizes = 'auto, (max-width: 720px) 45vw, 30vw'
         priority = 'loading="lazy"'
     return (

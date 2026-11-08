@@ -1077,3 +1077,14 @@ nav a:hover {
     justify-content: flex-start;
   }
 }
+
+/* Frozen top row: the header stays visible while the page scrolls. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--paper);
+}
+html {
+  scroll-padding-top: 100px;
+}
