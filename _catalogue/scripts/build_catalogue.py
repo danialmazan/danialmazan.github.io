@@ -162,9 +162,9 @@ def homepage():
 <div class="collection">{"".join(card(p["id"]) for p in ORDERED)}</div></section>'''
 
 def page(games):
-    title_en = "Games — Daniel Almazan" if games else "Daniel Almazan — Interactive projects"
-    title_es = "Juegos — Daniel Almazan" if games else "Daniel Almazan — Proyectos interactivos"
-    description = "Football, geography, trade and flag games by Daniel Almazan." if games else "Interactive maps, visual stories, tools and games by Daniel Almazan."
+    title_en = "Games — Daniel Almazán" if games else "Daniel Almazán — Interactive projects"
+    title_es = "Juegos — Daniel Almazán" if games else "Daniel Almazán — Proyectos interactivos"
+    description = "Football, geography, trade and flag games by Daniel Almazán." if games else "Interactive maps, visual stories, tools and games by Daniel Almazán."
     url = "https://danielalmazan.com/" + ("games/" if games else "")
     content = (
         f'<div class="games-intro">{text("Games", "Juegos", "h1")}</div>'
@@ -174,9 +174,9 @@ def page(games):
     sharing = ""
     if not games:
         image = "https://danielalmazan.com" + asset("share.png")
-        alt = "Daniel Almazan — blue site icon on a white background"
+        alt = "Daniel Almazán — blue site icon on a white background"
         sharing = (
-            '<meta property="og:site_name" content="Daniel Almazan">\n'
+            '<meta property="og:site_name" content="Daniel Almazán">\n'
             f'<meta property="og:image" content="{image}">\n'
             f'<meta property="og:image:secure_url" content="{image}">\n'
             '<meta property="og:image:type" content="image/png">\n'
@@ -200,7 +200,7 @@ def page(games):
 </head><body class="editorial identity identity-cobalt{' games-page' if games else ''}">
 <a class="skip" href="#main">{text("Skip to content", "Saltar al contenido")}</a>
 {header(games)}<main id="main" class="shell">{content}</main>
-<footer class="site-footer shell"><span>Daniel Almazan</span><div><a href="https://twitter.com/danialmazan_">X / Twitter</a><span aria-hidden="true"> · </span><a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a></div></footer>
+<footer class="site-footer shell"><span>Daniel Almazán</span><div><a href="https://twitter.com/danialmazan_">X / Twitter</a><span aria-hidden="true"> · </span><a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a></div></footer>
 </body></html>'''
     (OUTPUT / ("games.html" if games else "index.html")).write_text(html)
 
