@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-11-09",
   "ballotVersion": "29N-territorial-2026-10-19-v4",
   "rates": {
     "PODEMOS": {
@@ -13,7 +13,7 @@
       "abstention": 40
     }
   },
-  "assumption": "Sin evidencia de absorción se aplica la hipótesis pendiente. No son transferencias observadas. CUP es residual histórico, no una estimación publicada.",
+  "assumption": "Base de papeletas completas de 2026: no se añade transferencia ni abstención CAT. Fuentes sin cobertura territorial acreditada no aportan márgenes FA/Podemos/ERC. Las tasas históricas siguientes solo corresponden a escenarios anteriores con orígenes pendientes.",
   "politicalSources": [
     {
       "source": "https://www.europapress.es/catalunya/noticia-erc-niega-coalicion-podemos-si-contribuira-independientes-listas-barcelona-tarragona-20261013135705.html",
@@ -26,120 +26,106 @@
   ],
   "polls": [
     {
-      "id": "sigma-2026-10-12",
-      "fieldworkStart": "2026-10-01",
-      "fieldworkEnd": "2026-10-08",
+      "id": "sigma-2026-11-09",
+      "fieldworkStart": "2026-10-30",
+      "fieldworkEnd": "2026-11-06",
       "catalonia": {
         "PODEMOS": {
           "status": "unknown",
-          "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+          "source": "https://www.sigmados.com/noticia?id=Zr7XEKTN9GLN00s",
+          "verified": "2026-11-09",
+          "note": "La fuente no acredita el tratamiento CAT. Sus cifras de FA, Podemos y ERC no se usan en esta base."
         },
         "CUP": {
           "status": "unknown",
-          "source": "https://www.sigmados.com/wp-content/uploads/2026/10/438-819x1024.jpg",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación. Reconsulta de la URL el 19/10: 404; se conservan las cifras verificadas el 16/10, sin afirmar nueva verificación del cuestionario."
+          "source": "https://www.sigmados.com/noticia?id=Zr7XEKTN9GLN00s",
+          "verified": "2026-11-09",
+          "note": "La fuente no acredita el tratamiento CAT. Sus cifras de FA, Podemos y ERC no se usan en esta base."
         }
       }
     },
     {
-      "id": "gad3-2026-10-12",
-      "fieldworkStart": "2026-10-06",
-      "fieldworkEnd": "2026-10-08",
+      "id": "gad3-2026-11-09",
+      "fieldworkStart": "2026-11-03",
+      "fieldworkEnd": "2026-11-05",
       "catalonia": {
         "PODEMOS": {
-          "status": "unknown",
-          "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          "status": "absorbed",
+          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026/",
+          "verified": "2026-11-09",
+          "note": "Cuadro de candidaturas del 29N: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos; no hay fila CUP actual. Se armonizan las papeletas completas de 2026, sin añadir transferencias editoriales."
         },
         "CUP": {
-          "status": "unknown",
-          "source": "https://datawrapper.dwcdn.net/WfdjI/4/dataset.csv",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          "status": "absorbed",
+          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026/",
+          "verified": "2026-11-09",
+          "note": "Cuadro de candidaturas del 29N: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos; no hay fila CUP actual. Se armonizan las papeletas completas de 2026, sin añadir transferencias editoriales."
         }
       }
     },
     {
-      "id": "40db-2026-10-09",
-      "fieldworkStart": "2026-10-07",
-      "fieldworkEnd": "2026-10-08",
+      "id": "40db-2026-11-09",
+      "fieldworkStart": "2026-11-02",
+      "fieldworkEnd": "2026-11-04",
       "catalonia": {
         "PODEMOS": {
-          "status": "pending",
-          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
-          "verified": "2026-10-19",
-          "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          "status": "absorbed",
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral/2026_11_preelectoral_informe.pdf",
+          "verified": "2026-11-09",
+          "note": "Informe preelectoral con candidaturas territoriales completas en pp. 7 y siguientes; Podemos solo separado y CUP sin papeleta propia en Cataluña. No se añade trasvase a las estimaciones de las papeletas."
         },
         "CUP": {
-          "status": "pending",
-          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/10-08-barometro-flash/2026_10_informe_voto_barometro_flash.pdf",
-          "verified": "2026-10-19",
-          "note": "El informe mantiene Podemos y CUP como opciones en intención de voto (p. 16); no acredita la absorción territorial de sus ausencias. La pregunta conjunta nacional se conserva excluida del promedio."
+          "status": "absorbed",
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral/2026_11_preelectoral_informe.pdf",
+          "verified": "2026-11-09",
+          "note": "Informe preelectoral con candidaturas territoriales completas en pp. 7 y siguientes; Podemos solo separado y CUP sin papeleta propia en Cataluña. No se añade trasvase a las estimaciones de las papeletas."
         }
       }
     },
     {
-      "id": "dym-2026-10-09",
-      "fieldworkStart": "2026-10-05",
-      "fieldworkEnd": "2026-10-07",
+      "id": "ncreport-2026-11-09",
+      "fieldworkStart": "2026-11-02",
+      "fieldworkEnd": "2026-11-05",
       "catalonia": {
         "PODEMOS": {
           "status": "unknown",
-          "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          "source": "https://www.larazon.es/espana/gana-7-puntos-psoe-que-cae-100-escanos_202611096af1319903bbf30bb045239e.html",
+          "verified": "2026-11-09",
+          "note": "La noticia y el gráfico no acreditan cobertura CAT; FA, Podemos y ERC no contribuyen al promedio por partido de esta base."
         },
         "CUP": {
           "status": "unknown",
-          "source": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
-          "verified": "2026-10-19",
-          "note": "La publicación no documenta si sus estimaciones ya absorben la ausencia de Podemos y CUP en Cataluña. Campo anterior al acuerdo ERC–Podemos del 12/10; eso no prueba por sí solo el tratamiento de la estimación."
+          "source": "https://www.larazon.es/espana/gana-7-puntos-psoe-que-cae-100-escanos_202611096af1319903bbf30bb045239e.html",
+          "verified": "2026-11-09",
+          "note": "La noticia y el gráfico no acreditan cobertura CAT; FA, Podemos y ERC no contribuyen al promedio por partido de esta base."
         }
       }
     },
     {
-      "id": "ncreport-2026-10-08",
-      "fieldworkStart": "2026-10-01",
-      "fieldworkEnd": "2026-10-06",
+      "id": "imop-2026-11-08",
+      "fieldworkStart": "2026-11-02",
+      "fieldworkEnd": "2026-11-06",
       "catalonia": {
         "PODEMOS": {
-          "status": "unknown",
-          "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
-          "verified": "2026-10-19",
-          "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
+          "status": "absorbed",
+          "source": "https://www.elconfidencial.com/espana/2026-11-08/derecha-recupera-seis-escanos-izquierda-castigo-psoe-urda-cbtr_4460900/",
+          "verified": "2026-11-09",
+          "note": "El editor especifica Podemos solo en sus candidaturas separadas y las papeletas territoriales dentro de FA. La estimación corresponde a las listas del 29N sin otro trasvase CAT."
         },
         "CUP": {
-          "status": "unknown",
-          "source": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
-          "verified": "2026-10-19",
-          "note": "La ficha no documenta si la estimación incorpora la ausencia de Podemos y CUP en Cataluña. Se mantiene pendiente de ajustar; no se deduce absorción por la fecha de campo."
-        }
-      }
-    },
-    {
-      "id": "imop-2026-10-23",
-      "fieldworkStart": "2026-10-13",
-      "fieldworkEnd": "2026-10-16",
-      "catalonia": {
-        "PODEMOS": {
-          "status": "unknown",
-          "source": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
-          "verified": "2026-10-24",
-          "note": "La fuente publica FA y Podemos por separado, pero no documenta la absorción territorial de la ausencia de Podemos en Cataluña. El campo 13–16/10 y la mención al contexto de pactos no acreditan esa absorción. Se mantiene no documentado, tratado como pendiente por la política vigente."
-        },
-        "CUP": {
-          "status": "unknown",
-          "source": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
-          "verified": "2026-10-24",
-          "note": "La fuente no publica una estimación de CUP ni documenta la absorción de su ausencia en Cataluña. La cifra omitida no se convierte en cero; conserva el residual y el tratamiento pendiente del modelo."
+          "status": "absorbed",
+          "source": "https://www.elconfidencial.com/espana/2026-11-08/derecha-recupera-seis-escanos-izquierda-castigo-psoe-urda-cbtr_4460900/",
+          "verified": "2026-11-09",
+          "note": "El editor especifica Podemos solo en sus candidaturas separadas y las papeletas territoriales dentro de FA. La estimación corresponde a las listas del 29N sin otro trasvase CAT."
         }
       }
     }
   ],
   "previousReferenceResultSha256": "943697cf24cbdd49d7fb5b544ea9fcea49a5604ecace712179f89822585fe1f6",
-  "snapshotId": "promedio-2026-10-24-v1"
+  "snapshotId": "promedio-2026-11-09-v1",
+  "pollingBasis": "ballots-2026",
+  "effectiveTreatment": {
+    "PODEMOS": "absorbed",
+    "CUP": "absorbed"
+  }
 }

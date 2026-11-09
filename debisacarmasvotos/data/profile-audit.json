@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-09",
+  "profileVersion": "vox-tenerife-2026-11-09",
+  "province": "38",
+  "party": "VOX",
+  "candidacySource": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+  "candidacy": "Candidatura 8 del Congreso en Santa Cruz de Tenerife, encabezada por Alejandro Santiago Gómez Rodríguez. No se confunde con los pactos del Senado.",
+  "profileSource": "https://descargas.interior.gob.es/datasets/resultados_electorales/Elecciones-Congreso.xlsx",
+  "proxyElection": "2019-11-10",
+  "votes": 53491,
+  "candidateVotes": 460199,
+  "share": 0.11623449855388647,
+  "method": "Última general con candidatura de Vox en la provincia, noviembre de 2019. Se aplica su proporción entre candidaturas como semilla sobre el volumen provincial de 2023, reduciendo proporcionalmente las demás semillas. Después actúa la calibración nacional habitual. Es un proxy geográfico, no un resultado observado de 2026.",
+  "compatibility": "Solo escenarios con profileVersion. Los archivos anteriores sin esta clave conservan el perfil de 2023 y su ausencia de Vox en Tenerife. No se modifica model.json ni la historia."
+}
