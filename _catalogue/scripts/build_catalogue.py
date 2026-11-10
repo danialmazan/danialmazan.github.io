@@ -6,6 +6,7 @@ from html import escape
 import json
 from pathlib import Path
 import subprocess
+from web_analytics import SNIPPET, install
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "assets" / "portfolio"
@@ -202,12 +203,15 @@ def page(games):
 <a class="skip" href="#main">{text("Skip to content", "Saltar al contenido")}</a>
 {header(games)}<main id="main" class="shell">{content}</main>
 <footer class="site-footer shell"><span>Daniel Almazán</span><div><a href="https://twitter.com/danialmazan_">X / Twitter</a><span aria-hidden="true"> · </span><a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a></div></footer>
+{SNIPPET}
 </body></html>'''
     (OUTPUT / ("games.html" if games else "index.html")).write_text(html)
 
 if __name__ == "__main__":
     page(games=False)
     page(games=True)
+    for entry in OUTPUT.glob("*.html"):
+        install(entry)
     for license_file in SOURCE.joinpath("media").glob("*LICENSE.txt"):
         (ASSET_OUTPUT / license_file.name).write_bytes(license_file.read_bytes())
         MANIFEST.append("assets/portfolio/" + license_file.name)
