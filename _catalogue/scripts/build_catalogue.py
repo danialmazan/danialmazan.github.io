@@ -210,6 +210,7 @@ def page(games):
 if __name__ == "__main__":
     page(games=False)
     page(games=True)
+    # Standalone legacy maps/articles are also publishable entry points.
     for entry in OUTPUT.glob("*.html"):
         install(entry)
     for license_file in SOURCE.joinpath("media").glob("*LICENSE.txt"):

@@ -11,7 +11,7 @@ sections:
         topics: ["mobility", "places"]
         format: {en: "Mobility map", es: "Mapa de movilidad"}
         summary: {en: "See how Spain moves, hour by hour.", es: "Mira cómo se mueve España, hora a hora."}
-        last_published: "2026-11-06"
+        last_published: "2026-11-10"
         title: {en: "De aquí para allá", es: "De aquí para allá"}
         description:
           en: "Watch how Spain moves, hour by hour, in a living map of trips between municipalities built from the Ministry of Transport’s open mobility data."
@@ -168,7 +168,7 @@ sections:
         topics: ["people", "places"]
         format: {en: "Names explorer", es: "Explorador de nombres"}
         summary: {en: "Find out how many people share your name.", es: "Descubre cuánta gente se llama como tú."}
-        last_published: "2026-11-07"
+        last_published: "2026-11-09"
         title: {en: "Di mi nombre", es: "Di mi nombre"}
         description:
           en: "Search any first name or surname in Spain: how many people have it, where they live, how it has changed over generations, and which surnames define each province."
@@ -176,6 +176,18 @@ sections:
         url: "https://danielalmazan.com/di-mi-nombre/"
         url_en: "https://danielalmazan.com/di-mi-nombre/en/"
         url_es: "https://danielalmazan.com/di-mi-nombre/"
+      - id: riesgo-laboral
+        topics: ["people", "places"]
+        format: {en: "Data story", es: "Historia con datos"}
+        summary: {en: "See where workplace risk is, and how it has changed.", es: "Descubre dónde está el riesgo laboral y cómo ha cambiado."}
+        last_published: "2026-11-10"
+        title: {en: "Riesgo Laboral", es: "Riesgo Laboral"}
+        description:
+          en: "Workplace accidents in Spain: how risk has changed since 2006, which jobs and places are most dangerous, what happens in an accident and how Spain compares with Europe, with official Ministry of Labour and Eurostat data."
+          es: "Los accidentes de trabajo en España: cómo ha cambiado el riesgo desde 2006, qué actividades y lugares son más peligrosos, qué ocurre en un accidente y cómo estamos respecto a Europa, con datos oficiales del Ministerio de Trabajo y Eurostat."
+        url: "https://danielalmazan.com/riesgo-laboral/"
+        url_en: "https://danielalmazan.com/riesgo-laboral/en/"
+        url_es: "https://danielalmazan.com/riesgo-laboral/"
       - id: where-do-you-fit-spain
         topics: ["people"]
         format: {en: "Interactive tool", es: "Herramienta interactiva"}
@@ -246,7 +258,7 @@ sections:
         topics: ["elections"]
         format: {en: "Election simulator", es: "Simulador electoral"}
         summary: {en: "Adjust polls and model seats in Spain’s Congress.", es: "Ajusta las encuestas y simula escaños en el Congreso."}
-        last_published: "2026-10-24"
+        last_published: "2026-11-09"
         title: {en: "Debí sacar más votos", es: "Debí sacar más votos"}
         description:
           en: "Explore polls and model votes, seats, joint lists and withdrawals for Spain’s Congress. In Spanish."
@@ -337,7 +349,7 @@ sections:
         topics: ["climate", "places"]
         format: {en: "Temperature atlas", es: "Atlas de temperaturas"}
         summary: {en: "Explore Spain’s changing temperatures, station by station.", es: "Explora cómo cambia la temperatura en España, estación por estación."}
-        last_published: "2026-11-07"
+        last_published: "2026-11-08"
         title: {en: "Bochorno histórico", es: "Bochorno histórico"}
         description:
           en: "Explore AEMET temperature observations from 1961 to 2025 across 96 stations, with annual trends, monthly stripes, daily records and anomaly distributions."
@@ -349,7 +361,7 @@ sections:
         topics: ["energy"]
         format: {en: "Energy explorer", es: "Explorador energético"}
         summary: {en: "See how Spain generates its electricity.", es: "Descubre cómo se genera la electricidad en España."}
-        last_published: "2026-11-07"
+        last_published: "2026-11-09"
         title: {en: "E-Spain", es: "E-Spain"}
         description:
           en: "An analysis of the technologies and patterns of electricity generation in Spain"
@@ -368,7 +380,7 @@ sections:
         url: "https://danielalmazan.com/salary-calculator-2026/"
 
 homepage:
-  featured: ["di-mi-nombre", "bochorno-historico", "de-aqui-para-alla"]
+  featured: ["riesgo-laboral", "di-mi-nombre", "bochorno-historico"]
 topics:
   all: {en: "All", es: "Todo"}
   places: {en: "Places", es: "Lugares"}
