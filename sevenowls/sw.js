@@ -1,6 +1,6 @@
 // Replace older offline-capable workers and remove their encrypted caches.
 const root = new URL("./", self.location);
-const payload = "game.4cb8eabea554f7c44197.bin";
+const payload = "game.89f65b67f5e179ca3891.bin";
 const prefix = "sevenowls-encrypted-" + root.pathname + "-";
 self.addEventListener("install", (event) => event.waitUntil(self.skipWaiting()));
 self.addEventListener("activate", (event) =>
