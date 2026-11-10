@@ -36,6 +36,20 @@
   <body>
     <div id="root"><p class="initial-loading">Loading Di mi nombre…</p></div>
     <noscript>Di mi nombre needs JavaScript for its interactive charts. The data come from <a href="https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&amp;cid=1254736177009&amp;menu=resultados&amp;idp=1254735572981">INE</a>, the Spanish statistics office.</noscript>
-  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7e557ad432574707b8ba15bdd75c688e"}'></script><!-- End Cloudflare Web Analytics -->
+  <!-- Cloudflare Web Analytics -->
+<script id="cf-analytics-loader">
+(() => {
+  try {
+    if (localStorage.getItem("exclude_cf_analytics") === "1") return;
+  } catch { /* Storage unavailable: retain normal analytics. */ }
+  if (document.querySelector('script[src^="https://static.cloudflareinsights.com/beacon.min.js"]')) return;
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.setAttribute("data-cf-beacon", '{"token": "7e557ad432574707b8ba15bdd75c688e"}');
+  document.body.appendChild(beacon);
+})();
+</script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
