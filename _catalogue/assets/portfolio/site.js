@@ -80,6 +80,9 @@
       node.setAttribute("aria-label", label);
       if (node.matches("time")) node.title = label;
     }
+    for (const node of document.querySelectorAll("[data-tip-en]")) {
+      node.dataset.tip = node.getAttribute("data-tip-" + language);
+    }
     for (const node of document.querySelectorAll("[data-link-en]")) {
       node.href = node.getAttribute("data-link-" + language);
     }

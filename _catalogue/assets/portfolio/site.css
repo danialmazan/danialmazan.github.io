@@ -1088,3 +1088,202 @@ nav a:hover {
 html {
   scroll-padding-top: 100px;
 }
+
+/* Ko-fi SupportButton: an outlined pill that borrows the site's type and tokens. */
+.identity {
+  --support-warm: #a8642f;
+  --support-tint: rgba(168, 100, 47, .08);
+}
+:root[data-theme="dark"] .identity {
+  --support-warm: #e2a877;
+  --support-tint: rgba(226, 168, 119, .1);
+}
+.support-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 15px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.site-footer .support-button:hover {
+  text-decoration: none;
+}
+.support-icon {
+  flex: none;
+  overflow: visible;
+}
+.support-cup,
+.support-steam {
+  transform-box: fill-box;
+  transition: transform .22s ease, opacity .22s ease;
+}
+.support-cup {
+  transform-origin: 50% 100%;
+}
+.support-steam {
+  opacity: .55;
+}
+.support-button:hover,
+.support-button:focus-visible {
+  background: var(--support-tint);
+  border-color: var(--support-warm);
+}
+.support-button:hover .support-icon,
+.support-button:focus-visible .support-icon {
+  color: var(--support-warm);
+}
+.support-button:hover .support-cup {
+  transform: rotate(-7deg);
+}
+.support-button:hover .support-steam {
+  opacity: 1;
+  transform: translateY(-1.5px);
+}
+.support-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.support-button:active {
+  background: var(--support-tint);
+}
+/* Header: icon-only circular pill, sized like the theme toggle. */
+.support-button--icon {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0;
+}
+.support-button--icon::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: .72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: opacity .18s ease, transform .18s ease;
+}
+.support-button--icon:focus-visible::after {
+  opacity: 1;
+  transform: none;
+}
+@media (hover: hover) {
+  .support-button--icon:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+}
+.site-footer {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+@media (max-width: 720px) {
+  .support-button--icon {
+    width: 35px;
+    height: 36px;
+    min-height: 36px;
+  }
+}
+@media (max-width: 560px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+/* Phones: make room for the Ko-fi icon without overflowing the sticky header. */
+.nav-icon {
+  display: none;
+  flex: none;
+}
+@media (max-width: 480px) {
+  .header-inner {
+    gap: 6px;
+  }
+  .preferences {
+    gap: 4px;
+  }
+  /* Games / Projects becomes an icon; its label stays available to screen readers. */
+  .nav-games {
+    justify-content: center;
+    width: 35px;
+    padding: 0;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .nav-games > span[aria-hidden] {
+    display: none;
+  }
+  .nav-games .nav-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .languages button {
+    min-width: 26px;
+  }
+  .support-button--icon,
+  .identity .theme-button {
+    width: 32px;
+    min-width: 32px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .support-button,
+  .support-button *,
+  .support-button::after {
+    transition: none !important;
+  }
+  .support-button:hover .support-cup,
+  .support-button:hover .support-steam {
+    transform: none;
+  }
+}
+/* Smallest phones (≤359 px): tighter spacing so the wordmark and all five controls still fit. */
+@media (max-width: 359px) {
+  .header-inner {
+    gap: 3px;
+  }
+  .identity .brand {
+    gap: 3px;
+  }
+  .preferences {
+    gap: 3px;
+  }
+  .nav-games {
+    width: 32px;
+  }
+  .languages button {
+    min-width: 24px;
+  }
+}

@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "assets" / "portfolio"
 OUTPUT = ROOT / "html"
 ASSET_OUTPUT = OUTPUT / "assets" / "portfolio"
+# Ko-fi support link used by the header and footer SupportButton. Update it here only.
+KOFI_URL = "https://ko-fi.com/danialmazan"
 CATALOG = json.loads(subprocess.check_output(
     ["Rscript", str(ROOT / "scripts" / "export_catalogue.R")], text=True
 ))
@@ -135,14 +137,50 @@ def card(pid, kind="project"):
 {text("Play", "Jugar", extra='class="play"') if kind == "game" else ""}
 </div><span class="item-arrow" aria-hidden="true">↗</span></a></article>'''
 
+COFFEE_ICON = (
+    '<svg class="support-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" '
+    'stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'
+    '<g class="support-steam"><path d="M8 2.8c-.7.8.7 1.5 0 2.4"/><path d="M11.5 2.8c-.7.8.7 1.5 0 2.4"/></g>'
+    '<g class="support-cup"><path d="M4 8.5h11v5.2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/>'
+    '<path d="M15 10h1.6a2.4 2.4 0 0 1 0 4.8H15"/><path d="M3.5 21h12"/></g></svg>'
+)
+
+def support_button(compact=False):
+    """Ko-fi SupportButton: icon-only in the header, full outlined pill in the footer."""
+    en, es = "Support these projects", "Apoya estos proyectos"
+    label_en, label_es = f"{en} on Ko-fi (opens in a new tab)", f"{es} en Ko-fi (se abre en una pestaña nueva)"
+    if compact:
+        return (
+            f'<a class="support-button support-button--icon" href="{KOFI_URL}" target="_blank" rel="noopener noreferrer" '
+            f'aria-label="{escape(label_en)}" {attributes("label", label_en, label_es)} '
+            f'{attributes("tip", en, es)} data-tip="{en}">{COFFEE_ICON}</a>'
+        )
+    return (
+        f'<a class="support-button" href="{KOFI_URL}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="{escape(label_en)}" {attributes("label", label_en, label_es)}>'
+        + COFFEE_ICON + text(en, es, extra='class="support-text"') + '</a>'
+    )
+
 def header(games):
     destination = "/" if games else "/games/"
     label = ("Projects", "Proyectos") if games else ("Games", "Juegos")
+    # Narrow screens show an icon instead of the label (dice for Games, grid for Projects).
+    nav_icon = (
+        '<svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" '
+        'stroke-width="1.65" aria-hidden="true" focusable="false">'
+        + ('<rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/>'
+           '<rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/>'
+           if games else
+           '<rect x="4" y="4" width="16" height="16" rx="3"/><g fill="currentColor" stroke="none">'
+           '<circle cx="8.5" cy="8.5" r="1.4"/><circle cx="15.5" cy="8.5" r="1.4"/><circle cx="12" cy="12" r="1.4"/>'
+           '<circle cx="8.5" cy="15.5" r="1.4"/><circle cx="15.5" cy="15.5" r="1.4"/></g>')
+        + '</svg>'
+    )
     return f'''<header class="site-header"><div class="shell header-inner">
 <a class="brand" href="/" data-local-link><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 6h9v20H6zM17 6a9 9 0 0 1 9 9h-9z"/><path fill="currentColor" fill-opacity=".42" d="M17 17h9a9 9 0 0 1-9 9z"/></svg>Daniel Almazán</a>
-<nav aria-label="Sections" {attributes("label", "Sections", "Secciones")}><a class="nav-games" href="{destination}" data-local-link>{text(*label)} <span aria-hidden="true">↗</span></a></nav>
+<nav aria-label="Sections" {attributes("label", "Sections", "Secciones")}><a class="nav-games" href="{destination}" data-local-link>{nav_icon}{text(*label, extra='class="nav-label"')} <span aria-hidden="true">↗</span></a></nav>
 <div class="preferences"><div class="languages" role="group" aria-label="Language / Idioma"><button type="button" data-language="en" aria-label="English" aria-pressed="true">EN</button><button type="button" data-language="es" aria-label="Español" aria-pressed="false">ES</button></div>
-<button type="button" class="theme-button" aria-pressed="false" aria-label="Dark mode" {attributes("label", "Dark mode", "Modo oscuro")}><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M21 13.5A9.2 9.2 0 0 1 10.5 3 9.1 9.1 0 1 0 21 13.5Z"/></svg></button></div>
+<button type="button" class="theme-button" aria-pressed="false" aria-label="Dark mode" {attributes("label", "Dark mode", "Modo oscuro")}><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M21 13.5A9.2 9.2 0 0 1 10.5 3 9.1 9.1 0 1 0 21 13.5Z"/></svg></button>{support_button(compact=True)}</div>
 </div></header>'''
 
 def homepage():
@@ -202,7 +240,7 @@ def page(games):
 </head><body class="editorial identity identity-cobalt{' games-page' if games else ''}">
 <a class="skip" href="#main">{text("Skip to content", "Saltar al contenido")}</a>
 {header(games)}<main id="main" class="shell">{content}</main>
-<footer class="site-footer shell"><span>Daniel Almazán</span><div><a href="https://twitter.com/danialmazan_">X / Twitter</a><span aria-hidden="true"> · </span><a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a></div></footer>
+<footer class="site-footer shell"><span>Daniel Almazán</span><div class="footer-links"><span><a href="https://twitter.com/danialmazan_">X / Twitter</a><span aria-hidden="true"> · </span><a href="https://uk.linkedin.com/in/danielalmazan">LinkedIn</a></span>{support_button()}</div></footer>
 {SNIPPET}
 </body></html>'''
     (OUTPUT / ("games.html" if games else "index.html")).write_text(html)
