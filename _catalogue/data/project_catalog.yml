@@ -309,7 +309,7 @@ sections:
         topics: ["games"]
         format: {en: "Geography game", es: "Juego de geografía"}
         summary: {en: "Recognise the silhouette, then place it on the map.", es: "Reconoce la silueta y sitúala en el mapa."}
-        last_published: "2026-10-14"
+        last_published: "2026-11-13"
         title: {en: "The Mapfather", es: "The Mapfather"}
         description:
           en: "Guess the country from its silhouette, then place it on a map. A new challenge every day."
@@ -345,6 +345,18 @@ sections:
       en: "Other projects and practical interactive tools"
       es: "Otros proyectos y herramientas interactivas prácticas"
     projects:
+      - id: chip-happens
+        topics: ["technology"]
+        format: {en: "Interactive documentary", es: "Documental interactivo"}
+        summary: {en: "From a single transistor to chips with tens of billions.", es: "De un solo transistor a chips con decenas de miles de millones."}
+        last_published: "2026-11-13"
+        title: {en: "Chip Happens", es: "Chip Happens"}
+        description:
+          en: "An interactive documentary about transistors and chips: how they work, how small they have become, why they stopped getting faster, what they cost, where they are made and how AI is changing them."
+          es: "Un documental interactivo sobre transistores y chips: cómo funcionan, cuánto se han reducido, por qué dejaron de ganar velocidad, cuánto cuestan, dónde se fabrican y cómo los está cambiando la IA."
+        url: "https://danielalmazan.com/chip-happens/"
+        url_en: "https://danielalmazan.com/chip-happens/en/"
+        url_es: "https://danielalmazan.com/chip-happens/"
       - id: bochorno-historico
         topics: ["climate", "places"]
         format: {en: "Temperature atlas", es: "Atlas de temperaturas"}
@@ -380,7 +392,7 @@ sections:
         url: "https://danielalmazan.com/salary-calculator-2026/"
 
 homepage:
-  featured: ["riesgo-laboral", "di-mi-nombre", "bochorno-historico"]
+  featured: ["chip-happens", "riesgo-laboral", "di-mi-nombre"]
 topics:
   all: {en: "All", es: "Todo"}
   places: {en: "Places", es: "Lugares"}
@@ -389,4 +401,5 @@ topics:
   elections: {en: "Elections", es: "Elecciones"}
   climate: {en: "Climate", es: "Clima"}
   energy: {en: "Energy", es: "Energía"}
+  technology: {en: "Technology", es: "Tecnología"}
   games: {en: "Games", es: "Juegos"}
