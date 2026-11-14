@@ -15,8 +15,10 @@
  *                                        credit strip (danielalmazan.com · credit · project) is drawn
  *   data-accent       — optional CSS colour for the cup and hover state
  *
- * Pages normally declare a [data-dani-support] slot. Only with data-placement="auto" on the script tag
- * does it insert one itself (before the page's last <footer>, or at the end of <body>) when none exists.
+ * Placement: either declare a [data-dani-support] slot, or put data-placement="auto" on the script tag.
+ * Auto places the band just before the page's last visible <footer> (matching its width and side padding),
+ * and follows it if an app draws the footer late. Tune with data-anchor="<css selector>" and
+ * data-position="before|prepend|append". A declared slot always wins over auto placement.
  * Fonts and colours are inherited from the host page, so it looks native everywhere.
  * Language follows <html lang>, and updates live when the page switches language.
  */
@@ -180,20 +182,44 @@
     new MutationObserver(queue).observe(document.documentElement, {
       attributes: true, attributeFilter: ["lang", "data-theme", "class"], childList: true, subtree: true,
     });
-    // Opt-in only (data-placement="auto" on the script tag): with no slot once the page has loaded,
-    // insert one before the last <footer>. Pages that declare a slot never get an extra band.
+    // Opt-in only (data-placement="auto" on the script tag): place the band next to the page footer,
+    // matching its width and side padding. It keeps tracking the footer, so apps that draw (or redraw)
+    // their footer late still get the band in the right place. Pages that declare a slot never get one.
     if (read(script, "placement") !== "auto") return;
-    const autoInsert = () => setTimeout(() => {
-      if (document.querySelector("[data-dani-support]")) return;
-      const slot = document.createElement("div");
-      slot.setAttribute("data-dani-support", "");
-      slot.setAttribute("data-dsf-auto", "");
-      const footers = document.querySelectorAll("footer");
-      const anchor = footers[footers.length - 1];
-      anchor ? anchor.before(slot) : document.body.appendChild(slot);
-      refresh(slot);
-    }, 0);
-    document.readyState === "complete" ? autoInsert() : addEventListener("load", autoInsert, { once: true });
+    let auto = null;
+    const place = () => {
+      if (document.querySelector("[data-dani-support]:not([data-dsf-auto])")) return;
+      const selector = read(script, "anchor");
+      const candidates = [...document.querySelectorAll(selector || "footer")]
+        .filter((el) => el.getClientRects().length && !el.closest("dialog,[hidden],[aria-hidden='true']"));
+      const anchor = candidates[candidates.length - 1];
+      if (!anchor) return;
+      const where = read(script, "position") || "before"; // before | prepend | append
+      if (!auto) {
+        auto = document.createElement("div");
+        auto.setAttribute("data-dani-support", "");
+        auto.setAttribute("data-dsf-auto", "");
+      }
+      const placed = where === "prepend" ? anchor.firstElementChild === auto
+        : where === "append" ? anchor.lastElementChild === auto
+        : auto.nextElementSibling === anchor;
+      if (!placed) {
+        if (where === "prepend") anchor.prepend(auto);
+        else if (where === "append") anchor.append(auto);
+        else anchor.before(auto);
+      }
+      if (where === "before") {
+        // Line the band up with the footer's own content edges.
+        const cs = getComputedStyle(anchor);
+        Object.assign(auto.style, {
+          maxWidth: cs.maxWidth, marginLeft: cs.marginLeft, marginRight: cs.marginRight,
+          paddingLeft: cs.paddingLeft, paddingRight: cs.paddingRight, boxSizing: cs.boxSizing,
+        });
+      }
+      refresh(auto);
+    };
+    const settle = () => { place(); new MutationObserver(() => requestAnimationFrame(place)).observe(document.body, { childList: true, subtree: true }); };
+    document.readyState === "complete" ? settle() : addEventListener("load", settle, { once: true });
   }
 
   document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", mount) : mount();
