@@ -15,7 +15,8 @@
  *                                        credit strip (danielalmazan.com · credit · project) is drawn
  *   data-accent       — optional CSS colour for the cup and hover state
  *
- * Without a slot, the band is inserted just before the page's last <footer>, or at the end of <body>.
+ * Pages normally declare a [data-dani-support] slot. Only with data-placement="auto" on the script tag
+ * does it insert one itself (before the page's last <footer>, or at the end of <body>) when none exists.
  * Fonts and colours are inherited from the host page, so it looks native everywhere.
  * Language follows <html lang>, and updates live when the page switches language.
  */
@@ -153,7 +154,13 @@
     slot.__dsfKey = key;
     render(slot);
   }
-  const refreshAll = () => document.querySelectorAll("[data-dani-support]").forEach(refresh);
+  const refreshAll = () => {
+    // A declared slot always wins over one this script inserted on its own.
+    if (document.querySelector("[data-dani-support]:not([data-dsf-auto])")) {
+      document.querySelectorAll("[data-dani-support][data-dsf-auto]").forEach((slot) => slot.remove());
+    }
+    document.querySelectorAll("[data-dani-support]").forEach(refresh);
+  };
 
   function mount() {
     if (!document.getElementById("dsf-style")) {
@@ -173,11 +180,14 @@
     new MutationObserver(queue).observe(document.documentElement, {
       attributes: true, attributeFilter: ["lang", "data-theme", "class"], childList: true, subtree: true,
     });
-    // No slot at all once the page has loaded: insert one before the last <footer>.
+    // Opt-in only (data-placement="auto" on the script tag): with no slot once the page has loaded,
+    // insert one before the last <footer>. Pages that declare a slot never get an extra band.
+    if (read(script, "placement") !== "auto") return;
     const autoInsert = () => setTimeout(() => {
       if (document.querySelector("[data-dani-support]")) return;
       const slot = document.createElement("div");
       slot.setAttribute("data-dani-support", "");
+      slot.setAttribute("data-dsf-auto", "");
       const footers = document.querySelectorAll("footer");
       const anchor = footers[footers.length - 1];
       anchor ? anchor.before(slot) : document.body.appendChild(slot);
