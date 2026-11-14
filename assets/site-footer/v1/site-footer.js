@@ -15,6 +15,7 @@
  *                                        credit strip (danielalmazan.com · credit · project) is drawn
  *   data-accent       — optional CSS colour for the cup and hover state
  *   data-gap          — compact only: space above the pill (CSS length, default 14px)
+ *                       (GAPS below sets it by page path, for pages whose HTML may be cached offline)
  *
  * Placement: either declare a [data-dani-support] slot, or put data-placement="auto" on the script tag.
  * Auto places the band just before the page's last visible <footer> (matching its width and side padding),
@@ -25,6 +26,9 @@
  */
 (() => {
   const KOFI = "https://ko-fi.com/danialmazan";
+  // Compact-pill gap by page path. Lives here (not only in each page's data-gap) because offline games
+  // serve their saved index.html first, so returning players can keep an old tag for a long time.
+  const GAPS = { "/flagbag/": "22px", "/mapfather/": "22px" };
   const HOME = "https://danielalmazan.com/";
   const script = document.currentScript;
   const COPY = {
@@ -145,7 +149,7 @@
     const dark = luminance(ink) > 0.4;
     slot.style.setProperty("--dsf-ink", ink);
     slot.style.setProperty("--dsf-accent", option(slot, "accent") || (dark ? "#e2a877" : "#a8642f"));
-    const gap = option(slot, "gap");
+    const gap = option(slot, "gap") || GAPS[location.pathname.replace(/index\.html$/, "")];
     if (gap) slot.style.setProperty("--dsf-gap", gap);
     else slot.style.removeProperty("--dsf-gap");
   }
