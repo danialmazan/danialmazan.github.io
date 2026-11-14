@@ -14,6 +14,7 @@
  *   data-credit-es / data-credit-en    — optional credit line; when present a standard
  *                                        credit strip (danielalmazan.com · credit · project) is drawn
  *   data-accent       — optional CSS colour for the cup and hover state
+ *   data-gap          — compact only: space above the pill (CSS length, default 14px)
  *
  * Placement: either declare a [data-dani-support] slot, or put data-placement="auto" on the script tag.
  * Auto places the band just before the page's last visible <footer> (matching its width and side padding),
@@ -85,7 +86,7 @@
 .dsf-compact{display:inline-flex;align-items:center;gap:5px;text-decoration:none!important;font-size:.76rem;line-height:1.2;font-weight:600;color:var(--dsf-ink)!important;
   white-space:nowrap;border-radius:999px;padding:2px 9px 2px 7px;border:1px solid color-mix(in srgb,currentColor 22%,transparent);
   transition:background-color .2s ease,border-color .2s ease}
-.dsf:has(>.dsf-compact){display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dsf:has(>.dsf-compact){display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:var(--dsf-gap,14px)}
 .dsf-lead{font-size:.76rem;color:var(--dsf-muted)}
 .dsf-compact .dsf-cup{width:15px;height:15px;color:var(--dsf-accent);overflow:visible}
 .dsf-compact:hover,.dsf-compact:focus-visible{border-color:var(--dsf-accent);background:var(--dsf-tint)}
@@ -144,6 +145,9 @@
     const dark = luminance(ink) > 0.4;
     slot.style.setProperty("--dsf-ink", ink);
     slot.style.setProperty("--dsf-accent", option(slot, "accent") || (dark ? "#e2a877" : "#a8642f"));
+    const gap = option(slot, "gap");
+    if (gap) slot.style.setProperty("--dsf-gap", gap);
+    else slot.style.removeProperty("--dsf-gap");
   }
 
   // Re-render only when something visible changed (language, colours, options), so host re-renders
