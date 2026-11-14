@@ -80,9 +80,6 @@
       node.setAttribute("aria-label", label);
       if (node.matches("time")) node.title = label;
     }
-    for (const node of document.querySelectorAll("[data-tip-en]")) {
-      node.dataset.tip = node.getAttribute("data-tip-" + language);
-    }
     for (const node of document.querySelectorAll("[data-link-en]")) {
       node.href = node.getAttribute("data-link-" + language);
     }
@@ -154,6 +151,45 @@
       event.preventDefault();
       search.focus();
     });
+  }
+
+  // Floating Ko-fi prompt: visible after the page title scrolls under the header,
+  // hidden again as the footer pill comes into view (with a one-off glow handoff).
+  const floatButton = document.querySelector(".support-float");
+  const pageTitle = document.querySelector("main h1");
+  const footerSupport = document.querySelector(".site-footer .support-button");
+  if (floatButton && pageTitle && footerSupport && "IntersectionObserver" in window) {
+    const headerHeight = document.querySelector(".site-header")?.offsetHeight || 0;
+    let pastTitle = false;
+    let nearFooter = false;
+    let typing = false;
+    let shown = false;
+    const updateFloat = () => {
+      const visible = pastTitle && !nearFooter && !typing;
+      if (visible === shown) return;
+      if (shown && nearFooter) {
+        footerSupport.classList.remove("is-handoff");
+        void footerSupport.offsetWidth; // Restart the glow if it is already mid-animation.
+        footerSupport.classList.add("is-handoff");
+      }
+      shown = visible;
+      floatButton.classList.toggle("is-visible", visible);
+      floatButton.setAttribute("aria-hidden", String(!visible));
+      floatButton.tabIndex = visible ? 0 : -1;
+    };
+    footerSupport.addEventListener("animationend", () => footerSupport.classList.remove("is-handoff"));
+    new IntersectionObserver(([entry]) => {
+      pastTitle = !entry.isIntersecting && entry.boundingClientRect.top < headerHeight;
+      updateFloat();
+    }, { rootMargin: `-${headerHeight}px 0px 0px 0px` }).observe(pageTitle);
+    new IntersectionObserver(([entry]) => {
+      nearFooter = entry.isIntersecting || entry.boundingClientRect.top < 0;
+      updateFloat();
+    }, { rootMargin: "0px 0px 80px 0px" }).observe(footerSupport);
+    if (search) {
+      search.addEventListener("focus", () => { typing = matchMedia("(max-width: 560px)").matches; updateFloat(); });
+      search.addEventListener("blur", () => { typing = false; updateFloat(); });
+    }
   }
 
   setLanguage(preferredLanguage());

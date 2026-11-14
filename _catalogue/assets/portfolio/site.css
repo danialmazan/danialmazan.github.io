@@ -1157,42 +1157,6 @@ html {
 .support-button:active {
   background: var(--support-tint);
 }
-/* Header: icon-only circular pill, sized like the theme toggle. */
-.support-button--icon {
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  min-height: 40px;
-  padding: 0;
-}
-.support-button--icon::after {
-  content: attr(data-tip);
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  padding: 6px 9px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--surface);
-  color: var(--ink);
-  font-size: .72rem;
-  font-weight: 600;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(-3px);
-  transition: opacity .18s ease, transform .18s ease;
-}
-.support-button--icon:focus-visible::after {
-  opacity: 1;
-  transform: none;
-}
-@media (hover: hover) {
-  .support-button--icon:hover::after {
-    opacity: 1;
-    transform: none;
-  }
-}
 .site-footer {
   flex-wrap: wrap;
   align-items: center;
@@ -1203,13 +1167,6 @@ html {
   align-items: center;
   gap: 12px 20px;
 }
-@media (max-width: 720px) {
-  .support-button--icon {
-    width: 35px;
-    height: 36px;
-    min-height: 36px;
-  }
-}
 @media (max-width: 560px) {
   .site-footer {
     flex-direction: column;
@@ -1217,11 +1174,7 @@ html {
     gap: 12px;
   }
 }
-/* Phones: make room for the Ko-fi icon without overflowing the sticky header. */
-.nav-icon {
-  display: none;
-  flex: none;
-}
+/* Phones: keep the sticky header controls on one row. */
 @media (max-width: 480px) {
   .header-inner {
     gap: 6px;
@@ -1229,30 +1182,9 @@ html {
   .preferences {
     gap: 4px;
   }
-  /* Games / Projects becomes an icon; its label stays available to screen readers. */
-  .nav-games {
-    justify-content: center;
-    width: 35px;
-    padding: 0;
-  }
-  .nav-icon {
-    display: block;
-  }
-  .nav-games > span[aria-hidden] {
-    display: none;
-  }
-  .nav-games .nav-label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
   .languages button {
     min-width: 26px;
   }
-  .support-button--icon,
   .identity .theme-button {
     width: 32px;
     min-width: 32px;
@@ -1269,7 +1201,7 @@ html {
     transform: none;
   }
 }
-/* Smallest phones (≤359 px): tighter spacing so the wordmark and all five controls still fit. */
+/* Smallest phones (≤359 px): tighter spacing so the wordmark and all controls still fit. */
 @media (max-width: 359px) {
   .header-inner {
     gap: 3px;
@@ -1280,10 +1212,160 @@ html {
   .preferences {
     gap: 3px;
   }
+  /* The word label stays; only the decorative arrow goes. */
   .nav-games {
-    width: 32px;
+    padding: 0 4px;
+  }
+  .identity .theme-button {
+    width: 30px;
+    min-width: 30px;
+  }
+  .nav-games > span[aria-hidden] {
+    display: none;
   }
   .languages button {
     min-width: 24px;
+  }
+}
+
+/* Floating Ko-fi prompt: appears once the page title scrolls away and hands off to the footer pill. */
+.support-float {
+  --float-ease: cubic-bezier(.22, .61, .36, 1);
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 20px 10px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.15;
+  white-space: nowrap;
+  box-shadow: 0 10px 28px -14px rgba(33, 31, 29, .35), 0 2px 6px -3px rgba(33, 31, 29, .12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(14px) scale(.97);
+  transform-origin: 100% 100%;
+  transition:
+    opacity .5s var(--float-ease),
+    transform .5s var(--float-ease),
+    visibility 0s linear .5s,
+    background-color .2s ease,
+    border-color .2s ease;
+}
+.support-float.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: none;
+  transition:
+    opacity .5s var(--float-ease),
+    transform .5s var(--float-ease),
+    visibility 0s linear 0s,
+    background-color .2s ease,
+    border-color .2s ease;
+}
+:root[data-theme="dark"] .support-float {
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .7), 0 2px 6px -3px rgba(0, 0, 0, .4);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .support-float {
+    box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .7), 0 2px 6px -3px rgba(0, 0, 0, .4);
+  }
+}
+.support-float .support-icon {
+  width: 21px;
+  height: 21px;
+  color: var(--support-warm);
+}
+.support-float-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.support-float-kicker {
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 500;
+}
+.support-float-cta {
+  font-size: .88rem;
+  font-weight: 650;
+  letter-spacing: -.005em;
+}
+.support-float:hover,
+.support-float:focus-visible {
+  border-color: var(--support-warm);
+  background: linear-gradient(var(--support-tint), var(--support-tint)), var(--surface);
+}
+.support-float:hover .support-cup {
+  transform: rotate(-7deg);
+}
+.support-float:hover .support-steam {
+  opacity: 1;
+  transform: translateY(-1.5px);
+}
+.support-float:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+/* Handoff: the footer pill glows once as the floating prompt fades away. */
+@keyframes support-handoff {
+  0% { border-color: var(--line); background-color: transparent; }
+  30% { border-color: var(--support-warm); background-color: var(--support-tint); }
+  100% { border-color: var(--line); background-color: transparent; }
+}
+.site-footer .support-button.is-handoff {
+  animation: support-handoff 1.4s var(--float-ease, ease) both;
+}
+.site-footer .support-button.is-handoff .support-icon {
+  color: var(--support-warm);
+  transition: color 1.2s ease .4s;
+}
+/* Phones: one compact line, the question moves to the accessible label only. */
+@media (max-width: 560px) {
+  .support-float {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 15px 0 12px;
+  }
+  .support-float .support-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .support-float-kicker {
+    display: none;
+  }
+  .support-float-cta {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .support-float,
+  .support-float.is-visible {
+    transform: none;
+    transition: opacity .3s linear, visibility 0s linear .3s;
+  }
+  .support-float.is-visible {
+    transition: opacity .3s linear, visibility 0s;
+  }
+  .support-float *,
+  .site-footer .support-button.is-handoff,
+  .site-footer .support-button.is-handoff * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .support-float:hover .support-cup,
+  .support-float:hover .support-steam {
+    transform: none;
   }
 }
