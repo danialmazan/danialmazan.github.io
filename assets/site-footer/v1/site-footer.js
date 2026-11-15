@@ -23,6 +23,12 @@
  * data-position="before|prepend|append". A declared slot always wins over auto placement.
  * Fonts and colours are inherited from the host page, so it looks native everywhere.
  * Language follows <html lang>, and updates live when the page switches language.
+ *
+ * Home link: a small "◧ Daniel Almazán /" crumb next to the project's own title, so visitors can get back
+ * to danielalmazan.com without scrolling to the footer. Where it goes on each page is in HOME_PAGES below
+ * (keyed by path), so it can be tuned here without touching the project repos. Per-page overrides on the
+ * script tag: data-home="off", data-home-anchor="<css selector>", data-home-mode="inline|above",
+ * data-home-label="off" (mark only).
  */
 (() => {
   const KOFI = "https://ko-fi.com/danialmazan";
@@ -39,6 +45,7 @@
       compact: "Invítame a un café",
       lead: "¿Te ha gustado?",
       label: "Invítame a un café en Ko-fi (se abre en una pestaña nueva)",
+      home: "Daniel Almazán: todos los proyectos",
     },
     en: {
       question: (p) => (p ? `Enjoyed ${p}?` : "Enjoyed this project?"),
@@ -47,8 +54,58 @@
       compact: "Buy me a coffee",
       lead: "Enjoyed it?",
       label: "Buy me a coffee on Ko-fi (opens in a new tab)",
+      home: "Daniel Almazán: all projects",
     },
   };
+  // Where the home crumb goes on each project page (longest matching path prefix wins).
+  //   inline — before the project's brand in its header row; label hides on narrow screens
+  //   above  — a small line above a large hero title
+  //   false  — no crumb (the page already links home in its header, or has no header to join)
+  // A list means "the first of these that is showing" (the crumb moves when a sticky bar appears).
+  const HOME_PAGES = {
+    "/de-aqui-para-alla/": [
+      { anchor: "nav.compact-bar[data-shown='true'] > a.cb-home", mode: "inline" },
+      { anchor: ".hero-head > .hero-title", mode: "above" },
+    ],
+    "/apretados/": { anchor: "main#top > header h1", mode: "above" },
+    "/kilometro-cero/": { anchor: "header.masthead > a.brand", mode: "inline" },
+    "/density-madrid-london/": { anchor: "header.masthead > .masthead-meta", mode: "inline" },
+    "/density-europe/": false,
+    "/madrid-rail-density/": false,
+    "/madrid-income-rail-access/": false,
+    "/espana-desde-2018/": { anchor: "header#top > a.wordmark", mode: "inline" },
+    "/asi-somos/": { anchor: "section.opening > .opening-title-row", mode: "above" },
+    "/ocupados/": { anchor: "header.masthead .identity > .brand-heading", mode: "inline" },
+    "/tu-rincon/": { anchor: "header.site-header > .brand-button", mode: "inline" },
+    "/di-mi-nombre/": { anchor: "header.hero > .hero-row", mode: "above" },
+    "/riesgo-laboral/": { anchor: "header.topbar > a.brand", mode: "inline" },
+    "/where-do-you-fit-spain/": false,
+    "/metromadrid/": { anchor: ".hero-intro > div > .eyebrow", mode: "above" },
+    "/transport/londoncyclepulse": { anchor: "header.site-header > a.wordmark", mode: "inline", label: false },
+    // Full-screen map: the crumb tops whichever panel is open (Layers, or the full control panel).
+    "/transport/madrid_public_transport": [
+      { anchor: ".quick-panel__header > div > .eyebrow", mode: "above" },
+      { anchor: "aside#control-panel > header.panel-header > div > .eyebrow", mode: "above" },
+    ],
+    "/airport-to-tower/": { anchor: "nav.top-nav > a.wordmark", mode: "inline" },
+    "/debisacarmasvotos/": { anchor: "header.site-header > a.brand", mode: "inline" },
+    "/elections/madrid_elections_2023": false,
+    "/elections/general-elections-hex/": { anchor: "main > header > div:first-child > :first-child", mode: "above" },
+    "/football_trivia_game/": { anchor: "section.hero > .hero__kicker", mode: "above" },
+    "/mapfather/": { anchor: "header.site-header > button.wordmark", mode: "inline", label: false },
+    "/flagbag/": { anchor: "header.site-header > button.wordmark", mode: "inline", label: false },
+    "/guessports/": { anchor: "header.site-header > button.wordmark", mode: "inline", label: false },
+    // The brand only fades in after the opening screen, so no "/" pointing at an empty space.
+    "/chip-happens/": { anchor: "header.site-header > a.brand", mode: "inline", sep: false },
+    "/bochorno-historico/": { anchor: ".hero-title", mode: "above" },
+    // The header row has no side padding of its own (the title link carries it).
+    "/e-spain/": { anchor: "header.topbar > a.identity", mode: "inline", indent: true },
+    "/salary-calculator-2026/": { anchor: ".title-block > .brand-kicker", mode: "above" },
+  };
+  const MARK =
+    '<svg class="dsf-mark" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true" focusable="false">' +
+    '<path fill="currentColor" d="M6 6h9v20H6zM17 6a9 9 0 0 1 9 9h-9z"/>' +
+    '<path fill="currentColor" fill-opacity=".42" d="M17 17h9a9 9 0 0 1-9 9z"/></svg>';
   const CUP =
     '<svg class="dsf-cup" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.65" ' +
     'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' +
@@ -103,6 +160,20 @@
   .dsf-credit{flex-direction:column;align-items:flex-start;gap:6px}
 }
 @media (prefers-reduced-motion:reduce){.dsf *{transition:none!important}.dsf .dsf-mug,.dsf .dsf-steam,.dsf .dsf-arrow{transform:none!important}}
+.dsf-crumb{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;align-self:center;min-height:32px;box-sizing:border-box;
+  color:inherit!important;background:none!important;text-decoration:none!important;font-family:inherit;font-style:normal;font-weight:600;font-size:13px;line-height:1;
+  letter-spacing:0;text-transform:none;white-space:nowrap;opacity:.72;transition:opacity .2s ease}
+.dsf-crumb:hover,.dsf-crumb:focus-visible{opacity:1}
+.dsf-crumb:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:3px}
+.dsf-crumb .dsf-mark{width:16px;height:16px;flex:0 0 auto;display:block}
+.dsf-crumb .dsf-sep{opacity:.45;font-weight:400;margin-left:2px}
+.dsf-crumb[data-mode="above"]{display:flex;width:max-content;align-self:flex-start;justify-self:start;min-height:24px;margin:0 0 10px;font-size:12px;gap:6px}
+.dsf-crumb[data-mode="above"] .dsf-mark{width:14px;height:14px}
+@media (max-width:600px){.dsf-crumb[data-mode="inline"]:not([data-wrapped]) .dsf-name{display:none}}
+.dsf-crumb[data-wrapped]{min-height:24px;font-size:12px;gap:6px}
+.dsf-crumb[data-wrapped] .dsf-sep{display:none}
+.dsf-crumb[data-wrapped] .dsf-mark{width:14px;height:14px}
+@media (prefers-reduced-motion:reduce){.dsf-crumb{transition:none}}
 `;
 
   const read = (node, name) => node?.getAttribute?.("data-" + name) ?? null;
@@ -164,6 +235,86 @@
     slot.__dsfKey = key;
     render(slot);
   }
+  // ---- Home crumb -------------------------------------------------------------------------------
+  function homeConfig() {
+    if (read(script, "home") === "off") return null;
+    let config = null;
+    let best = -1;
+    for (const [prefix, value] of Object.entries(HOME_PAGES)) {
+      if (location.pathname.startsWith(prefix) && prefix.length > best) { best = prefix.length; config = value; }
+    }
+    const anchor = read(script, "home-anchor");
+    if (anchor) config = { mode: "inline", anchor };
+    if (!config) return null;
+    const mode = read(script, "home-mode");
+    const label = read(script, "home-label") === "off" ? { label: false } : {};
+    return [].concat(config).map((c) => ({ ...c, ...(mode ? { mode } : {}), ...label }));
+  }
+
+  let crumb = null;
+  let nudged = null;
+  const showing = (el) => el.getClientRects().length && !el.closest("dialog,[hidden],[aria-hidden='true'],[inert]");
+  function placeHome(configs) {
+    let config = null;
+    let anchor = null;
+    for (const c of configs) {
+      anchor = [...document.querySelectorAll(c.anchor)].find(showing);
+      if (anchor) { config = c; break; }
+    }
+    if (!anchor) return;
+    const t = COPY[language()];
+    const mode = config.mode === "above" ? "above" : "inline";
+    if (!crumb) {
+      crumb = document.createElement("a");
+      crumb.className = "dsf-crumb";
+      crumb.href = HOME;
+    }
+    const sep = mode === "inline" && config.sep !== false;
+    const key = [language(), mode, config.label !== false, sep].join("|");
+    if (crumb.__dsfKey !== key) {
+      crumb.__dsfKey = key;
+      crumb.dataset.mode = mode;
+      crumb.setAttribute("aria-label", t.home);
+      crumb.title = t.home;
+      crumb.innerHTML = MARK + (config.label === false ? "" : '<span class="dsf-name">Daniel Almazán</span>') +
+        (sep ? '<span class="dsf-sep" aria-hidden="true">/</span>' : "");
+    }
+    if (crumb.nextElementSibling !== anchor) anchor.before(crumb);
+    if (nudged && nudged !== anchor) { nudged.style.marginRight = nudged.style.marginLeft = nudged.style.gridRow = ""; nudged = null; }
+    for (const p of ["marginLeft", "marginRight", "gridColumn", "gridRow", "justifySelf"]) crumb.style[p] = "";
+    delete crumb.dataset.wrapped;
+    if (mode !== "inline") return;
+    const row = getComputedStyle(anchor.parentElement);
+    // Line up with the brand's own inner padding (for rows that leave the side padding to the brand).
+    if (config.indent) crumb.style.marginLeft = getComputedStyle(anchor).paddingLeft;
+    if (row.display.includes("grid")) {
+      // Share the brand's grid cell and move the brand along by our width, so no new row appears.
+      const cell = getComputedStyle(anchor);
+      const gridRow = cell.gridRowStart === "auto" ? "1" : cell.gridRowStart;
+      Object.assign(crumb.style, { gridColumn: cell.gridColumnStart, gridRow, justifySelf: "start" });
+      // Two items may only share a cell when both are placed explicitly.
+      if (cell.gridRowStart === "auto") anchor.style.gridRow = "1";
+      const r = crumb.getBoundingClientRect();
+      anchor.style.marginLeft = Math.ceil(r.width + (parseFloat(crumb.style.marginLeft) || 0)) + (config.indent ? 0 : 10) + "px";
+      nudged = anchor;
+      return;
+    }
+    // Sit 10px from the project brand whatever gap the host row already uses.
+    const gap = parseFloat(row.columnGap) || 0;
+    crumb.style.marginRight = config.indent ? "0px" : Math.max(0, 10 - gap) + "px";
+    // In a two-item space-between row (brand … controls) a third item would push the brand to the
+    // middle. An auto margin on the brand reproduces the original layout with us beside it.
+    const others = [...anchor.parentElement.children].filter((el) => el !== crumb && showing(el));
+    if (!nudged && others.length === 2 && /flex/.test(row.display) && /space-(between|around|evenly)/.test(row.justifyContent)) {
+      anchor.style.marginRight = "auto";
+      nudged = anchor;
+    }
+    // A row that wraps on small screens leaves us on a line of our own: read as a label above the title.
+    const a = anchor.getBoundingClientRect();
+    const c = crumb.getBoundingClientRect();
+    if (c.bottom <= a.top + 2 || c.top >= a.bottom - 2) crumb.dataset.wrapped = "";
+  }
+
   const refreshAll = () => {
     // A declared slot always wins over one this script inserted on its own.
     if (document.querySelector("[data-dani-support]:not([data-dsf-auto])")) {
@@ -179,16 +330,20 @@
       style.textContent = CSS;
       document.head.appendChild(style);
     }
-    refreshAll();
-    // Single-page apps may draw (or redraw) their slot after this script runs.
+    const home = homeConfig();
+    const update = () => { if (home) placeHome(home); refreshAll(); };
+    update();
+    // Single-page apps may draw (or redraw) their slot and header after this script runs.
     let queued = false;
     const queue = () => {
       if (queued) return;
       queued = true;
-      requestAnimationFrame(() => { queued = false; refreshAll(); });
+      requestAnimationFrame(() => { queued = false; update(); });
     };
+    addEventListener("resize", queue, { passive: true });
     new MutationObserver(queue).observe(document.documentElement, {
-      attributes: true, attributeFilter: ["lang", "data-theme", "class"], childList: true, subtree: true,
+      attributes: true, childList: true, subtree: true,
+      attributeFilter: ["lang", "data-theme", "class", "hidden", "aria-hidden", "inert", "data-shown"],
     });
     // Opt-in only (data-placement="auto" on the script tag): place the band next to the page footer,
     // matching its width and side padding. It keeps tracking the footer, so apps that draw (or redraw)
