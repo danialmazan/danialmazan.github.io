@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-23",
   "ballotVersion": "29N-territorial-2026-10-19-v4",
   "rates": {
     "PODEMOS": {
@@ -26,103 +26,122 @@
   ],
   "polls": [
     {
-      "id": "sigma-2026-11-09",
-      "fieldworkStart": "2026-10-30",
-      "fieldworkEnd": "2026-11-06",
+      "id": "sigma-2026-11-22",
+      "fieldworkStart": "2026-11-16",
+      "fieldworkEnd": "2026-11-21",
       "catalonia": {
         "PODEMOS": {
           "status": "unknown",
-          "source": "https://www.sigmados.com/noticia?id=Zr7XEKTN9GLN00s",
-          "verified": "2026-11-09",
-          "note": "La fuente no acredita el tratamiento CAT. Sus cifras de FA, Podemos y ERC no se usan en esta base."
+          "source": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b033046fc6c830e508b4594.html",
+          "verified": "2026-11-23",
+          "note": "La nueva publicación no documenta completamente la cobertura CAT de las estimaciones. FA, Podemos y ERC quedan fuera del promedio de esta fuente."
         },
         "CUP": {
           "status": "unknown",
-          "source": "https://www.sigmados.com/noticia?id=Zr7XEKTN9GLN00s",
-          "verified": "2026-11-09",
-          "note": "La fuente no acredita el tratamiento CAT. Sus cifras de FA, Podemos y ERC no se usan en esta base."
+          "source": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b033046fc6c830e508b4594.html",
+          "verified": "2026-11-23",
+          "note": "La nueva publicación no documenta completamente la cobertura CAT de las estimaciones. FA, Podemos y ERC quedan fuera del promedio de esta fuente."
         }
       }
     },
     {
-      "id": "gad3-2026-11-09",
-      "fieldworkStart": "2026-11-03",
-      "fieldworkEnd": "2026-11-05",
+      "id": "gad3-2026-11-22",
+      "fieldworkStart": "2026-11-16",
+      "fieldworkEnd": "2026-11-19",
       "catalonia": {
         "PODEMOS": {
           "status": "absorbed",
-          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026/",
-          "verified": "2026-11-09",
-          "note": "Cuadro de candidaturas del 29N: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos; no hay fila CUP actual. Se armonizan las papeletas completas de 2026, sin añadir transferencias editoriales."
+          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026-ii/",
+          "verified": "2026-11-23",
+          "note": "Se conserva la interpretación de papeletas completas de 2026 del cuadro GAD3: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos separado. No se añade un segundo flujo CAT."
         },
         "CUP": {
           "status": "absorbed",
-          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026/",
-          "verified": "2026-11-09",
-          "note": "Cuadro de candidaturas del 29N: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos; no hay fila CUP actual. Se armonizan las papeletas completas de 2026, sin añadir transferencias editoriales."
+          "source": "https://www.gad3.com/barometro-abc-i-estimacion-de-voto-nacional-noviembre-2026-ii/",
+          "verified": "2026-11-23",
+          "note": "Se conserva la interpretación de papeletas completas de 2026 del cuadro GAD3: distingue CFV, UPC, CHA–FA Aragón, Ara Més y Podemos separado. No se añade un segundo flujo CAT."
         }
       }
     },
     {
-      "id": "40db-2026-11-09",
-      "fieldworkStart": "2026-11-02",
-      "fieldworkEnd": "2026-11-04",
+      "id": "40db-2026-11-23",
+      "fieldworkStart": "2026-11-10",
+      "fieldworkEnd": "2026-11-21",
       "catalonia": {
         "PODEMOS": {
           "status": "absorbed",
-          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral/2026_11_preelectoral_informe.pdf",
-          "verified": "2026-11-09",
-          "note": "Informe preelectoral con candidaturas territoriales completas en pp. 7 y siguientes; Podemos solo separado y CUP sin papeleta propia en Cataluña. No se añade trasvase a las estimaciones de las papeletas."
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral2/PE2-cbe680f8658575bfec9654dda53767bbd334f392/2026_11_preelectoral2_voto.pdf",
+          "verified": "2026-11-23",
+          "note": "Continúa el cuadro de papeletas de 2026 de esta serie, que distingue FA, Podemos separado y las coaliciones territoriales de CFV, Ara Més y UPC. Se conserva el tratamiento CAT sin añadir otro trasvase."
         },
         "CUP": {
           "status": "absorbed",
-          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral/2026_11_preelectoral_informe.pdf",
-          "verified": "2026-11-09",
-          "note": "Informe preelectoral con candidaturas territoriales completas en pp. 7 y siguientes; Podemos solo separado y CUP sin papeleta propia en Cataluña. No se añade trasvase a las estimaciones de las papeletas."
+          "source": "https://ep00.epimg.net/infografias/encuestas40db/2026/11-preelectoral2/PE2-cbe680f8658575bfec9654dda53767bbd334f392/2026_11_preelectoral2_voto.pdf",
+          "verified": "2026-11-23",
+          "note": "Continúa el cuadro de papeletas de 2026 de esta serie, que distingue FA, Podemos separado y las coaliciones territoriales de CFV, Ara Més y UPC. Se conserva el tratamiento CAT sin añadir otro trasvase."
         }
       }
     },
     {
-      "id": "ncreport-2026-11-09",
-      "fieldworkStart": "2026-11-02",
-      "fieldworkEnd": "2026-11-05",
+      "id": "ncreport-2026-11-23",
+      "fieldworkStart": "2026-11-16",
+      "fieldworkEnd": "2026-11-20",
       "catalonia": {
         "PODEMOS": {
           "status": "unknown",
-          "source": "https://www.larazon.es/espana/gana-7-puntos-psoe-que-cae-100-escanos_202611096af1319903bbf30bb045239e.html",
-          "verified": "2026-11-09",
-          "note": "La noticia y el gráfico no acreditan cobertura CAT; FA, Podemos y ERC no contribuyen al promedio por partido de esta base."
+          "source": "https://www.larazon.es/espana/sanchez-remonta-alterar-mayoria-ppvox_202611236b032823c0d5c85b96c4a76e.html",
+          "verified": "2026-11-23",
+          "note": "La ficha nueva no acredita el tratamiento CAT. Las estimaciones originales FA, Podemos y ERC no contribuyen a sus promedios."
         },
         "CUP": {
           "status": "unknown",
-          "source": "https://www.larazon.es/espana/gana-7-puntos-psoe-que-cae-100-escanos_202611096af1319903bbf30bb045239e.html",
-          "verified": "2026-11-09",
-          "note": "La noticia y el gráfico no acreditan cobertura CAT; FA, Podemos y ERC no contribuyen al promedio por partido de esta base."
+          "source": "https://www.larazon.es/espana/sanchez-remonta-alterar-mayoria-ppvox_202611236b032823c0d5c85b96c4a76e.html",
+          "verified": "2026-11-23",
+          "note": "La ficha nueva no acredita el tratamiento CAT. Las estimaciones originales FA, Podemos y ERC no contribuyen a sus promedios."
         }
       }
     },
     {
-      "id": "imop-2026-11-08",
-      "fieldworkStart": "2026-11-02",
-      "fieldworkEnd": "2026-11-06",
+      "id": "imop-2026-11-23",
+      "fieldworkStart": "2026-11-17",
+      "fieldworkEnd": "2026-11-19",
       "catalonia": {
         "PODEMOS": {
           "status": "absorbed",
-          "source": "https://www.elconfidencial.com/espana/2026-11-08/derecha-recupera-seis-escanos-izquierda-castigo-psoe-urda-cbtr_4460900/",
-          "verified": "2026-11-09",
-          "note": "El editor especifica Podemos solo en sus candidaturas separadas y las papeletas territoriales dentro de FA. La estimación corresponde a las listas del 29N sin otro trasvase CAT."
+          "source": "https://www.imop.es/encuesta-pre-electoral-el-confidencial-ola-5/",
+          "verified": "2026-11-23",
+          "note": "Se conserva la interpretación de papeletas de 2026 de la serie IMOP; la nota oficial aclara ahora la inclusión de CFV, Ara Més y UPC en el agregado FA. No se añade transferencia CAT ni se imputan porcentajes a socios."
         },
         "CUP": {
           "status": "absorbed",
-          "source": "https://www.elconfidencial.com/espana/2026-11-08/derecha-recupera-seis-escanos-izquierda-castigo-psoe-urda-cbtr_4460900/",
-          "verified": "2026-11-09",
-          "note": "El editor especifica Podemos solo en sus candidaturas separadas y las papeletas territoriales dentro de FA. La estimación corresponde a las listas del 29N sin otro trasvase CAT."
+          "source": "https://www.imop.es/encuesta-pre-electoral-el-confidencial-ola-5/",
+          "verified": "2026-11-23",
+          "note": "Se conserva la interpretación de papeletas de 2026 de la serie IMOP; la nota oficial aclara ahora la inclusión de CFV, Ara Més y UPC en el agregado FA. No se añade transferencia CAT ni se imputan porcentajes a socios."
+        }
+      }
+    },
+    {
+      "id": "dym-2026-11-22",
+      "fieldworkStart": "2026-11-17",
+      "fieldworkEnd": "2026-11-19",
+      "catalonia": {
+        "PODEMOS": {
+          "status": "unknown",
+          "source": "https://www.diariodenavarra.es/noticias/actualidad/nacional/2026/11/22/pp-vox-consolidan-ventaja-semana-elecciones-843312-28.html",
+          "verified": "2026-11-23",
+          "note": "La mención de acuerdos territoriales no acredita la cobertura CAT ni el perímetro completo de FA. No se promedian FA, Podemos o ERC de esta fuente."
+        },
+        "CUP": {
+          "status": "unknown",
+          "source": "https://www.diariodenavarra.es/noticias/actualidad/nacional/2026/11/22/pp-vox-consolidan-ventaja-semana-elecciones-843312-28.html",
+          "verified": "2026-11-23",
+          "note": "La mención de acuerdos territoriales no acredita la cobertura CAT ni el perímetro completo de FA. No se promedian FA, Podemos o ERC de esta fuente."
         }
       }
     }
   ],
   "previousReferenceResultSha256": "943697cf24cbdd49d7fb5b544ea9fcea49a5604ecace712179f89822585fe1f6",
-  "snapshotId": "promedio-2026-11-09-v1",
+  "snapshotId": "promedio-2026-11-23-v1",
   "pollingBasis": "ballots-2026",
   "effectiveTreatment": {
     "PODEMOS": "absorbed",
