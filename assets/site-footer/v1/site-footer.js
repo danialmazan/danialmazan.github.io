@@ -18,6 +18,8 @@
  *                       (GAPS below sets it by page path, for pages whose HTML may be cached offline)
  *
  * Placement: either declare a [data-dani-support] slot, or put data-placement="auto" on the script tag.
+ * Single-page apps and games should declare the slot in their own markup, only on the screens that
+ * should show it (home, final results), so it never appears mid-game.
  * Auto places the band just before the page's last visible <footer> (matching its width and side padding),
  * and follows it if an app draws the footer late. Tune with data-anchor="<css selector>" and
  * data-position="before|prepend|append". A declared slot always wins over auto placement.
@@ -356,7 +358,10 @@
       const candidates = [...document.querySelectorAll(selector || "footer")]
         .filter((el) => el.getClientRects().length && !el.closest("dialog,[hidden],[aria-hidden='true']"));
       const anchor = candidates[candidates.length - 1];
-      if (!anchor) return;
+      // No anchor on this screen (an app switched views): take the band away rather than leave it
+      // stranded where the old anchor was. Frameworks that reuse the parent element would otherwise
+      // keep it on screens it was never meant for (e.g. on top of a game board).
+      if (!anchor) { auto?.remove(); return; }
       const where = read(script, "position") || "before"; // before | prepend | append
       if (!auto) {
         auto = document.createElement("div");
