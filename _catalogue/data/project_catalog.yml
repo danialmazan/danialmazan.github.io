@@ -254,11 +254,23 @@ sections:
     url_es: "https://danielalmazan.com/elections/?lang=es"
     description: {en: "Projects with election data", es: "Proyectos con datos electorales"}
     projects:
+      - id: decretometro
+        topics: ["elections"]
+        format: {en: "Data explorer", es: "Explorador de datos"}
+        summary: {en: "How often each government has ruled by decree-law since 1978.", es: "Cuánto ha gobernado por decreto-ley cada Gobierno desde 1978."}
+        last_published: "2026-11-25"
+        title: {en: "Decretómetro", es: "Decretómetro"}
+        description:
+          en: "Every royal decree-law approved in Spain since 1978: pace, governments and prime ministers, elections, what Congress did next and the weight of decree-laws among laws. Updated weekly from the BOE and Congress."
+          es: "Todos los reales decretos-leyes aprobados en España desde 1978: ritmo, Gobiernos y presidentes, elecciones, qué hizo después el Congreso y el peso de los decretos-leyes entre las leyes. Se actualiza cada semana con datos del BOE y del Congreso."
+        url: "https://danielalmazan.com/decretometro/"
+        url_en: "https://danielalmazan.com/decretometro/en/"
+        url_es: "https://danielalmazan.com/decretometro/"
       - id: debi-sacar-mas-votos
         topics: ["elections"]
         format: {en: "Election simulator", es: "Simulador electoral"}
         summary: {en: "Adjust polls and model seats in Spain’s Congress.", es: "Ajusta las encuestas y simula escaños en el Congreso."}
-        last_published: "2026-11-09"
+        last_published: "2026-11-23"
         title: {en: "Debí sacar más votos", es: "Debí sacar más votos"}
         description:
           en: "Explore polls and model votes, seats, joint lists and withdrawals for Spain’s Congress. In Spanish."
@@ -309,7 +321,7 @@ sections:
         topics: ["games"]
         format: {en: "Geography game", es: "Juego de geografía"}
         summary: {en: "Recognise the silhouette, then place it on the map.", es: "Reconoce la silueta y sitúala en el mapa."}
-        last_published: "2026-11-13"
+        last_published: "2026-11-24"
         title: {en: "The Mapfather", es: "The Mapfather"}
         description:
           en: "Guess the country from its silhouette, then place it on a map. A new challenge every day."
@@ -319,7 +331,7 @@ sections:
         topics: ["games"]
         format: {en: "Trade puzzle", es: "Juego de comercio"}
         summary: {en: "Guess the country from its trade.", es: "Adivina el país a partir de su comercio."}
-        last_published: "2026-11-03"
+        last_published: "2026-11-24"
         title: {en: "Guessports", es: "Guessports"}
         description:
           en: "Guess the country from its exports, imports or export destinations. Daily puzzles and 10-country rounds."
@@ -330,7 +342,7 @@ sections:
         topics: ["games"]
         format: {en: "Flag puzzles", es: "Juegos de banderas"}
         summary: {en: "Four ways to test how well you know your flags.", es: "Pon a prueba cuánto sabes de banderas con cuatro juegos."}
-        last_published: "2026-10-23"
+        last_published: "2026-11-24"
         title: {en: "Flag Bag", es: "Flag Bag"}
         description:
           en: "Four flag guessing games. Identify flags, compare colours, zoom in or pick the right flag. Daily challenges and 10-round games."
@@ -384,7 +396,7 @@ sections:
         topics: ["people"]
         format: {en: "Calculator", es: "Calculadora"}
         summary: {en: "Estimate take-home pay and labour costs in Madrid.", es: "Calcula el salario neto y el coste laboral en Madrid."}
-        last_published: "2026-07-17"
+        last_published: "2026-11-25"
         title: {en: "Calculadora Salario 2026", es: "Calculadora Salario 2026"}
         description:
           en: "Net salary and labour-cost calculator for Madrid in 2026."
