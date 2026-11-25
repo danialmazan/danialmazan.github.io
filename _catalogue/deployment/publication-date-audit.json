@@ -63,9 +63,9 @@
       "commit_url": "https://github.com/danialmazan/density-madrid-london/commit/855dfd814c26c7b23c488fc9ae0dd09b335a6fd6",
       "committed_at": "2026-08-23T12:14:17Z",
       "message": "Add population density distribution section",
-      "published_at": "2026-08-23T12:14:44Z",
-      "deployment_url": "https://github.com/danialmazan/density-madrid-london/actions/runs/32638825529/job/97192620920",
-      "date_basis": "successful GitHub Pages artifact deployment"
+      "published_at": "2026-08-23T12:14:26Z",
+      "deployment_url": "https://api.github.com/repos/danialmazan/density-madrid-london/deployments/6047829817",
+      "date_basis": "superseded GitHub Pages artifact deployment"
     },
     {
       "id": "density-europe",
@@ -241,24 +241,17 @@
       "repository": "danialmazan/danialmazan.github.io",
       "path": "debisacarmasvotos",
       "branch": "master",
-      "commit": "06c1434315fa81d0fc9eb0742175db4df7083f2a",
-      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/06c1434315fa81d0fc9eb0742175db4df7083f2a",
-      "committed_at": "2026-11-09T22:30:13Z",
-      "message": "Deploy November polling refresh and Congress sharing",
+      "commit": "82767e21698df29517cb7c0f7771394efb34131f",
+      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/82767e21698df29517cb7c0f7771394efb34131f",
+      "committed_at": "2026-11-23T18:05:40Z",
+      "message": "Fix election simulator header on small phones",
       "published_files_changed": [
-        "debisacarmasvotos/assets/index-BRtAfdaa.js",
-        "debisacarmasvotos/assets/index-Dfx9Bhke.css",
-        "debisacarmasvotos/assets/index-tp1uti-L.js",
-        "debisacarmasvotos/data/baseline.json",
-        "debisacarmasvotos/data/catalonia-audit.json",
-        "debisacarmasvotos/data/poll-refresh-report.json",
-        "debisacarmasvotos/data/poll-review.json",
-        "debisacarmasvotos/data/profile-audit.json",
-        "debisacarmasvotos/data/snapshots/promedio-2026-11-09-v1.json",
+        "debisacarmasvotos/assets/index-CPSZ8CWi.js",
+        "debisacarmasvotos/assets/index-Deq2dQZ3.css",
         "debisacarmasvotos/index.html"
       ],
-      "published_at": "2026-11-09T22:32:33Z",
-      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/42712454792/job/129485800865",
+      "published_at": "2026-11-23T18:07:50Z",
+      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/45234757433/job/137904080177",
       "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
@@ -331,19 +324,18 @@
       "repository": "danialmazan/danialmazan.github.io",
       "path": "mapfather",
       "branch": "master",
-      "commit": "d846b843aea8d38f14149d493647544283bc603a",
-      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/d846b843aea8d38f14149d493647544283bc603a",
-      "committed_at": "2026-11-13T08:53:17Z",
-      "message": "Prevent accidental mobile reveals in The Mapfather",
+      "commit": "e930f46c733bdbfeefb4ac35bc30efef3c26a973",
+      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/e930f46c733bdbfeefb4ac35bc30efef3c26a973",
+      "committed_at": "2026-11-24T20:08:59Z",
+      "message": "The Mapfather and Guessports: fit the phone header on narrow screens",
       "published_files_changed": [
-        "mapfather/assets/index-C9ZF2x4N.js",
-        "mapfather/assets/index-CTiP5kiR.js",
-        "mapfather/assets/index-Zx6tQmGK.css",
+        "mapfather/assets/index-B7Zkz6A1.js",
+        "mapfather/assets/index-CCTWwQVo.css",
         "mapfather/index.html",
         "mapfather/sw.js"
       ],
-      "published_at": "2026-11-13T08:55:01Z",
-      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/43396767196/job/131789965260",
+      "published_at": "2026-11-24T20:10:59Z",
+      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/45477730514/job/138743012298",
       "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
@@ -351,19 +343,18 @@
       "repository": "danialmazan/danialmazan.github.io",
       "path": "guessports",
       "branch": "master",
-      "commit": "f41c6a4957e564fc60a4d443b7af4d84d247052e",
-      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/f41c6a4957e564fc60a4d443b7af4d84d247052e",
-      "committed_at": "2026-11-03T09:47:56Z",
-      "message": "Protect Guessports give-up and open suggestions above the input",
+      "commit": "e930f46c733bdbfeefb4ac35bc30efef3c26a973",
+      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/e930f46c733bdbfeefb4ac35bc30efef3c26a973",
+      "committed_at": "2026-11-24T20:08:59Z",
+      "message": "The Mapfather and Guessports: fit the phone header on narrow screens",
       "published_files_changed": [
-        "guessports/assets/index-Bi_N3igm.js",
-        "guessports/assets/index-CtVPXRNT.css",
-        "guessports/assets/index-DAf-NLZg.css",
+        "guessports/assets/index-B9V_u4uL.css",
+        "guessports/assets/index-CzKr44UK.js",
         "guessports/index.html",
         "guessports/sw.js"
       ],
-      "published_at": "2026-11-03T09:51:10Z",
-      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/41614296873/job/125843899919",
+      "published_at": "2026-11-24T20:10:59Z",
+      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/45477730514/job/138743012298",
       "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
@@ -371,18 +362,18 @@
       "repository": "danialmazan/danialmazan.github.io",
       "path": "flagbag",
       "branch": "master",
-      "commit": "52c578bd6c126468f7324afe831cedd39c42c9b2",
-      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/52c578bd6c126468f7324afe831cedd39c42c9b2",
-      "committed_at": "2026-10-23T11:40:32Z",
-      "message": "Serve square Flag Bag link preview with a new image filename",
+      "commit": "7cb89d44a7d1f59bb5d4805415f410cadea00ae6",
+      "commit_url": "https://github.com/danialmazan/danialmazan.github.io/commit/7cb89d44a7d1f59bb5d4805415f410cadea00ae6",
+      "committed_at": "2026-11-24T19:29:07Z",
+      "message": "Flag Bag: fit the phone header without overflowing",
       "published_files_changed": [
+        "flagbag/assets/index-CVXbqXdb.css",
+        "flagbag/assets/index-CwqrE2eR.js",
         "flagbag/index.html",
-        "flagbag/social-preview-06026110cf53.png",
-        "flagbag/social-preview.png",
         "flagbag/sw.js"
       ],
-      "published_at": "2026-10-23T11:44:46Z",
-      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/39948161633/job/120395896324",
+      "published_at": "2026-11-24T19:30:52Z",
+      "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/45470702029/job/138718210032",
       "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
@@ -403,19 +394,18 @@
       "repository": "danialmazan/salary-calculator-2026",
       "path": "",
       "branch": "main",
-      "commit": "fc46ed6bf8db8a1b905467dc0595e399175ff193",
-      "commit_url": "https://github.com/danialmazan/salary-calculator-2026/commit/fc46ed6bf8db8a1b905467dc0595e399175ff193",
-      "committed_at": "2026-07-17T18:59:50Z",
-      "message": "Publish calculator from finances fdeff92",
+      "commit": "617db2646586678fe554c74b8676b7de85e156d1",
+      "commit_url": "https://github.com/danialmazan/salary-calculator-2026/commit/617db2646586678fe554c74b8676b7de85e156d1",
+      "committed_at": "2026-11-25T07:55:58Z",
+      "message": "Publish calculator from finances 4699af6",
       "published_files_changed": [
-        "assets/index-BuXhRHDL.js",
-        "assets/index-CiYy_bDR.css",
+        "assets/index-VXyf2w6y.js",
         "index.html",
         "sw.js"
       ],
-      "published_at": "2026-07-17T19:00:06Z",
-      "deployment_url": "https://api.github.com/repos/danialmazan/salary-calculator-2026/deployments/5494225708",
-      "date_basis": "superseded Pages deployment of the latest changed published files"
+      "published_at": "2026-11-25T07:56:33Z",
+      "deployment_url": "https://github.com/danialmazan/salary-calculator-2026/actions/runs/45572004629/job/139060769546",
+      "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
       "id": "asi-somos",
@@ -913,6 +903,19 @@
       "published_at": "2026-11-13T21:16:24Z",
       "deployment_url": "https://github.com/danialmazan/danialmazan.github.io/actions/runs/43508928938/job/132174347307",
       "date_basis": "successful Pages deployment of the latest changed published files"
+    },
+    {
+      "id": "por-decreto",
+      "repository": "danialmazan/por-decreto",
+      "path": "",
+      "branch": "main",
+      "commit": "1dcf428779fcbd118705e32d9fdff368e634c259",
+      "commit_url": "https://github.com/danialmazan/por-decreto/commit/1dcf428779fcbd118705e32d9fdff368e634c259",
+      "committed_at": "2026-11-25T22:31:20Z",
+      "message": "package-lock: nombre por-decreto",
+      "published_at": "2026-11-25T22:32:02Z",
+      "deployment_url": "https://github.com/danialmazan/por-decreto/actions/runs/45713944292/job/139555250400",
+      "date_basis": "successful GitHub Pages artifact deployment"
     }
   ]
 }
