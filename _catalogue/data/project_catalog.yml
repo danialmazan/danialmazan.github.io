@@ -404,7 +404,7 @@ sections:
         url: "https://danielalmazan.com/salary-calculator-2026/"
 
 homepage:
-  featured: ["chip-happens", "riesgo-laboral", "di-mi-nombre"]
+  featured: ["por-decreto", "chip-happens", "di-mi-nombre"]
 topics:
   all: {en: "All", es: "Todo"}
   places: {en: "Places", es: "Lugares"}
