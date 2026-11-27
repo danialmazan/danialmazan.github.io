@@ -32,6 +32,14 @@ Countries aggregate Natural Earth map units with matching `ADM0_A3`, subject to 
 
 Other countries retain the matching Natural Earth national map units. This is a curated game definition, not automatic aggregation by administering sovereign. Natural Earth uses de facto cartographic treatments for disputed areas; for example Cyprus does not include the separate Northern Cyprus or British base-area units, and Serbia does not include Kosovo. Source geometry and statistics may consequently cover different territorial definitions. Population is World Bank's national series; area is the exact curated game territory. The full unit list is bundled with each country's metadata for audit.
 
+## Country lists
+
+The game has two country lists. The **Full list** is all 195 countries above. The **Reduced list** (`data/reduced-list-v1.json`, 166 countries) is the Full list without every island country, meaning a country made up only of islands with no land border with another country, whose biggest island is under 10,000 km². The biggest island is the largest single polygon of the curated game territory, measured with the same spherical area method. Countries that share an island (Haiti, Dominican Republic, Timor-Leste, Brunei, Papua New Guinea, Indonesia, Ireland, United Kingdom) are not island countries, and small countries without islands such as Vatican City or Monaco stay in.
+
+Excluded from the Reduced list (29): Antigua and Barbuda, Bahamas, Bahrain, Barbados, Cabo Verde, Comoros, Cyprus, Dominica, Grenada, Kiribati, Maldives, Malta, Marshall Islands, Mauritius, Micronesia, Nauru, Palau, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, São Tomé and Príncipe, Seychelles, Singapore, Solomon Islands, Tonga, Trinidad and Tobago, Tuvalu and Vanuatu.
+
+Daily uses the Reduced list from 28 November 2026 (challenge #332; earlier dates keep schedule v1). Unlimited uses the Full list, and in 10-Country the player chooses. The list is frozen: changing it requires a new daily schedule version that starts on a future date. See `docs/adr/0001-reduced-daily-schedule.md`.
+
 ## Continents
 
 Six continents: Europe, Asia, Africa, North America, South America, Oceania. **North America and South America are separate.** Use one primary continent from the source's UN-style classification, overriding Maldives and Timor-Leste to Asia and Seychelles/Mauritius to Africa. Russia and Türkiye are both Europe and Asia. Overseas units do not change the primary continent. Kazakhstan is Asia; Egypt is Africa; France is Europe. Matching means a non-empty intersection of assigned continents.
