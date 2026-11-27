@@ -211,12 +211,13 @@ sections:
         topics: ["mobility"]
         format: {en: "Ridership dashboard", es: "Panel de demanda"}
         summary: {en: "Explore when and where people ride Metro de Madrid.", es: "Explora cuándo y dónde se usa Metro de Madrid."}
-        last_published: "2026-07-26"
+        last_published: "2026-11-27"
         title: {en: "Metro de Madrid - Demand dashboard", es: "Metro de Madrid — Panel de demanda"}
         description:
           en: "Interactive dashboard exploring network and station demand, daily patterns, recovery and the impact of service disruptions using official Metro de Madrid data."
           es: "Panel interactivo para explorar la demanda de la red y las estaciones, los patrones diarios, la recuperación y el impacto de las interrupciones del servicio con datos oficiales de Metro de Madrid."
-        url: "https://danielalmazan.com/metromadrid/dashboard.html"
+        url: "https://danielalmazan.com/metromadrid/en/"
+        url_es: "https://danielalmazan.com/metromadrid/"
       - id: london-cycle-pulse
         topics: ["mobility", "places"]
         format: {en: "Interactive dashboard", es: "Panel interactivo"}

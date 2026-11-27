@@ -166,18 +166,20 @@
     {
       "id": "metro-madrid-demand",
       "repository": "danialmazan/metromadrid",
-      "path": "dashboard.html",
+      "path": "",
       "branch": "main",
-      "commit": "7f01e70d003031db39e9b90d318548cf527910f1",
-      "commit_url": "https://github.com/danialmazan/metromadrid/commit/7f01e70d003031db39e9b90d318548cf527910f1",
-      "committed_at": "2026-07-26T13:08:12Z",
-      "message": "Deploy June 2026 Metro demand dashboard",
+      "commit": "bc2711fa3d2f2c774c6fa9bd027ddc3f22f40e1d",
+      "commit_url": "https://github.com/danialmazan/metromadrid/commit/bc2711fa3d2f2c774c6fa9bd027ddc3f22f40e1d",
+      "committed_at": "2026-11-27T11:24:09Z",
+      "message": "Publish bilingual Metro Pulse with October 2026 demand",
       "published_files_changed": [
-        "dashboard.html"
+        "dashboard.html",
+        "en/index.html",
+        "index.html"
       ],
-      "published_at": "2026-07-26T13:08:53Z",
-      "deployment_url": "https://api.github.com/repos/danialmazan/metromadrid/deployments/5610464940",
-      "date_basis": "superseded Pages deployment of the latest changed published files"
+      "published_at": "2026-11-27T11:25:11Z",
+      "deployment_url": "https://github.com/danialmazan/metromadrid/actions/runs/45990209559/job/140476021222",
+      "date_basis": "successful Pages deployment of the latest changed published files"
     },
     {
       "id": "london-cycle-pulse",
